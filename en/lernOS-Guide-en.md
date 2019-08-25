@@ -9,7 +9,10 @@ If you have **further questions** regarding lernOS or need **peer support** you 
 Yours @simondueckert
 
 # Acknowledgments
-...
+
+lernOS is inspired by many of sources and thought leaders and is thus [standing on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants). An overview of the roots & inspirations I have compiled [in the lernos Wiki](https://github.com/cogneon/lernos-core/wiki). For this guide I would especially like to thank:
+
+* -
 
 # Introduction
 ...

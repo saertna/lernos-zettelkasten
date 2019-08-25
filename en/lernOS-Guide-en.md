@@ -15,9 +15,19 @@ lernOS is inspired by many of sources and thought leaders and is thus [standing 
 * ...
 
 # Introduction
+
 ...
 
 # Learning Path
+
+...
+
+## ... (Kata)
+
+**... Kata's Mission ...**
+
+_**Duration:** ... Minutes_
+
 ...
 
 # Stop talking, start doing!

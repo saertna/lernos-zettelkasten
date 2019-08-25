@@ -36,4 +36,4 @@ Keep Calm & Learn On! :-)
 
 | Version | Edited by | Description | Date |
 |---------|----------------|-----------------------|-------|
-| 1.0 | AUTHOR(s) | ... | yyyy-mm-dd |
+| 1.0 | Author(s) | ... | yyyy-mm-dd |

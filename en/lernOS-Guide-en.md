@@ -12,7 +12,7 @@ Yours @simondueckert
 
 lernOS is inspired by many of sources and thought leaders and is thus [standing on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants). An overview of the roots & inspirations I have compiled [in the lernos Wiki](https://github.com/cogneon/lernos-core/wiki). For this guide I would especially like to thank:
 
-* -
+* ...
 
 # Introduction
 ...
@@ -21,7 +21,16 @@ lernOS is inspired by many of sources and thought leaders and is thus [standing 
 ...
 
 # Stop talking, start doing!
-...
+
+If you read through this guide but are not practising yet you should do so NOW! To start with lernOS is really easy. These five steps will help to start smoothly:
+
+1. **Schedule Time:** define the quarter when you begin to use lernOS. Add the time-slots for  the weekly to your calendar. This regular meeting is of particular importance if you practice in a lernOS Circle.
+1. **Define Objectives and Key Results:** use week 0 to define the objectives and the measurable results for the sprint. Choose an objective you really, really care about.
+1. **Find a Circle:** look for 3-4 people who want to start a sprint in the same quarter. If someone has been in a circle before he can take the role of the "Circle Moderator".
+1. **Organize the Weekly Meeting:** if you don't know each other meet face-to-face in week 0. Use social networks or instant messengers to communicate between the meetings. Use video conferencing tools to organize virtual meetings.
+1. **Plan, Do, Learn, Repeat:** Use the last weekly meeting in week 12 to reflect the results and the collaboration in the circle. Decide if you want to run another sprint together.
+
+Keep Calm & Learn On! :-)
 
 # Change History
 ...

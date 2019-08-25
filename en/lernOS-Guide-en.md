@@ -33,4 +33,7 @@ If you read through this guide but are not practising yet you should do so NOW! 
 Keep Calm & Learn On! :-)
 
 # Change History
-...
+
+| Version | Edited by | Description | Date |
+|---------|----------------|-----------------------|-------|
+| 1.0 | AUTHOR(s) | ... | yyyy-mm-dd |

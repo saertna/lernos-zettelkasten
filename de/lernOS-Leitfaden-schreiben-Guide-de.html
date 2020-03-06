@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Simon Dückert" />
+  <title>lernOS Leitfaden schreiben Leitfaden</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">lernOS Leitfaden schreiben Leitfaden</h1>
+<p class="subtitle">Dein eigener lernOS Leitfaden in einem Sprint</p>
+<p class="author">Simon Dückert</p>
+<p class="date">Version 0.1 (xx.xx.2020)</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#über-lernos">Über lernOS</a></li>
+<li><a href="#grundlagen">Grundlagen</a>
+<ul>
+<li><a href="#inhaltlicher-aufbau-eines-lernos-leitfadens">Inhaltlicher Aufbau eines lernOS Leitfadens</a></li>
+<li><a href="#lernos-leitfaden-vs.-lernos-lernpfad">lernOS Leitfaden vs. lernOS Lernpfad</a></li>
+<li><a href="#lernos-leitfäden-für-den-eigenen-bedarf-anpassen">lernOS Leitfäden für den eigenen Bedarf anpassen</a></li>
+<li><a href="#notendige-software-zum-schreiben-von-lernos-guides">Notendige Software zum Schreiben von lernOS Guides</a></li>
+<li><a href="#lernos-leitfäden-versionieren">lernOS Leitfäden versionieren</a></li>
+<li><a href="#einheitliche-begriffsverwendung-in-lernos-guides">Einheitliche Begriffsverwendung in lernOS Guides</a></li>
+</ul></li>
+<li><a href="#lernpfad">Lernpfad</a></li>
+<li><a href="#anhang">Anhang</a>
+<ul>
+<li><a href="#danksagungen">Danksagungen</a></li>
+<li><a href="#änderungshistorie">Änderungshistorie</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="über-lernos">Über lernOS</h1>
+<p>lernOS ist eine Methode zur Selbstorganisation für Menschen, die im 21. Jahrhundert leben und arbeiten. Um heute erfolgreich zu sein, muss man ständig lernen, sich organisieren und weiterentwickeln. Niemand sonst ist für diesen Prozess verantwortlich. Man muss sich selber darum kümmern (selbstgesteuertes, lebenslanges Lernen).</p>
+<p>Der Trend Working Out Loud bedeutet, die eigene Arbeit sichtbar zu machen und über die eigene Arbeit zu erzählen, um Vernetzung zu ermöglichen und Hilfe aus dem Netzwerk zu erhalten. Als Plattform kommen oft interne und externe soziale Netzwerke zum Einsatz. Gerade wenn es um den Transport von Wissen zu komplexen Themen oder Emotionen geht, reichen kurze Texte oft nicht aus. Hier eignen sich Audio- und Video-Formate wie Screencasts, Erklärvideos und Podcasts besser.</p>
+<p>Podcasts haben hierbei den Vorteil, dass sie viel einfacher zu produzieren sind, als Videos. Außerdem können Podcasts an Orten konsumiert werden, an denen die Nutzung von Videos schwierig ist (Pendler, im Auto, im Flugzeug, beim Spazieren etc.). Mit diesem lernOS Leitfaden lernt ihr in einem Learning Sprint, selber Podcast zu machen und zu veröffentlichen. Ihr könnt den Podcasting Lernpfad alleine durchlaufen oder in einem Learning Circle mit 4-5 anderen Personen.</p>
+<p>@simondueckert</p>
+<p>Lizenz</p>
+<p>lernOS Leitfäden stehen unter der Lizenz <a href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons Namensnennung 4.0 International</a> (CC BY 4.0):</p>
+<p><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></p>
+<p><strong>Du darfst:</strong></p>
+<ul>
+<li><strong>Teilen</strong> - das Material in jedwedem Format oder Medium vervielfältigen und weiterverbreiten.</li>
+<li><strong>Bearbeiten</strong> - das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.</li>
+</ul>
+<p><strong>Unter folgenden Bedingungen:</strong></p>
+<ul>
+<li><strong>Namensnennung</strong> - Du musst angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung besonders.</li>
+<li><strong>Keine weiteren Einschränkungen</strong> - Du darst keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.</li>
+</ul>
+<h1 id="grundlagen">Grundlagen</h1>
+<h2 id="inhaltlicher-aufbau-eines-lernos-leitfadens">Inhaltlicher Aufbau eines lernOS Leitfadens</h2>
+<p>High Level Struktur (<a href="https://cogneon.de/2019/04/30/wie-schreibt-man-einen-lernos-guide-einige-vorueberlegungen-zu-einer-anleitung/">Blog</a>, Beschreibung der High Level Struktur dort veraltet):</p>
+<ul>
+<li>Über lernOS</li>
+<li>Grundlagen</li>
+<li>Lernpfad</li>
+<li>Anhang</li>
+</ul>
+<p>WIki-Seite zur <a href="https://github.com/cogneon/lernos-core/wiki/How-to-write-a-lernOS-Guide">Kata-Dokumentation</a>.</p>
+<h2 id="lernos-leitfaden-vs.-lernos-lernpfad">lernOS Leitfaden vs. lernOS Lernpfad</h2>
+<p>Siehe <a href="https://community.cogneon.de/t/anforderungen-an-lernos-guides-und-lernpfade-draft">Beitrag auf CONNECT</a>.</p>
+<h2 id="lernos-leitfäden-für-den-eigenen-bedarf-anpassen">lernOS Leitfäden für den eigenen Bedarf anpassen</h2>
+<p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-fork-a-lernOS-Guide">How to fork a lernOS Guide</a>.</p>
+<h2 id="notendige-software-zum-schreiben-von-lernos-guides">Notendige Software zum Schreiben von lernOS Guides</h2>
+<p>Um lernOS Inhalte zu erstellen und zu pflegen ist einiges an Software notwendig. Wir versuchen, <a href="https://de.wikipedia.org/wiki/Open_Source">Open Source Software</a> zu verwenden, wo möglich:</p>
+<ul>
+<li><a href="https://atom.io">Atom</a> - <a href="https://en.wikipedia.org/wiki/Markdown">Markdown-</a>Editor zum Schreiben des eigentlichen Inhalts.</li>
+<li><a href="https://calibre-ebook.com">Calibre</a> - E-Book-Management-Software, um das Cover hinzuzufügen und aus dem epub-Format auch das mobi-Format (für Kindle) zu erzeugen.</li>
+<li><a href="https://desktop.github.com">Github Desktop</a> - Client um die Quellen von <a href="https://github.com/simondueckert/lernos">lernOS Repositories</a> auf GitHub mit dem lokalen Rechner zu synchronisieren.</li>
+<li><a href="https://www.imagemagick.org">ImageMagick</a> - Extraktion der ersten Seite der PDF-Version, um daraus das Cover der E-Book-Version zu erstellen.</li>
+<li><a href="https://www.ghostscript.com/index.html">Ghostscript</a> - Generierung von PDFs, benötigt von ImageMagic.</li>
+<li><a href="https://inkscape.org">Inkscape</a> - Erstellung von Vektor-Grafiken, die im <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Scalable Vector Graphic</a> Format (SVG) und PNG (96 and 300 dpi) bereitgestellt werden.</li>
+<li><a href="https://en.wikipedia.org/wiki/Microsoft_OneNote">Microsoft OneNote</a> - Digitales Notizbuch für Circle Templates und den lernOS Memex.</li>
+<li><a href="https://miktex.org">MiKTeX</a> - LaTeX Distribution für Windows, die von Pandoc für die PDF-Erstellung verwendet wird.</li>
+<li><a href="https://pandoc.org">Pandoc</a> - Konverter, der Markdown in andere Formate konvertieren kann (z.B. docx, pdf, epub, html).</li>
+<li><a href="https://typora.io/">Typora</a> - <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> Editor zum Schreiben der lernOS Inhalte.</li>
+</ul>
+<h2 id="lernos-leitfäden-versionieren">lernOS Leitfäden versionieren</h2>
+<p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-release-a-new-guide-version">How to release a new guide version</a>.</p>
+<h2 id="einheitliche-begriffsverwendung-in-lernos-guides">Einheitliche Begriffsverwendung in lernOS Guides</h2>
+<p>Siehe <a href="https://github.com/cogneon/lernos-core/blob/master/lernOS%20Glossary/de/lernOS-Glossary-de.md">lernOS Glossar</a>.</p>
+<h1 id="lernpfad">Lernpfad</h1>
+<p>…</p>
+<h1 id="anhang">Anhang</h1>
+<h2 id="danksagungen">Danksagungen</h2>
+<p>…</p>
+<h2 id="änderungshistorie">Änderungshistorie</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Version</th>
+<th>Bearbeitet von</th>
+<th>Beschreibung Änderung</th>
+<th>Datum</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.1</td>
+<td>Simon Dückert</td>
+<td>…</td>
+<td>dd.mm.2020</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Simon Dückert" />
-  <title>lernOS Leitfaden schreiben Leitfaden</title>
+  <title>Wie schreibt man einen lernOS Leitfaden?</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">lernOS Leitfaden schreiben Leitfaden</h1>
+<h1 class="title">Wie schreibt man einen lernOS Leitfaden?</h1>
 <p class="subtitle">Dein eigener lernOS Leitfaden in einem Sprint</p>
 <p class="author">Simon Dückert</p>
 <p class="date">Version 0.1 (xx.xx.2020)</p>
@@ -30,12 +30,15 @@
 <li><a href="#über-lernos">Über lernOS</a></li>
 <li><a href="#grundlagen">Grundlagen</a>
 <ul>
+<li><a href="#die-grundidee-der-lernos-leitfäden">Die Grundidee der lernOS Leitfäden</a></li>
 <li><a href="#inhaltlicher-aufbau-eines-lernos-leitfadens">Inhaltlicher Aufbau eines lernOS Leitfadens</a></li>
-<li><a href="#lernos-leitfaden-vs.-lernos-lernpfad">lernOS Leitfaden vs. lernOS Lernpfad</a></li>
-<li><a href="#lernos-leitfäden-für-den-eigenen-bedarf-anpassen">lernOS Leitfäden für den eigenen Bedarf anpassen</a></li>
-<li><a href="#notendige-software-zum-schreiben-von-lernos-guides">Notendige Software zum Schreiben von lernOS Guides</a></li>
-<li><a href="#lernos-leitfäden-versionieren">lernOS Leitfäden versionieren</a></li>
-<li><a href="#einheitliche-begriffsverwendung-in-lernos-guides">Einheitliche Begriffsverwendung in lernOS Guides</a></li>
+<li><a href="#schreibstil-in-lernos-leitfäden">Schreibstil in lernOS Leitfäden</a></li>
+<li><a href="#technische-infrastruktur-für-lernos-leitfäden">Technische Infrastruktur für lernOS Leitfäden</a>
+<ul>
+<li><a href="#lernos-leitfaden-toolset-für-windows-10">lernOS Leitfaden Toolset für Windows 10</a></li>
+<li><a href="#makefile-auf-windows-10">Makefile auf Windows 10</a></li>
+</ul></li>
+<li><a href="#lernos-leitfaden-lebenszyklus">lernOS Leitfaden Lebenszyklus</a></li>
 </ul></li>
 <li><a href="#lernpfad">Lernpfad</a></li>
 <li><a href="#anhang">Anhang</a>
@@ -64,6 +67,10 @@
 <li><strong>Keine weiteren Einschränkungen</strong> - Du darst keine zusätzlichen Klauseln oder technische Verfahren einsetzen, die anderen rechtlich irgendetwas untersagen, was die Lizenz erlaubt.</li>
 </ul>
 <h1 id="grundlagen">Grundlagen</h1>
+<h2 id="die-grundidee-der-lernos-leitfäden">Die Grundidee der lernOS Leitfäden</h2>
+<p>Ein lernOS Leitfaden hilft selbstgesteuerten, lebenslang Lernenden ein Thema oder eine Fähigkeit im Rahmen eines Learning Sprints (3 Monate) zu erlernen. Die Lernenden lernen dabei allein, im Lerntandem oder in einem Learning Circle (4-5 Personen). Der zeitliche Aufwand über den Sprint sollte maximal zwei Stunden pro Woche betragen. Die Woche 0 und 12 im Sprint sind immer für Planung und Retrospektive vorgesehen, in Woche 4 und 8 findet ein sog. Boxenstopp (Pitstop) zur Zwischenreflexion des Lernprozesses statt. Die Wochen 1-11 können mit Übungen (mindestens 11), <a href="https://de.wikipedia.org/wiki/Kata_(Programmierung)">Katas</a> genannt, gefüllt werden.</p>
+<p>Die Grundstruktur der lernOS Leitfäden ist immer gleich: das Kapitel “Über lernOS” erklärt die Grundlagen von lernOS (in allen Leitfäden gleich). Das Kapitel “Grundlagen” enthält theoretische Hintergründe und Informationen, die für das Verständnis des Leitfaden-Themas relevant sind. In diesem Kapitel wird viel auf andere verfügbare Quellen und Literatur verwiesen (Hub- oder Kurationsfunktion). Das Kapitel “Lernpfad” enthält die Katas (Übungen) des Leitfadens. Jede Kata wird in einem eigenen Kapitel beschrieben, das maximal zwei Druckseiten lang sein sollte (Sushi-Card-Prinzip). Ein Leitfaden kann mehr als einen Lernpfad enthalten. Das Kapitel Anhang enthält mindestens die “Änderungshistorie”, oft auch ein Kapitel mit Danksagungen (z.B. um Beitragende zu nennen)</p>
+<p>Ein lernOS Leitfaden steht immer unter der <a href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons Namensnennung 4.0 International Lizenz</a> (CC BY). Die Lizenz gilt auch für im Leitfaden verwendete Bilder. Alle Inhalte müssen auch in bearbeitbaren Quellformaten vorliegen (bei Bildern z.B. PNG und SVG). Die Inhalte eines lernOS Leitfaden werden als <a href="https://github.com">Repository auf GitHub</a> verwaltet, um offenen Zugang und einfach Wiederverwendung zu gewähleisten.</p>
 <h2 id="inhaltlicher-aufbau-eines-lernos-leitfadens">Inhaltlicher Aufbau eines lernOS Leitfadens</h2>
 <p>High Level Struktur (<a href="https://cogneon.de/2019/04/30/wie-schreibt-man-einen-lernos-guide-einige-vorueberlegungen-zu-einer-anleitung/">Blog</a>, Beschreibung der High Level Struktur dort veraltet):</p>
 <ul>
@@ -73,12 +80,12 @@
 <li>Anhang</li>
 </ul>
 <p>WIki-Seite zur <a href="https://github.com/cogneon/lernos-core/wiki/How-to-write-a-lernOS-Guide">Kata-Dokumentation</a>.</p>
-<h2 id="lernos-leitfaden-vs.-lernos-lernpfad">lernOS Leitfaden vs. lernOS Lernpfad</h2>
-<p>Siehe <a href="https://community.cogneon.de/t/anforderungen-an-lernos-guides-und-lernpfade-draft">Beitrag auf CONNECT</a>.</p>
-<h2 id="lernos-leitfäden-für-den-eigenen-bedarf-anpassen">lernOS Leitfäden für den eigenen Bedarf anpassen</h2>
-<p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-fork-a-lernOS-Guide">How to fork a lernOS Guide</a>.</p>
-<h2 id="notendige-software-zum-schreiben-von-lernos-guides">Notendige Software zum Schreiben von lernOS Guides</h2>
-<p>Um lernOS Inhalte zu erstellen und zu pflegen ist einiges an Software notwendig. Wir versuchen, <a href="https://de.wikipedia.org/wiki/Open_Source">Open Source Software</a> zu verwenden, wo möglich:</p>
+<h2 id="schreibstil-in-lernos-leitfäden">Schreibstil in lernOS Leitfäden</h2>
+<p>Direkte Ansprache (Du, da auch Solo-Lernende).</p>
+<p>Siehe <a href="https://github.com/cogneon/lernos-core/blob/master/lernOS%20Glossary/de/lernOS-Glossary-de.md">lernOS Glossar</a>.</p>
+<h2 id="technische-infrastruktur-für-lernos-leitfäden">Technische Infrastruktur für lernOS Leitfäden</h2>
+<p>lernOS Leitfäden werden in der Auszeichnungssprache <a href="https://de.wikipedia.org/wiki/Markdown">Markdown</a> erstellt und auf <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> verwaltet. Aus den Markdown-Quellen werden über die lernOS Produktionskette weitere Zielformate wie PDF, Word, E-Book etc. generiert. Diese Generierung kann zentral auf GitHub (noch nicht verfügbar) oder auf dem eigenen Rechner erfolgen. Generiert man die Zieformate auf dem eigenen Rechner, ist ein Toolset notwendig, das im folgenden beschrieben wird. Wir versuchen, <a href="https://de.wikipedia.org/wiki/Open_Source">Open Source Software</a> zu verwenden, wo möglich.</p>
+<h3 id="lernos-leitfaden-toolset-für-windows-10">lernOS Leitfaden Toolset für Windows 10</h3>
 <ul>
 <li><a href="https://atom.io">Atom</a> - <a href="https://en.wikipedia.org/wiki/Markdown">Markdown-</a>Editor zum Schreiben des eigentlichen Inhalts.</li>
 <li><a href="https://calibre-ebook.com">Calibre</a> - E-Book-Management-Software, um das Cover hinzuzufügen und aus dem epub-Format auch das mobi-Format (für Kindle) zu erzeugen.</li>
@@ -91,10 +98,11 @@
 <li><a href="https://pandoc.org">Pandoc</a> - Konverter, der Markdown in andere Formate konvertieren kann (z.B. docx, pdf, epub, html).</li>
 <li><a href="https://typora.io/">Typora</a> - <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> Editor zum Schreiben der lernOS Inhalte.</li>
 </ul>
-<h2 id="lernos-leitfäden-versionieren">lernOS Leitfäden versionieren</h2>
+<h3 id="makefile-auf-windows-10">Makefile auf Windows 10</h3>
+<p>Für die Erstellung der Zielformate aus den Markdown-Quellen wird ein sog. <a href="https://de.wikipedia.org/wiki/Makefile">Makefile</a> verwendet. Ist die Produktionskette auf dem eigenen Rechner richtig eingerichtet, führt ein Doppelklick auf dem Makefile (make.bat) dazu, dass alle Zielformate automatisch generiert werden. Je nach Umfang und Geschwindigkeit des eigenen Rechners kann das bis zu einigen Minuten dauern.</p>
+<h2 id="lernos-leitfaden-lebenszyklus">lernOS Leitfaden Lebenszyklus</h2>
 <p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-release-a-new-guide-version">How to release a new guide version</a>.</p>
-<h2 id="einheitliche-begriffsverwendung-in-lernos-guides">Einheitliche Begriffsverwendung in lernOS Guides</h2>
-<p>Siehe <a href="https://github.com/cogneon/lernos-core/blob/master/lernOS%20Glossary/de/lernOS-Glossary-de.md">lernOS Glossar</a>.</p>
+<p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-fork-a-lernOS-Guide">How to fork a lernOS Guide</a>.</p>
 <h1 id="lernpfad">Lernpfad</h1>
 <p>…</p>
 <h1 id="anhang">Anhang</h1>

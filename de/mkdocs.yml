@@ -26,11 +26,11 @@ google_analytics:
   - 'auto'
 
 extra:
-    social:
-        - type: 'twitter'
-          link: 'https://twitter.com/lern_os'
-        - type: 'linkedin'
-          link: 'https://www.linkedin.com/showcase/lern-os'
-        - type: 'github'
-          link: 'https://github.com/cogneon'
+#    social:
+#        - type: 'twitter'
+#          link: 'https://twitter.com/lern_os'
+#        - type: 'linkedin'
+#          link: 'https://www.linkedin.com/showcase/lern-os'
+#        - type: 'github'
+#          link: 'https://github.com/cogneon'
     disqus: lernos

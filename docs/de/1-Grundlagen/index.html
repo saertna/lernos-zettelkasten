@@ -1,0 +1,851 @@
+
+
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="https://cogneon.github.io/1-Grundlagen/">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Grundlagen - Wie schreibt man einen lernOS Leitfaden?</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ff7043">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-156969141-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview")})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#grundlagen" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://cogneon.github.io/" title="Wie schreibt man einen lernOS Leitfaden?" class="md-header-nav__button md-logo" aria-label="Wie schreibt man einen lernOS Leitfaden?">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Wie schreibt man einen lernOS Leitfaden?
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Grundlagen
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/cogneon/lernos-template/" title="Quellcode" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cogneon/lernos-template
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://cogneon.github.io/" title="Wie schreibt man einen lernOS Leitfaden?" class="md-nav__button md-logo" aria-label="Wie schreibt man einen lernOS Leitfaden?">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Wie schreibt man einen lernOS Leitfaden?
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/cogneon/lernos-template/" title="Quellcode" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cogneon/lernos-template
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Über lernOS" class="md-nav__link">
+      Über lernOS
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Grundlagen
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Grundlagen" class="md-nav__link md-nav__link--active">
+      Grundlagen
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#die-grundidee-der-lernos-leitfaden" class="md-nav__link">
+    Die Grundidee der lernOS Leitfäden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernos-leitfaden-struktur" class="md-nav__link">
+    lernOS Leitfaden Struktur
+  </a>
+  
+    <nav class="md-nav" aria-label="lernOS Leitfaden Struktur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-uber-lernos" class="md-nav__link">
+    Kapitel "Über lernOS"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-grundlagen" class="md-nav__link">
+    Kapitel "Grundlagen"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-lernpfad" class="md-nav__link">
+    Kapitel "Lernpfad"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-anhang" class="md-nav__link">
+    Kapitel "Anhang"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernos-leitfaden-inhalte" class="md-nav__link">
+    lernOS Leitfaden Inhalte
+  </a>
+  
+    <nav class="md-nav" aria-label="lernOS Leitfaden Inhalte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schreibstil" class="md-nav__link">
+    Schreibstil
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilder" class="md-nav__link">
+    Bilder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-und-video" class="md-nav__link">
+    Audio und Video
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminologie" class="md-nav__link">
+    Terminologie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lernos-markdown-flavor" class="md-nav__link">
+    lernOS Markdown Flavor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mehrsprachigkeit" class="md-nav__link">
+    Mehrsprachigkeit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernos-leitfaden-produktionskette" class="md-nav__link">
+    lernOS Leitfaden Produktionskette
+  </a>
+  
+    <nav class="md-nav" aria-label="lernOS Leitfaden Produktionskette">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lernos-leitfaden-verzeichnisstruktur" class="md-nav__link">
+    lernOS Leitfaden Verzeichnisstruktur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolset-fur-die-lernos-produktionskette" class="md-nav__link">
+    Toolset für die lernOS Produktionskette
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lernos-produktionskette-auf-windows-10" class="md-nav__link">
+    lernOS Produktionskette auf Windows 10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lernos-produktionskette-auf-github" class="md-nav__link">
+    lernOS Produktionskette auf GitHub
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernos-leitfaden-lebenszyklus" class="md-nav__link">
+    lernOS Leitfaden Lebenszyklus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rechtliche-aspekte" class="md-nav__link">
+    Rechtliche Aspekte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    FAQ
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../2-Lernpfad/" title="Lernpfad" class="md-nav__link">
+      Lernpfad
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../3-Anhang/" title="Anhang" class="md-nav__link">
+      Anhang
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#die-grundidee-der-lernos-leitfaden" class="md-nav__link">
+    Die Grundidee der lernOS Leitfäden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernos-leitfaden-struktur" class="md-nav__link">
+    lernOS Leitfaden Struktur
+  </a>
+  
+    <nav class="md-nav" aria-label="lernOS Leitfaden Struktur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-uber-lernos" class="md-nav__link">
+    Kapitel "Über lernOS"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-grundlagen" class="md-nav__link">
+    Kapitel "Grundlagen"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-lernpfad" class="md-nav__link">
+    Kapitel "Lernpfad"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kapitel-anhang" class="md-nav__link">
+    Kapitel "Anhang"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernos-leitfaden-inhalte" class="md-nav__link">
+    lernOS Leitfaden Inhalte
+  </a>
+  
+    <nav class="md-nav" aria-label="lernOS Leitfaden Inhalte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schreibstil" class="md-nav__link">
+    Schreibstil
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilder" class="md-nav__link">
+    Bilder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#audio-und-video" class="md-nav__link">
+    Audio und Video
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminologie" class="md-nav__link">
+    Terminologie
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lernos-markdown-flavor" class="md-nav__link">
+    lernOS Markdown Flavor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mehrsprachigkeit" class="md-nav__link">
+    Mehrsprachigkeit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernos-leitfaden-produktionskette" class="md-nav__link">
+    lernOS Leitfaden Produktionskette
+  </a>
+  
+    <nav class="md-nav" aria-label="lernOS Leitfaden Produktionskette">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lernos-leitfaden-verzeichnisstruktur" class="md-nav__link">
+    lernOS Leitfaden Verzeichnisstruktur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolset-fur-die-lernos-produktionskette" class="md-nav__link">
+    Toolset für die lernOS Produktionskette
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lernos-produktionskette-auf-windows-10" class="md-nav__link">
+    lernOS Produktionskette auf Windows 10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lernos-produktionskette-auf-github" class="md-nav__link">
+    lernOS Produktionskette auf GitHub
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lernos-leitfaden-lebenszyklus" class="md-nav__link">
+    lernOS Leitfaden Lebenszyklus
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rechtliche-aspekte" class="md-nav__link">
+    Rechtliche Aspekte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    FAQ
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/cogneon/lernos-template/edit/master/docs/1-Grundlagen.md" title="Seite editieren" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="grundlagen">Grundlagen</h1>
+<h2 id="die-grundidee-der-lernos-leitfaden">Die Grundidee der lernOS Leitfäden</h2>
+<p>Ein lernOS Leitfaden hilft Lernenden durch einen vorgegebenen Lernpfad ihr eigenes Lernziel im Rahmen eines Learning Sprints (3 Monate) zu erlernen zu erreichen. Die Lernenden lernen dabei allein, im Lerntandem oder in einem Learning Circle (4-5 Personen). Der zeitliche Aufwand über den Sprint sollte maximal zwei Stunden pro Woche betragen. Das Lernziel kann dabei aus einem oder einer Kombination dieser Bereiche kommen:</p>
+<ul>
+<li><strong>MINDSET</strong> - eine bestimmte Haltung fördern</li>
+<li><strong>SKILLSET</strong> - eine Fähigkeit erlernen</li>
+<li><strong>TOOLSET</strong> - ein Tool oder eine Methode beherrschen</li>
+</ul>
+<p>Die Woche 0 und 12 im Learning Sprint sind immer für Planung und Retrospektive vorgesehen, in Woche 4 und 8 findet ein sog. Boxenstopp zur Zwischenreflexion des Lernfortschritts statt. Die Wochen 1-11 können mit Übungen (mindestens 11), <a href="https://de.wikipedia.org/wiki/Kata_(Programmierung)">Katas</a> genannt, gefüllt werden.</p>
+<p>Ein lernOS Leitfaden steht immer unter der <a href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons Namensnennung 4.0 International Lizenz</a> (CC BY). Die Lizenz gilt auch für im Leitfaden  verwendete Bilder. Alle Inhalte müssen auch in bearbeitbaren  Quellformaten vorliegen (bei Bildern z.B. PNG und SVG). Die Inhalte eines lernOS Leitfaden werden als <a href="https://github.com">Repository auf GitHub</a> verwaltet, um offenen Zugang und einfach Wiederverwendung zu gewähleisten.</p>
+<h2 id="lernos-leitfaden-struktur">lernOS Leitfaden Struktur</h2>
+<p>Zur einfachen Orientierung für die Lernenden haben alle lernOS Leitfäden die gleiche Grundstruktur (<a href="https://cogneon.de/2019/04/30/wie-schreibt-man-einen-lernos-guide-einige-vorueberlegungen-zu-einer-anleitung/">Blog</a>). Diese besteht aus den vier Kapiteln Über lernOS, Grundlagen, Lernpfad und Anhang, die im Folgenden beschrieben werden.</p>
+<h3 id="kapitel-uber-lernos">Kapitel "Über lernOS"</h3>
+<p>Das Kapitel "Über lernOS" erklärt die Grundlagen von lernOS (in allen Leitfäden gleich).</p>
+<h3 id="kapitel-grundlagen">Kapitel "Grundlagen"</h3>
+<p>Das Kapitel "Grundlagen" enthält theoretische Hintergründe und Informationen, die für das Verständnis des Leitfaden-Themas relevant sind. In diesem Kapitel wird viel auf andere verfügbare Quellen und Literatur verwiesen (Hub- oder Kurationsfunktion). </p>
+<h3 id="kapitel-lernpfad">Kapitel "Lernpfad"</h3>
+<p>Das Kapitel "Lernpfad" enthält die Katas (Übungen) des Leitfadens. Jede Kata wird in einem eigenen Kapitel beschrieben, das maximal zwei Druckseiten lang sein sollte (Sushi-Card-Prinzip). Ein Leitfaden kann mehr als einen Lernpfad enthalten.</p>
+<p>Wiki-Seite zur <a href="https://github.com/cogneon/lernos-core/wiki/How-to-write-a-lernOS-Guide">Kata-Dokumentation</a>.</p>
+<h3 id="kapitel-anhang">Kapitel "Anhang"</h3>
+<p>Das Kapitel Anhang enthält mindestens die "Änderungshistorie", oft auch ein Kapitel mit Danksagungen (z.B. um Beitragende zu nennen)</p>
+<h2 id="lernos-leitfaden-inhalte">lernOS Leitfaden Inhalte</h2>
+<h3 id="schreibstil">Schreibstil</h3>
+<p>Direkte Ansprache (Du, da auch Solo-Lernende).</p>
+<h3 id="bilder">Bilder</h3>
+<p>...</p>
+<h3 id="audio-und-video">Audio und Video</h3>
+<p>Da die Produktionskette auch Textdokumente erzeugt, können in lernOS Leitfäden keine Audio- und Video-Inhalte eingebettet werden. Um trotzdem auf Audio- und Videoinhalte zu verweisen, können diese einfach im Text verlinkt werden.</p>
+<h3 id="terminologie">Terminologie</h3>
+<p>Siehe <a href="https://github.com/cogneon/lernos-core/blob/master/lernOS%20Glossary/de/lernOS-Glossary-de.md">lernOS Glossar</a>.</p>
+<h3 id="lernos-markdown-flavor">lernOS Markdown Flavor</h3>
+<p>Die Auszeichnungssprache Markdown lässt verschiedene Stile zu, die oft auch <a href="https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors">Markdown Flavors</a> genannt werden (z.B. kann man eine Aufzählung mit einem * oder einem - erzeugen). Für lernOS Leitfäden wird, wenn hier nicht anders beschrieben, die <a href="https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">Schreib- und Formatiersyntax von GitHub</a> verwendet.</p>
+<h3 id="mehrsprachigkeit">Mehrsprachigkeit</h3>
+<p>...</p>
+<h2 id="lernos-leitfaden-produktionskette">lernOS Leitfaden Produktionskette</h2>
+<p>lernOS Leitfäden werden in der Auszeichnungssprache <a href="https://de.wikipedia.org/wiki/Markdown">Markdown</a> erstellt und i.d.R. auf <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> verwaltet. Aus den Markdown-Quellen werden über die lernOS Produktionskette weitere Zielformate wie PDF, Word, E-Book etc. generiert. Diese Generierung kann zentral auf GitHub (noch nicht verfügbar) oder auf dem eigenen Rechner erfolgen. Generiert man die Zieformate auf dem eigenen Rechner, ist ein Toolset notwendig, das im folgenden beschrieben wird. Wir versuchen wo möglich <a href="https://de.wikipedia.org/wiki/Open_Source">Open Source Software</a> zu verwenden.</p>
+<h3 id="lernos-leitfaden-verzeichnisstruktur">lernOS Leitfaden Verzeichnisstruktur</h3>
+<p>Damit die lernOS Produktionskette funktioniert, müssen die Inhalte des Leitfadens in einem Dateiordner mit folgender Verzeichnisstruktur abgelegt werden (Beispiel für ein Leitfaden mit deutscher und englischer Version, fett sind Ordner- und Dateinamen, dahinter eine kurze Beschreibung):</p>
+<ul>
+<li>
+<p><strong>de</strong> - Inhalte der deutschen Version des Leitfadens</p>
+</li>
+<li>
+<p><strong>src</strong> - die Markdown-Quellen des Leitfaden</p>
+<ul>
+<li><strong>css</strong> - Anpassung von Farben für die Web-Version</li>
+<li><strong>images</strong> - Bilder des Leitfadens in den Formaten SVG und PNG</li>
+<li><strong>1-Grundlagen.md</strong> - das Kapitel "Grundlagen"</li>
+<li><strong>2-Lernpfad.md</strong> - das Kapitel "Lernpfad"</li>
+<li><strong>3-Anhang.md</strong> - das Kapitel "Anhang"</li>
+<li><strong>index.md</strong> - das Kapitel "Über lernOS", muss wegen Web-Version index.md heißen</li>
+</ul>
+</li>
+<li>
+<p><strong>make.bat</strong> - das Herzstück der Produktionskette, Batch-Datei (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen</p>
+</li>
+<li><strong>metadata.yaml</strong> - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)</li>
+<li>
+<p><strong>mkdocs.yaml</strong> - Einstellungen für die Generierung der Web-Version mit mkdocs</p>
+</li>
+<li>
+<p><strong>docs</strong></p>
+</li>
+<li>
+<p><strong>de</strong> - deutsche Web-Version des Leitfadens</p>
+</li>
+<li>
+<p><strong>en</strong> - englische Web-Version des Leitfadens</p>
+</li>
+<li>
+<p><strong>en</strong> - Inhalte der deutschen Version des Leitfadens</p>
+</li>
+<li>
+<p>Struktur identisch mit der deutschen Sprachversion</p>
+</li>
+</ul>
+<p><strong>Hinweis:</strong> im Verzeichnis einer Sprachversion liegen zusätzlich alle produzierten Dokumente (z.B. docx, epub, html, mobi, pdf).</p>
+<p><strong>Hinweis:</strong> Für die Benennung der Verzeichnisse für weitere Sprachversionen werden die Kürzel nach <a href="https://de.wikipedia.org/wiki/Liste_der_ISO-639-1-Codes">ISO 639-1</a> verwendet.</p>
+<p><strong>Hinweis:</strong> Im src-Verzeichnis kann der Leitfaden auch auf Unterkapitelebene in einzelne Markdown-Dateien geteilt werden. Das ist z.B. sinnvoll, wenn mehrere Personen gleichzeitig an den Inhalten arbeiten oder die Inhalte in der Webversion auf Kapitelebene kommentierbar sein sollen. </p>
+<h3 id="toolset-fur-die-lernos-produktionskette">Toolset für die lernOS Produktionskette</h3>
+<p>Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich. Im folgenden eine kurze Beschreibung der Tools in alphabetischer Reihenfolge:</p>
+<ul>
+<li><a href="https://calibre-ebook.com">Calibre</a> - E-Book-Management-Software, um die E-Book-Versionen <a href="https://de.wikipedia.org/wiki/EPUB">EPUB</a> und <a href="https://de.wikipedia.org/wiki/Mobipocket">Mobipocket</a> (mobi) zu erzeugen.</li>
+<li><a href="https://desktop.github.com">Github Desktop</a> - Client um <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> Repositories mit dem lokalen Rechner zu synchronisieren.</li>
+<li><a href="https://www.imagemagick.org">ImageMagick</a> - Extraktion der ersten Seite der PDF-Version, um daraus das Cover der E-Book-Version zu erstellen.</li>
+<li><a href="https://www.ghostscript.com/index.html">Ghostscript</a> - Generierung von PDFs, auch benötigt von ImageMagic.</li>
+<li><a href="https://inkscape.org">Inkscape</a> - Erstellung von Vektor-Grafiken im <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Scalable Vector Graphic</a> Format (SVG) und Export von PNGs (96 and 300 dpi).</li>
+<li><a href="https://miktex.org">MiKTeX</a> - LaTeX Distribution für Windows, die von Pandoc für die PDF-Erstellung verwendet wird.</li>
+<li><a href="https://www.mkdocs.org/">mkdocs</a> - statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion (<a href="https://de.wikipedia.org/wiki/Disqus">Disqus</a>) erzeugt.</li>
+<li><a href="https://pandoc.org">Pandoc</a> - Text-Konverter, der Markdown in andere Formate konvertieren kann (z.B. docx, pdf, epub, html).</li>
+<li><a href="https://typora.io/">Typora</a> - <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> - Editor zum Schreiben der lernOS Inhalte.</li>
+</ul>
+<h3 id="lernos-produktionskette-auf-windows-10">lernOS Produktionskette auf Windows 10</h3>
+<p>Für die Erstellung der Zielformate aus den Markdown-Quellen wird ein sog. <a href="https://de.wikipedia.org/wiki/Makefile">Makefile</a> verwendet (make.bat). Ist die Produktionskette auf dem eigenen Rechner richtig eingerichtet, führt ein Doppelklick auf dem Makefile (make.bat) dazu, dass alle Zielformate automatisch generiert werden. Je nach Umfang und Geschwindigkeit des eigenen Rechners kann das bis zu einigen Minuten dauern. Folgende Schritte werden in der Produktionskette ausgeführt:</p>
+<ol>
+<li>Alte Versionen der produzierten Dokumente löschen.</li>
+<li>Word-Version (.docx) produzieren</li>
+<li>HTML-Version (.html) produzieren (rohes HTML, z.B. für Copy&amp;Paste in CMS oder ESN)</li>
+<li>Web-Version produzieren (mkdocs mit Theme <a href="https://squidfunk.github.io/mkdocs-material/">material</a>, Ergebnis im Ordner docs)</li>
+<li>PDF-Version produzieren (.pdf)</li>
+<li>Titelseite als Grafik aus PDF exportieren (src/images/ebook-cover.jpg)</li>
+<li>E-Book-Version EPUB (.epub) produzieren</li>
+<li>E-Book-Version EPUB (.epub) on Mobipocket (.mobi) konvertieren</li>
+<li>Fertig :-)</li>
+</ol>
+<h3 id="lernos-produktionskette-auf-github">lernOS Produktionskette auf GitHub</h3>
+<p>Aktuell ist eine automatisierte Produktionskette mit <a href="https://github.com/features/actions">GitHub Actions</a> in Vorbereitung.</p>
+<h2 id="lernos-leitfaden-lebenszyklus">lernOS Leitfaden Lebenszyklus</h2>
+<p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-release-a-new-guide-version">How to release a new guide version</a>.</p>
+<p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-fork-a-lernOS-Guide">How to fork a lernOS Guide</a>.</p>
+<p>Sechs Stufen: Goal Setting, Creation, Publishing, Promotion, Maintaining, Retirement </p>
+<h2 id="rechtliche-aspekte">Rechtliche Aspekte</h2>
+<p>Lizenz CC BY. Richtige Zitation.</p>
+<p>Marke, keine kommerziellen Produkte mit lernOS im Namen (Beispiele <a href="https://de.wikipedia.org/wiki/Chromium_(Browser)">Chromium</a> -&gt; Chrome, Edge, Opera, Brave).</p>
+<h2 id="faq">FAQ</h2>
+<p><strong>Warum werden die lernOS Inhalte so kompliziert verwaltet, warum nicht einfach ein Word- oder Google Dokument?</strong></p>
+<p>1.) für die verteilte Arbeit an Inhalten und die Produktion verschiedener Zielformate ist dieser Ansatz notwendig. 2.) Wir wollen im Rahmen der digitalen Transformation möglichst viele Menschen mit echten digitalen und agilen Arbeitsprozessen in Berührung bringen und sie in den "digital-agilen Zaubertrank" fallen lassen. </p>
+<p><strong>Ich habe lernOS Leitfäden gesehen, die nicht der beschriebenen Ordner- oder Kapitelstruktur folgen. Wie kann das sein?</strong></p>
+<p>lernOS ist als Projekt noch im wachsen, daher gibt es auch gewachsene Strukturen.</p>
+                
+              
+              
+                
+
+
+  <h2 id="__comments">Kommentare</h2>
+  <div id="disqus_thread"></div>
+  <script>var disqus_config=function(){this.page.url="https://cogneon.github.io/1-Grundlagen/",this.page.identifier="1-Grundlagen/"};!function(){var e=document,i=e.createElement("script");i.src="//lernos.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." title="Über lernOS" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Zurück
+                </span>
+                Über lernOS
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../2-Lernpfad/" title="Lernpfad" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Weiter
+                </span>
+                Lernpfad
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "In Zwischenablage kopieren", "clipboard.copied": "In Zwischenablage kopiert", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Suchbegriff eingeben", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

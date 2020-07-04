@@ -31,14 +31,32 @@
 <li><a href="#grundlagen">Grundlagen</a>
 <ul>
 <li><a href="#die-grundidee-der-lernos-leitfäden">Die Grundidee der lernOS Leitfäden</a></li>
-<li><a href="#inhaltlicher-aufbau-eines-lernos-leitfadens">Inhaltlicher Aufbau eines lernOS Leitfadens</a></li>
-<li><a href="#schreibstil-in-lernos-leitfäden">Schreibstil in lernOS Leitfäden</a></li>
-<li><a href="#technische-infrastruktur-für-lernos-leitfäden">Technische Infrastruktur für lernOS Leitfäden</a>
+<li><a href="#lernos-leitfaden-struktur">lernOS Leitfaden Struktur</a>
 <ul>
-<li><a href="#lernos-leitfaden-toolset-für-windows-10">lernOS Leitfaden Toolset für Windows 10</a></li>
-<li><a href="#makefile-auf-windows-10">Makefile auf Windows 10</a></li>
+<li><a href="#kapitel-über-lernos">Kapitel “Über lernOS”</a></li>
+<li><a href="#kapitel-grundlagen">Kapitel “Grundlagen”</a></li>
+<li><a href="#kapitel-lernpfad">Kapitel “Lernpfad”</a></li>
+<li><a href="#kapitel-anhang">Kapitel “Anhang”</a></li>
+</ul></li>
+<li><a href="#lernos-leitfaden-inhalte">lernOS Leitfaden Inhalte</a>
+<ul>
+<li><a href="#schreibstil">Schreibstil</a></li>
+<li><a href="#bilder">Bilder</a></li>
+<li><a href="#audio-und-video">Audio und Video</a></li>
+<li><a href="#terminologie">Terminologie</a></li>
+<li><a href="#lernos-markdown-flavor">lernOS Markdown Flavor</a></li>
+<li><a href="#mehrsprachigkeit">Mehrsprachigkeit</a></li>
+</ul></li>
+<li><a href="#lernos-leitfaden-produktionskette">lernOS Leitfaden Produktionskette</a>
+<ul>
+<li><a href="#lernos-leitfaden-verzeichnisstruktur">lernOS Leitfaden Verzeichnisstruktur</a></li>
+<li><a href="#toolset-für-die-lernos-produktionskette">Toolset für die lernOS Produktionskette</a></li>
+<li><a href="#lernos-produktionskette-auf-windows-10">lernOS Produktionskette auf Windows 10</a></li>
+<li><a href="#lernos-produktionskette-auf-github">lernOS Produktionskette auf GitHub</a></li>
 </ul></li>
 <li><a href="#lernos-leitfaden-lebenszyklus">lernOS Leitfaden Lebenszyklus</a></li>
+<li><a href="#rechtliche-aspekte">Rechtliche Aspekte</a></li>
+<li><a href="#faq">FAQ</a></li>
 </ul></li>
 <li><a href="#lernpfad">Lernpfad</a></li>
 <li><a href="#anhang">Anhang</a>
@@ -68,43 +86,135 @@
 </ul>
 <h1 id="grundlagen">Grundlagen</h1>
 <h2 id="die-grundidee-der-lernos-leitfäden">Die Grundidee der lernOS Leitfäden</h2>
-<p>Ein lernOS Leitfaden hilft selbstgesteuerten, lebenslang Lernenden ein Thema oder eine Fähigkeit im Rahmen eines Learning Sprints (3 Monate) zu erlernen. Die Lernenden lernen dabei allein, im Lerntandem oder in einem Learning Circle (4-5 Personen). Der zeitliche Aufwand über den Sprint sollte maximal zwei Stunden pro Woche betragen. Die Woche 0 und 12 im Sprint sind immer für Planung und Retrospektive vorgesehen, in Woche 4 und 8 findet ein sog. Boxenstopp (Pitstop) zur Zwischenreflexion des Lernprozesses statt. Die Wochen 1-11 können mit Übungen (mindestens 11), <a href="https://de.wikipedia.org/wiki/Kata_(Programmierung)">Katas</a> genannt, gefüllt werden.</p>
-<p>Die Grundstruktur der lernOS Leitfäden ist immer gleich: das Kapitel “Über lernOS” erklärt die Grundlagen von lernOS (in allen Leitfäden gleich). Das Kapitel “Grundlagen” enthält theoretische Hintergründe und Informationen, die für das Verständnis des Leitfaden-Themas relevant sind. In diesem Kapitel wird viel auf andere verfügbare Quellen und Literatur verwiesen (Hub- oder Kurationsfunktion). Das Kapitel “Lernpfad” enthält die Katas (Übungen) des Leitfadens. Jede Kata wird in einem eigenen Kapitel beschrieben, das maximal zwei Druckseiten lang sein sollte (Sushi-Card-Prinzip). Ein Leitfaden kann mehr als einen Lernpfad enthalten. Das Kapitel Anhang enthält mindestens die “Änderungshistorie”, oft auch ein Kapitel mit Danksagungen (z.B. um Beitragende zu nennen)</p>
+<p>Ein lernOS Leitfaden hilft Lernenden durch einen vorgegebenen Lernpfad ihr eigenes Lernziel im Rahmen eines Learning Sprints (3 Monate) zu erlernen zu erreichen. Die Lernenden lernen dabei allein, im Lerntandem oder in einem Learning Circle (4-5 Personen). Der zeitliche Aufwand über den Sprint sollte maximal zwei Stunden pro Woche betragen. Das Lernziel kann dabei aus einem oder einer Kombination dieser Bereiche kommen:</p>
+<ul>
+<li><strong>MINDSET</strong> - eine bestimmte Haltung fördern</li>
+<li><strong>SKILLSET</strong> - eine Fähigkeit erlernen</li>
+<li><strong>TOOLSET</strong> - ein Tool oder eine Methode beherrschen</li>
+</ul>
+<p>Die Woche 0 und 12 im Learning Sprint sind immer für Planung und Retrospektive vorgesehen, in Woche 4 und 8 findet ein sog. Boxenstopp zur Zwischenreflexion des Lernfortschritts statt. Die Wochen 1-11 können mit Übungen (mindestens 11), <a href="https://de.wikipedia.org/wiki/Kata_(Programmierung)">Katas</a> genannt, gefüllt werden.</p>
 <p>Ein lernOS Leitfaden steht immer unter der <a href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons Namensnennung 4.0 International Lizenz</a> (CC BY). Die Lizenz gilt auch für im Leitfaden verwendete Bilder. Alle Inhalte müssen auch in bearbeitbaren Quellformaten vorliegen (bei Bildern z.B. PNG und SVG). Die Inhalte eines lernOS Leitfaden werden als <a href="https://github.com">Repository auf GitHub</a> verwaltet, um offenen Zugang und einfach Wiederverwendung zu gewähleisten.</p>
-<h2 id="inhaltlicher-aufbau-eines-lernos-leitfadens">Inhaltlicher Aufbau eines lernOS Leitfadens</h2>
-<p>High Level Struktur (<a href="https://cogneon.de/2019/04/30/wie-schreibt-man-einen-lernos-guide-einige-vorueberlegungen-zu-einer-anleitung/">Blog</a>, Beschreibung der High Level Struktur dort veraltet):</p>
-<ul>
-<li>Über lernOS</li>
-<li>Grundlagen</li>
-<li>Lernpfad</li>
-<li>Anhang</li>
-</ul>
-<p>WIki-Seite zur <a href="https://github.com/cogneon/lernos-core/wiki/How-to-write-a-lernOS-Guide">Kata-Dokumentation</a>.</p>
-<h2 id="schreibstil-in-lernos-leitfäden">Schreibstil in lernOS Leitfäden</h2>
+<h2 id="lernos-leitfaden-struktur">lernOS Leitfaden Struktur</h2>
+<p>Zur einfachen Orientierung für die Lernenden haben alle lernOS Leitfäden die gleiche Grundstruktur (<a href="https://cogneon.de/2019/04/30/wie-schreibt-man-einen-lernos-guide-einige-vorueberlegungen-zu-einer-anleitung/">Blog</a>). Diese besteht aus den vier Kapiteln Über lernOS, Grundlagen, Lernpfad und Anhang, die im Folgenden beschrieben werden.</p>
+<h3 id="kapitel-über-lernos">Kapitel “Über lernOS”</h3>
+<p>Das Kapitel “Über lernOS” erklärt die Grundlagen von lernOS (in allen Leitfäden gleich).</p>
+<h3 id="kapitel-grundlagen">Kapitel “Grundlagen”</h3>
+<p>Das Kapitel “Grundlagen” enthält theoretische Hintergründe und Informationen, die für das Verständnis des Leitfaden-Themas relevant sind. In diesem Kapitel wird viel auf andere verfügbare Quellen und Literatur verwiesen (Hub- oder Kurationsfunktion).</p>
+<h3 id="kapitel-lernpfad">Kapitel “Lernpfad”</h3>
+<p>Das Kapitel “Lernpfad” enthält die Katas (Übungen) des Leitfadens. Jede Kata wird in einem eigenen Kapitel beschrieben, das maximal zwei Druckseiten lang sein sollte (Sushi-Card-Prinzip). Ein Leitfaden kann mehr als einen Lernpfad enthalten.</p>
+<p>Wiki-Seite zur <a href="https://github.com/cogneon/lernos-core/wiki/How-to-write-a-lernOS-Guide">Kata-Dokumentation</a>.</p>
+<h3 id="kapitel-anhang">Kapitel “Anhang”</h3>
+<p>Das Kapitel Anhang enthält mindestens die “Änderungshistorie”, oft auch ein Kapitel mit Danksagungen (z.B. um Beitragende zu nennen)</p>
+<h2 id="lernos-leitfaden-inhalte">lernOS Leitfaden Inhalte</h2>
+<h3 id="schreibstil">Schreibstil</h3>
 <p>Direkte Ansprache (Du, da auch Solo-Lernende).</p>
+<h3 id="bilder">Bilder</h3>
+<p>…</p>
+<h3 id="audio-und-video">Audio und Video</h3>
+<p>Da die Produktionskette auch Textdokumente erzeugt, können in lernOS Leitfäden keine Audio- und Video-Inhalte eingebettet werden. Um trotzdem auf Audio- und Videoinhalte zu verweisen, können diese einfach im Text verlinkt werden.</p>
+<h3 id="terminologie">Terminologie</h3>
 <p>Siehe <a href="https://github.com/cogneon/lernos-core/blob/master/lernOS%20Glossary/de/lernOS-Glossary-de.md">lernOS Glossar</a>.</p>
-<h2 id="technische-infrastruktur-für-lernos-leitfäden">Technische Infrastruktur für lernOS Leitfäden</h2>
-<p>lernOS Leitfäden werden in der Auszeichnungssprache <a href="https://de.wikipedia.org/wiki/Markdown">Markdown</a> erstellt und auf <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> verwaltet. Aus den Markdown-Quellen werden über die lernOS Produktionskette weitere Zielformate wie PDF, Word, E-Book etc. generiert. Diese Generierung kann zentral auf GitHub (noch nicht verfügbar) oder auf dem eigenen Rechner erfolgen. Generiert man die Zieformate auf dem eigenen Rechner, ist ein Toolset notwendig, das im folgenden beschrieben wird. Wir versuchen, <a href="https://de.wikipedia.org/wiki/Open_Source">Open Source Software</a> zu verwenden, wo möglich.</p>
-<h3 id="lernos-leitfaden-toolset-für-windows-10">lernOS Leitfaden Toolset für Windows 10</h3>
+<h3 id="lernos-markdown-flavor">lernOS Markdown Flavor</h3>
+<p>Die Auszeichnungssprache Markdown lässt verschiedene Stile zu, die oft auch <a href="https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors">Markdown Flavors</a> genannt werden (z.B. kann man eine Aufzählung mit einem * oder einem - erzeugen). Für lernOS Leitfäden wird, wenn hier nicht anders beschrieben, die <a href="https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">Schreib- und Formatiersyntax von GitHub</a> verwendet.</p>
+<h3 id="mehrsprachigkeit">Mehrsprachigkeit</h3>
+<p>…</p>
+<h2 id="lernos-leitfaden-produktionskette">lernOS Leitfaden Produktionskette</h2>
+<p>lernOS Leitfäden werden in der Auszeichnungssprache <a href="https://de.wikipedia.org/wiki/Markdown">Markdown</a> erstellt und i.d.R. auf <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> verwaltet. Aus den Markdown-Quellen werden über die lernOS Produktionskette weitere Zielformate wie PDF, Word, E-Book etc. generiert. Diese Generierung kann zentral auf GitHub (noch nicht verfügbar) oder auf dem eigenen Rechner erfolgen. Generiert man die Zieformate auf dem eigenen Rechner, ist ein Toolset notwendig, das im folgenden beschrieben wird. Wir versuchen wo möglich <a href="https://de.wikipedia.org/wiki/Open_Source">Open Source Software</a> zu verwenden.</p>
+<h3 id="lernos-leitfaden-verzeichnisstruktur">lernOS Leitfaden Verzeichnisstruktur</h3>
+<p>Damit die lernOS Produktionskette funktioniert, müssen die Inhalte des Leitfadens in einem Dateiordner mit folgender Verzeichnisstruktur abgelegt werden (Beispiel für ein Leitfaden mit deutscher und englischer Version, fett sind Ordner- und Dateinamen, dahinter eine kurze Beschreibung):</p>
 <ul>
-<li><a href="https://atom.io">Atom</a> - <a href="https://en.wikipedia.org/wiki/Markdown">Markdown-</a>Editor zum Schreiben des eigentlichen Inhalts.</li>
-<li><a href="https://calibre-ebook.com">Calibre</a> - E-Book-Management-Software, um das Cover hinzuzufügen und aus dem epub-Format auch das mobi-Format (für Kindle) zu erzeugen.</li>
-<li><a href="https://desktop.github.com">Github Desktop</a> - Client um die Quellen von <a href="https://github.com/simondueckert/lernos">lernOS Repositories</a> auf GitHub mit dem lokalen Rechner zu synchronisieren.</li>
-<li><a href="https://www.imagemagick.org">ImageMagick</a> - Extraktion der ersten Seite der PDF-Version, um daraus das Cover der E-Book-Version zu erstellen.</li>
-<li><a href="https://www.ghostscript.com/index.html">Ghostscript</a> - Generierung von PDFs, benötigt von ImageMagic.</li>
-<li><a href="https://inkscape.org">Inkscape</a> - Erstellung von Vektor-Grafiken, die im <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Scalable Vector Graphic</a> Format (SVG) und PNG (96 and 300 dpi) bereitgestellt werden.</li>
-<li><a href="https://en.wikipedia.org/wiki/Microsoft_OneNote">Microsoft OneNote</a> - Digitales Notizbuch für Circle Templates und den lernOS Memex.</li>
-<li><a href="https://miktex.org">MiKTeX</a> - LaTeX Distribution für Windows, die von Pandoc für die PDF-Erstellung verwendet wird.</li>
-<li><a href="https://pandoc.org">Pandoc</a> - Konverter, der Markdown in andere Formate konvertieren kann (z.B. docx, pdf, epub, html).</li>
-<li><a href="https://typora.io/">Typora</a> - <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> Editor zum Schreiben der lernOS Inhalte.</li>
+<li><p><strong>de</strong> - Inhalte der deutschen Version des Leitfadens</p>
+<ul>
+<li><strong>src</strong> - die Markdown-Quellen des Leitfaden
+<ul>
+<li><strong>css</strong> - Anpassung von Farben für die Web-Version</li>
+<li><strong>images</strong> - Bilder des Leitfadens in den Formaten SVG und PNG</li>
+<li><strong>1-Grundlagen.md</strong> - das Kapitel “Grundlagen”</li>
+<li><strong>2-Lernpfad.md</strong> - das Kapitel “Lernpfad”</li>
+<li><strong>3-Anhang.md</strong> - das Kapitel “Anhang”</li>
+<li><strong>index.md</strong> - das Kapitel “Über lernOS”, muss wegen Web-Version index.md heißen</li>
+</ul></li>
+<li><strong>make.bat</strong> - das Herzstück der Produktionskette, Batch-Datei (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen</li>
+<li><strong>metadata.yaml</strong> - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)</li>
+<li><strong>mkdocs.yaml</strong> - Einstellungen für die Generierung der Web-Version mit mkdocs</li>
+</ul></li>
+<li><p><strong>docs</strong></p>
+<ul>
+<li><strong>de</strong> - deutsche Web-Version des Leitfadens</li>
+<li><strong>en</strong> - englische Web-Version des Leitfadens</li>
+</ul></li>
+<li><p><strong>en</strong> - Inhalte der deutschen Version des Leitfadens</p>
+<ul>
+<li>Struktur identisch mit der deutschen Sprachversion</li>
+</ul></li>
 </ul>
-<h3 id="makefile-auf-windows-10">Makefile auf Windows 10</h3>
-<p>Für die Erstellung der Zielformate aus den Markdown-Quellen wird ein sog. <a href="https://de.wikipedia.org/wiki/Makefile">Makefile</a> verwendet. Ist die Produktionskette auf dem eigenen Rechner richtig eingerichtet, führt ein Doppelklick auf dem Makefile (make.bat) dazu, dass alle Zielformate automatisch generiert werden. Je nach Umfang und Geschwindigkeit des eigenen Rechners kann das bis zu einigen Minuten dauern.</p>
+<p><strong>Hinweis:</strong> im Verzeichnis einer Sprachversion liegen zusätzlich alle produzierten Dokumente (z.B. docx, epub, html, mobi, pdf).</p>
+<p><strong>Hinweis:</strong> Für die Benennung der Verzeichnisse für weitere Sprachversionen werden die Kürzel nach <a href="https://de.wikipedia.org/wiki/Liste_der_ISO-639-1-Codes">ISO 639-1</a> verwendet.</p>
+<p><strong>Hinweis:</strong> Im src-Verzeichnis kann der Leitfaden auch auf Unterkapitelebene in einzelne Markdown-Dateien geteilt werden. Das ist z.B. sinnvoll, wenn mehrere Personen gleichzeitig an den Inhalten arbeiten oder die Inhalte in der Webversion auf Kapitelebene kommentierbar sein sollen.</p>
+<h3 id="toolset-für-die-lernos-produktionskette">Toolset für die lernOS Produktionskette</h3>
+<p>Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich. Im folgenden eine kurze Beschreibung der Tools in alphabetischer Reihenfolge:</p>
+<ul>
+<li><a href="https://calibre-ebook.com">Calibre</a> - E-Book-Management-Software, um die E-Book-Versionen <a href="https://de.wikipedia.org/wiki/EPUB">EPUB</a> und <a href="https://de.wikipedia.org/wiki/Mobipocket">Mobipocket</a> (mobi) zu erzeugen.</li>
+<li><a href="https://desktop.github.com">Github Desktop</a> - Client um <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> Repositories mit dem lokalen Rechner zu synchronisieren.</li>
+<li><a href="https://www.imagemagick.org">ImageMagick</a> - Extraktion der ersten Seite der PDF-Version, um daraus das Cover der E-Book-Version zu erstellen.</li>
+<li><a href="https://www.ghostscript.com/index.html">Ghostscript</a> - Generierung von PDFs, auch benötigt von ImageMagic.</li>
+<li><a href="https://inkscape.org">Inkscape</a> - Erstellung von Vektor-Grafiken im <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Scalable Vector Graphic</a> Format (SVG) und Export von PNGs (96 and 300 dpi).</li>
+<li><a href="https://miktex.org">MiKTeX</a> - LaTeX Distribution für Windows, die von Pandoc für die PDF-Erstellung verwendet wird.</li>
+<li><a href="https://www.mkdocs.org/">mkdocs</a> - statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion (<a href="https://de.wikipedia.org/wiki/Disqus">Disqus</a>) erzeugt.</li>
+<li><a href="https://pandoc.org">Pandoc</a> - Text-Konverter, der Markdown in andere Formate konvertieren kann (z.B. docx, pdf, epub, html).</li>
+<li><a href="https://typora.io/">Typora</a> - <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> - Editor zum Schreiben der lernOS Inhalte.</li>
+</ul>
+<h3 id="lernos-produktionskette-auf-windows-10">lernOS Produktionskette auf Windows 10</h3>
+<p>Für die Erstellung der Zielformate aus den Markdown-Quellen wird ein sog. <a href="https://de.wikipedia.org/wiki/Makefile">Makefile</a> verwendet (make.bat). Ist die Produktionskette auf dem eigenen Rechner richtig eingerichtet, führt ein Doppelklick auf dem Makefile (make.bat) dazu, dass alle Zielformate automatisch generiert werden. Je nach Umfang und Geschwindigkeit des eigenen Rechners kann das bis zu einigen Minuten dauern. Folgende Schritte werden in der Produktionskette ausgeführt:</p>
+<ol type="1">
+<li>Alte Versionen der produzierten Dokumente löschen.</li>
+<li>Word-Version (.docx) produzieren</li>
+<li>HTML-Version (.html) produzieren (rohes HTML, z.B. für Copy&amp;Paste in CMS oder ESN)</li>
+<li>Web-Version produzieren (mkdocs mit Theme <a href="https://squidfunk.github.io/mkdocs-material/">material</a>, Ergebnis im Ordner docs)</li>
+<li>PDF-Version produzieren (.pdf)</li>
+<li>Titelseite als Grafik aus PDF exportieren (src/images/ebook-cover.jpg)</li>
+<li>E-Book-Version EPUB (.epub) produzieren</li>
+<li>E-Book-Version EPUB (.epub) on Mobipocket (.mobi) konvertieren</li>
+<li>Fertig :-)</li>
+</ol>
+<h3 id="lernos-produktionskette-auf-github">lernOS Produktionskette auf GitHub</h3>
+<p>Aktuell ist eine automatisierte Produktionskette mit <a href="https://github.com/features/actions">GitHub Actions</a> in Vorbereitung.</p>
 <h2 id="lernos-leitfaden-lebenszyklus">lernOS Leitfaden Lebenszyklus</h2>
 <p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-release-a-new-guide-version">How to release a new guide version</a>.</p>
 <p>Wiki-Seite <a href="https://github.com/cogneon/lernos-core/wiki/How-to-fork-a-lernOS-Guide">How to fork a lernOS Guide</a>.</p>
+<p>Sechs Stufen: Goal Setting, Creation, Publishing, Promotion, Maintaining, Retirement</p>
+<h2 id="rechtliche-aspekte">Rechtliche Aspekte</h2>
+<p>Lizenz CC BY. Richtige Zitation.</p>
+<p>Marke, keine kommerziellen Produkte mit lernOS im Namen (Beispiele <a href="https://de.wikipedia.org/wiki/Chromium_(Browser)">Chromium</a> -&gt; Chrome, Edge, Opera, Brave).</p>
+<h2 id="faq">FAQ</h2>
+<p><strong>Warum werden die lernOS Inhalte so kompliziert verwaltet, warum nicht einfach ein Word- oder Google Dokument?</strong></p>
+<p>1.) für die verteilte Arbeit an Inhalten und die Produktion verschiedener Zielformate ist dieser Ansatz notwendig. 2.) Wir wollen im Rahmen der digitalen Transformation möglichst viele Menschen mit echten digitalen und agilen Arbeitsprozessen in Berührung bringen und sie in den “digital-agilen Zaubertrank” fallen lassen.</p>
+<p><strong>Ich habe lernOS Leitfäden gesehen, die nicht der beschriebenen Ordner- oder Kapitelstruktur folgen. Wie kann das sein?</strong></p>
+<p>lernOS ist als Projekt noch im wachsen, daher gibt es auch gewachsene Strukturen.</p>
 <h1 id="lernpfad">Lernpfad</h1>
-<p>…</p>
+<p>Erste Skizze für die 11 Katas im Lernpfad:</p>
+<ol type="1">
+<li><strong>Bis Boxenstopp 1 - Technische Infrastruktur:</strong>
+<ol type="1">
+<li><strong>Markdown kennenlernen:</strong> Markdown-Editor (Empfehlung Typora) herunterladen und erste Schritte mit der Markdown-Syntax sammeln. Vorteil Typora: damit kann man schon PDF, Word, HTML etc. exportieren, ohne die ganze Produktionskette zu benötigen (Frühes Erfolgserlebnis).</li>
+<li><strong>Vorlage von GitHub herunterladen:</strong> aus dem <a href="https://github.com/cogneon/lernos-template">lernos-template Repository</a> die Leitfaden-Vorlage als ZIP-Datei herunterladen (oben rechts: Code -&gt; Download ZIP) und lokal entpacken. Mit der Verzeichnis- und Datei-Struktur vertraut machen.</li>
+<li><strong>Produktionskette installieren:</strong> Toolset für die Produktionskette installieren und Produktionskette zum Laufen bekommen. Einige Änderungen an Metadaten und Inhalten der Vorlage vornehmen und Leitfaden produzieren.</li>
+<li><strong>GitHub Synchronisation einrichten:</strong> GitHub Account anlegen, GitHub Desktop installieren und lokales Vorlagen-Verzeichnis mit einem GitHub Repository synchronisieren. Commits und Unterschied Master/Develop-Branch verstehen (s.a. <a href="https://www.atlassian.com/de/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow</a>).</li>
+</ol></li>
+<li><strong>Bis Boxenstop 2 - Struktur Inhalt und Quellen:</strong>
+<ol type="1">
+<li><strong>Zielfindung:</strong> welches Lernziel (Mindset, Skillset, Toolset) soll der Leitfaden für welche Lernende (Zielgruppe) erfüllen? Feedback von Vertretern aus der Zielgruppe einholen.</li>
+<li><strong>Ideenfindung Inhaltsverzeichnis:</strong> Ideenfindung, wie das Inhaltsverzeichnis entlang der vier Standard-Kapitel (Über lernOS, Grundlagen, Lernpfad, Anhang) aufgebaut sein könnte. Das kann z.B. in Form einer MindMap (z.B. XMind) erfolgen, in der man sehr flexibel mit Strukturen arbeiten kann.</li>
+<li><strong>Inhaltsverzeichnis auf drei Ebenen:</strong> Festlegung der Kapitel-Struktur auf drei (maximal vier) Ebenen. Pro Kapitel können hier bereits erste Stickpunkte zu den Inhalten erfasst werden.</li>
+<li><strong>Kuration von Quellen:</strong> Ermittlung von Quellen, die im Grundlagen-Kapitel referenziert werden sollen. Hierbei ist insbesondere auf Absicherung der Quelle in Theorie und/oder Praxis (keine Hypes, Moden etc.), langfristige Verfügbarkeit (z.B. durch institutionellen Träger) und offenen Zugang zu achten.</li>
+</ol></li>
+<li><strong>Bis Retrospektive - Inhalt:</strong>
+<ol type="1">
+<li><strong>Book Sprint</strong> in einem 1- bis 5-tägigen <a href="https://de.wikipedia.org/wiki/Book_Sprint">Book Sprint</a> werden die Kerninhalte des Leitfadens erstellt. Ziel ist, dass eine Version 0.1 am Ende des Book Sprints in allen Zielformaten auf <a href="https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository">GitHub als Release</a> zur Verfügung steht und durch die Zielgruppe Feedback gegeben werden kann (z.B. als Issues in GitHub oder durch eine kommentierbare Word-/Google-Doc-Version).</li>
+<li><strong>Feedback und Lektorat:</strong> Das Feedback der Zielgruppe wird in die Inhalte eingearbeitet. Die Texte werden korrekturgelesen und Feinheiten verbessert, so dass eine Version 0.2 entsteht.</li>
+<li><strong>Go Live!:</strong> Die Version 0.2 wird auf GitHub in Form eines weiteren Release veröffentlicht und auf geeigneten Kanälen an die Zielgruppe kommuniziert. Idealerweise probieren einige Learning Circle den Leitfaden im nächsten Sprint aus, geben Feedback auf Basis dessen dann eine Version 1.0 veröffentlicht werden kann.</li>
+</ol></li>
+</ol>
 <h1 id="anhang">Anhang</h1>
 <h2 id="danksagungen">Danksagungen</h2>
 <p>…</p>

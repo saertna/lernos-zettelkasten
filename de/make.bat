@@ -6,7 +6,7 @@ REM See lernOS Core Repository
 
 REM Variables
 set filename="lernOS-Leitfaden-schreiben-Guide-de"
-set chapters=./src/index.md ./src/2-Grundlagen.md ./src/3-Lernpfad.md ./src/4-Anhang.md
+set chapters=./src/index.md ./src/1-Grundlagen.md ./src/2-Lernpfad.md ./src/3-Anhang.md
 
 REM Delete Old Versions
 echo Deleting old versions ...

@@ -63,7 +63,7 @@ lernOS Leitfäden sollten aus Gründen der Barrierefreiheit in möglichst vielen
 * [Deepl](https://de.wikipedia.org/wiki/DeepL) - Online-Übersetzungsdienst
 * https://de.wikipedia.org/wiki/Microsoft_Word - Online-Übersetzungsdienst als Teil von Office 365 (Überprüfen/Übersetzen/Dokument übersetzen)
 
-## lernOS Leitfaden Produktionskette
+## lernOS Produktionskette
 
 lernOS Leitfäden werden in der Auszeichnungssprache [Markdown](https://de.wikipedia.org/wiki/Markdown) erstellt und i.d.R. auf [GitHub](https://de.wikipedia.org/wiki/GitHub) verwaltet. Aus den Markdown-Quellen werden über die lernOS Produktionskette weitere Zielformate wie PDF, Word, E-Book etc. generiert. Diese Generierung kann zentral auf GitHub (noch nicht verfügbar) oder auf dem eigenen Rechner erfolgen. Generiert man die Zieformate auf dem eigenen Rechner, ist ein Toolset notwendig, das im folgenden beschrieben wird. Wir versuchen wo möglich [Open Source Software](https://de.wikipedia.org/wiki/Open_Source) zu verwenden.
 
@@ -100,20 +100,6 @@ Damit die lernOS Produktionskette funktioniert, müssen die Inhalte des Leitfade
 
 **Hinweis:** Im src-Verzeichnis kann der Leitfaden auch auf Unterkapitelebene in einzelne Markdown-Dateien geteilt werden. Das ist z.B. sinnvoll, wenn mehrere Personen gleichzeitig an den Inhalten arbeiten oder die Inhalte in der Webversion auf Kapitelebene kommentierbar sein sollen. 
 
-### Toolset für die lernOS Produktionskette
-
-Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich. Im folgenden eine kurze Beschreibung der Tools in alphabetischer Reihenfolge:
-
-- [Calibre](https://calibre-ebook.com) - E-Book-Management-Software, um die E-Book-Versionen [EPUB](https://de.wikipedia.org/wiki/EPUB) und [Mobipocket](https://de.wikipedia.org/wiki/Mobipocket) (mobi) zu erzeugen.
-- [Github Desktop](https://desktop.github.com) - Client um [GitHub](https://de.wikipedia.org/wiki/GitHub) Repositories mit dem lokalen Rechner zu synchronisieren.
-- [ImageMagick](https://www.imagemagick.org) - Extraktion der ersten Seite der PDF-Version, um daraus das Cover der E-Book-Version zu erstellen.
-- [Ghostscript](https://www.ghostscript.com/index.html) - Generierung von PDFs, auch benötigt von ImageMagic.
-- [Inkscape](https://inkscape.org) - Erstellung von Vektor-Grafiken im [Scalable Vector Graphic](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) Format (SVG) und Export von PNGs (96 and 300 dpi).
-- [MiKTeX](https://miktex.org) - LaTeX Distribution für Windows, die von Pandoc für die PDF-Erstellung verwendet wird.
-- [mkdocs](https://www.mkdocs.org/) - statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion ([Disqus](https://de.wikipedia.org/wiki/Disqus)) erzeugt.
-- [Pandoc](https://pandoc.org) - Text-Konverter, der Markdown in andere Formate konvertieren kann (z.B. docx, pdf, epub, html).
-- [Typora](https://typora.io/) - [Markdown](https://en.wikipedia.org/wiki/Markdown) - Editor zum Schreiben der lernOS Inhalte.
-
 ### lernOS Produktionskette auf Windows 10
 
 Für die Erstellung der Zielformate aus den Markdown-Quellen wird ein sog. [Makefile](https://de.wikipedia.org/wiki/Makefile) verwendet (make.bat). Ist die Produktionskette auf dem eigenen Rechner richtig eingerichtet, führt ein Doppelklick auf dem Makefile (make.bat) dazu, dass alle Zielformate automatisch generiert werden. Je nach Umfang und Geschwindigkeit des eigenen Rechners kann das bis zu einigen Minuten dauern. Folgende Schritte werden in der Produktionskette ausgeführt:
@@ -135,6 +121,60 @@ Wie auch die Leitfäden wird die lernOS Produktionskette kontinuierlich erweiter
 * **Github Actions:** aktuell ist eine automatisierte Produktionskette mit [GitHub Actions](https://github.com/features/actions) in Vorbereitung.
 * **OneNote:** zusätzlich Produktion einer OneNote-Version der Leitfäden (aktuell nur als Begleitdokument, das manuell gepflegt werden muss).
 * **Audiobook:** Produktion eines Audiobooks mit Kapitelmarken zum Anhören (z.B. mit [Balbolka](http://www.cross-plus-a.com/balabolka.htm)).
+
+## Toolset für die lernOS Produktionskette
+
+Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich. 
+
+### Typora
+
+[Typora](https://typora.io/) ist ein Text-Editor zur Bearbeitung von [Markdown](https://en.wikipedia.org/wiki/Markdown)-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfachen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.
+
+![Typora Screenshot](file:///Users/simondueckert/Documents/GitHub/lernos-template/de/src/images/typora-screenshot.png?lastModify=1593943079)
+
+### Pandoc
+
+[Pandoc](https://pandoc.org) ist ein Komandozeilen-basierter Text-Konverter, der Markdown in andere Formate konvertieren kann. Beispiel für die Konvertierung von Markdown in Microsoft Word:
+
+```
+pandoc dokument.md -o dokument.docx
+```
+
+Zu den von Pandoc unterstützten Formaten gehören u.a.:
+
+* Asciidoc
+* DokuWiki
+* EPUB (E-Book)
+* HTML
+* LaTeX
+* Markdown
+* MediaWiki
+* Microsoft PowerPoint
+* Microsoft Word (docx)
+* OpenOffice/LibreOffice (odt)
+* Reveal.js (Online-Präsentationen)
+* Textile (z.B. für Confluence)
+* uvm.
+
+### GitHub Desktop
+
+[Github Desktop](https://desktop.github.com) ist ein Client, der [GitHub](https://de.wikipedia.org/wiki/GitHub) Repositories mit dem lokalen Rechner synchronisieren kann. Somit kann z.B. lokal an Markdown-Inhalten gearbeitet und diese bei Bedarf ins Repository synchronisiert werden. Die Funktionsweise kann man sich ähnlich wie die Synchronisation von Dateien mit Dropbox oder OneDrive vorstellen.
+
+![Github Desktop Screenshot](file:///Users/simondueckert/Documents/GitHub/lernos-template/de/src/images/github-desktop-screenshot.png?lastModify=1593943079)
+
+### LaTeX & Co.
+
+[LaTeX](https://de.wikipedia.org/wiki/LaTeX) ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows [MiKTeX](https://miktex.org)) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich [Ghostscript](https://de.wikipedia.org/wiki/Ghostscript) notwendig.
+
+### mkdocs
+
+[mkdocs](https://www.mkdocs.org/) ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion ([Disqus](https://de.wikipedia.org/wiki/Disqus)) erzeugt.
+
+### Weitere Tools
+
+- [Calibre](https://calibre-ebook.com) - E-Book-Management-Software, um die E-Book-Versionen [EPUB](https://de.wikipedia.org/wiki/EPUB) und [Mobipocket](https://de.wikipedia.org/wiki/Mobipocket) (mobi) zu erzeugen.
+- [ImageMagick](https://www.imagemagick.org) - Extraktion der ersten Seite der PDF-Version, um daraus das Cover der E-Book-Version zu erstellen.
+- [Inkscape](https://inkscape.org) - Erstellung von Vektor-Grafiken im [Scalable Vector Graphic](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) Format (SVG) und Export von PNGs (96 and 300 dpi).
 
 ## lernOS Leitfaden Lebenszyklus
 

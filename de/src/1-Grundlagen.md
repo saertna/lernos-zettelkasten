@@ -10,7 +10,9 @@ Ein lernOS Leitfaden hilft Lernenden durch einen vorgegebenen Lernpfad ihr eigen
 
 Die Woche 0 und 12 im Learning Sprint sind immer für Planung und Retrospektive vorgesehen, in Woche 4 und 8 findet ein sog. Boxenstopp zur Zwischenreflexion des Lernfortschritts statt. Die Wochen 1-11 können mit Übungen (mindestens 11), [Katas](https://de.wikipedia.org/wiki/Kata_(Programmierung)) genannt, gefüllt werden. Eine Kata sollte einen Übenden zw. 30-60 Minuten Zeit kosten und auf nicht mehr als zwei DIN A4 Seiten beschrieben sein (Sushi-Card-Prinzip).
 
-Ein lernOS Leitfaden steht immer unter der [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de) (CC BY). Die Lizenz gilt auch für im Leitfaden  verwendete Bilder. Alle Inhalte müssen auch in bearbeitbaren  Quellformaten vorliegen (bei Bildern z.B. PNG und SVG). Die Inhalte eines lernOS Leitfaden werden als [Repository auf GitHub](https://github.com) verwaltet, um offenen Zugang und einfach Wiederverwendung zu gewähleisten. 
+Ein lernOS Leitfaden steht immer unter der [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de) (CC BY). Die Lizenz gilt auch für im Leitfaden  verwendete Bilder. Alle Inhalte müssen auch in bearbeitbaren  Quellformaten vorliegen (bei Bildern z.B. PNG und SVG). Die Inhalte eines lernOS Leitfaden werden als [Repository auf GitHub](https://github.com) verwaltet, um offenen Zugang und einfach Wiederverwendung zu gewähleisten.
+
+![Offene Lizenz Creative Commons Namensnennung 4.0 International](./images/CC-BY.png)
 
 Dadurch können lernOS Inhalte für jeden Zweck offen zugegriffen, genutzt, verändert und geteilt werden (auch für kommerzielle Anwendungen). Produkte und Dienstleistungen dürfen allerdings nicht den Begriff "lernOS" im Namen tragen. Dieser Ansatz ist vergleichbar mit dem Browser [Chromium](https://de.wikipedia.org/wiki/Chromium_(Browser)) und den darauf aufsetzenden Produkten [Google Chrome](https://de.wikipedia.org/wiki/Google_Chrome), [Microsoft Edge](https://de.wikipedia.org/wiki/Microsoft_Edge), [Opera](https://de.wikipedia.org/wiki/Opera_(Browser)) und Brave.
 
@@ -269,18 +271,17 @@ Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTex 
 
 ### MkDocs & Material for MkDocs
 
-[MkDocs](https://www.mkdocs.org/) ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion ([Disqus](https://de.wikipedia.org/wiki/Disqus)) erzeugt. Als Theme kommt bei der Web-Version der lernOS Leitfäden [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) zum Einsatz.
+[MkDocs](https://www.mkdocs.org/) ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion erzeugt. Als Theme kommt bei der Web-Version der lernOS Leitfäden [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) zum Einsatz.
+
+![lernOS Leitfaden Web-Version](./images/lernos-web-version-screenshot.png)
+
+Für die Kommentarfunktion am Ende jeder Seite der Web-Version kommt der Dienst [Disqus](https://de.wikipedia.org/wiki/Disqus) zum Einsatz:
+
+![Kommentare mit Disqus Screenshot](./images/disqus-screenshot.png)
 
 ### Calibre
 
 [Calibre](https://calibre-ebook.com) ist eine E-Book-Management-Software, die für die Konvertierung der E-Book-Version [EPUB](https://de.wikipedia.org/wiki/EPUB) in [Mobipocket](https://de.wikipedia.org/wiki/Mobipocket) (mobi, z.B. für Kindle Reader und Kindle App) zu erzeugen. Um aus der PDF-Version eines Leitfadens das Titelbild als Grafik zu extrahieren und in die richtige Größe für E-Books zu skalieren kommt das Grafik-Paket [ImageMagick](https://www.imagemagick.org) zum Einsatz.
 
-## FAQ
+![Calibre Screenshot](./images/calibre-screenshot.png)
 
-**Warum werden die lernOS Inhalte so kompliziert verwaltet, warum nicht einfach ein Word- oder Google Dokument?**
-
-1.) für die verteilte Arbeit an Inhalten und die Produktion verschiedener Zielformate ist dieser Ansatz notwendig. 2.) Wir wollen im Rahmen der digitalen Transformation möglichst viele Menschen mit echten digitalen und agilen Arbeitsprozessen in Berührung bringen und sie in den "digital-agilen Zaubertrank" fallen lassen. 
-
-**Ich habe lernOS Leitfäden gesehen, die nicht der beschriebenen Ordner- oder Kapitelstruktur folgen. Wie kann das sein?**
-
-lernOS ist als Projekt noch im wachsen, daher gibt es auch gewachsene Strukturen.

@@ -1,6 +1,6 @@
 
 # Grundlagen
-## Die Grundidee der lernOS Leitfäden
+## Grundidee der lernOS Leitfäden
 
 Ein lernOS Leitfaden hilft Lernenden durch einen vorgegebenen Lernpfad ihr eigenes Lernziel im Rahmen eines Learning Sprints (3 Monate) zu erlernen zu erreichen. Die Lernenden lernen dabei allein, im Lerntandem oder in einem Learning Circle (4-5 Personen). Der zeitliche Aufwand über den Sprint sollte maximal zwei Stunden pro Woche betragen. Das Lernziel kann dabei aus einem oder einer Kombination dieser Bereiche kommen:
 
@@ -12,7 +12,15 @@ Die Woche 0 und 12 im Learning Sprint sind immer für Planung und Retrospektive 
 
 Ein lernOS Leitfaden steht immer unter der [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de) (CC BY). Die Lizenz gilt auch für im Leitfaden  verwendete Bilder. Alle Inhalte müssen auch in bearbeitbaren  Quellformaten vorliegen (bei Bildern z.B. PNG und SVG). Die Inhalte eines lernOS Leitfaden werden als [Repository auf GitHub](https://github.com) verwaltet, um offenen Zugang und einfach Wiederverwendung zu gewähleisten.
 
-## lernOS Leitfaden Struktur
+## Lebenszyklus eines Leitfadens
+
+Wiki-Seite [How to release a new guide version](https://github.com/cogneon/lernos-core/wiki/How-to-release-a-new-guide-version).
+
+Wiki-Seite [How to fork a lernOS Guide](https://github.com/cogneon/lernos-core/wiki/How-to-fork-a-lernOS-Guide).
+
+Sechs Stufen: Goal Setting, Creation, Publishing, Promotion, Maintaining, Retirement
+
+## Inhaltsverzeichnis und Struktur
 
 Zur einfachen Orientierung für die Lernenden haben alle lernOS Leitfäden die gleiche Grundstruktur ([Blog](https://cogneon.de/2019/04/30/wie-schreibt-man-einen-lernos-guide-einige-vorueberlegungen-zu-einer-anleitung/)). Diese besteht aus den vier Kapiteln Über lernOS, Grundlagen, Lernpfad und Anhang, die im Folgenden beschrieben werden.
 
@@ -34,7 +42,7 @@ Wiki-Seite zur [Kata-Dokumentation](https://github.com/cogneon/lernos-core/wiki/
 
 Das Kapitel Anhang enthält mindestens die "Änderungshistorie", oft auch ein Kapitel mit Danksagungen (z.B. um Beitragende zu nennen)
 
-## lernOS Leitfaden Inhalte
+## Inhalte erstellen
 
 ### Schreibstil
 
@@ -42,7 +50,7 @@ Direkte Ansprache (Du, da auch Solo-Lernende).
 
 ### Bilder
 
-Ein Bild sagt mehr als 1000 Worte. Daher ist die Bebilderung von Leitfäden sehr sinnvoll. Auch bei Bildern sollten immer Quellen mit CC BY Lizenz verwendet werden. Vorzugsformat für Vektorgrafiken ist [SVG](https://de.wikipedia.org/wiki/Scalable_Vector_Graphics) (als PNG in den Leitfaden eingebunden), für Pixelgrafiken [PNG](https://de.wikipedia.org/wiki/Portable_Network_Graphics).
+Ein Bild sagt mehr als 1000 Worte. Daher ist die Bebilderung von Leitfäden sehr sinnvoll. Auch bei Bildern sollten immer Quellen mit CC BY Lizenz verwendet werden. Vorzugsformat für Vektorgrafiken ist [SVG](https://de.wikipedia.org/wiki/Scalable_Vector_Graphics) (als PNG in den Leitfaden eingebunden), für Pixelgrafiken [PNG](https://de.wikipedia.org/wiki/Portable_Network_Graphics). Für die Erstellung von SVG-Vektor-Grafiken und den Export in PNG wird [Inkscape](https://inkscape.org) empfohlen.
 
 ### Audio und Video
 
@@ -63,7 +71,7 @@ lernOS Leitfäden sollten aus Gründen der Barrierefreiheit in möglichst vielen
 * [Deepl](https://de.wikipedia.org/wiki/DeepL) - Online-Übersetzungsdienst
 * [Microsoft Word](https://de.wikipedia.org/wiki/Microsoft_Word) - Online-Übersetzungsdienst als Teil von Office 365 (Überprüfen/Übersetzen/Dokument übersetzen)
 
-## lernOS Produktionskette
+## Leitfaden Produktionskette
 
 lernOS Leitfäden werden in der Auszeichnungssprache [Markdown](https://de.wikipedia.org/wiki/Markdown) erstellt und i.d.R. auf [GitHub](https://de.wikipedia.org/wiki/GitHub) verwaltet. Aus den Markdown-Quellen werden über die lernOS Produktionskette weitere Zielformate wie PDF, Word, E-Book etc. generiert. Diese Generierung kann zentral auf GitHub (noch nicht verfügbar) oder auf dem eigenen Rechner erfolgen. Generiert man die Zieformate auf dem eigenen Rechner, ist ein Toolset notwendig, das im folgenden beschrieben wird. Wir versuchen wo möglich [Open Source Software](https://de.wikipedia.org/wiki/Open_Source) zu verwenden.
 
@@ -122,7 +130,7 @@ Wie auch die Leitfäden wird die lernOS Produktionskette kontinuierlich erweiter
 * **OneNote:** zusätzlich Produktion einer OneNote-Version der Leitfäden (aktuell nur als Begleitdokument, das manuell gepflegt werden muss).
 * **Audiobook:** Produktion eines Audiobooks mit Kapitelmarken zum Anhören (z.B. mit [Balbolka](http://www.cross-plus-a.com/balabolka.htm)).
 
-## Toolset für die lernOS Produktionskette
+## Toolset für die Produktionskette
 
 Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich. 
 
@@ -166,25 +174,17 @@ Zu den von Pandoc unterstützten Formaten gehören u.a.:
 
 [LaTeX](https://de.wikipedia.org/wiki/LaTeX) ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows [MiKTeX](https://miktex.org)) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich [Ghostscript](https://de.wikipedia.org/wiki/Ghostscript) notwendig.
 
-### mkdocs
+Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTex Template [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template) verwendet und über die Datei *metadata.yaml* angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.
 
-[mkdocs](https://www.mkdocs.org/) ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion ([Disqus](https://de.wikipedia.org/wiki/Disqus)) erzeugt.
+### MkDocs & Material for MkDocs
 
-### Weitere Tools
+[MkDocs](https://www.mkdocs.org/) ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion ([Disqus](https://de.wikipedia.org/wiki/Disqus)) erzeugt. Als Theme kommt bei der Web-Version der lernOS Leitfäden [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) zum Einsatz.
 
-- [Calibre](https://calibre-ebook.com) - E-Book-Management-Software, um die E-Book-Versionen [EPUB](https://de.wikipedia.org/wiki/EPUB) und [Mobipocket](https://de.wikipedia.org/wiki/Mobipocket) (mobi) zu erzeugen.
-- [ImageMagick](https://www.imagemagick.org) - Extraktion der ersten Seite der PDF-Version, um daraus das Cover der E-Book-Version zu erstellen.
-- [Inkscape](https://inkscape.org) - Erstellung von Vektor-Grafiken im [Scalable Vector Graphic](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) Format (SVG) und Export von PNGs (96 and 300 dpi).
+### Calibre
 
-## lernOS Leitfaden Lebenszyklus
+[Calibre](https://calibre-ebook.com) ist eine E-Book-Management-Software, die für die Konvertierung der E-Book-Version [EPUB](https://de.wikipedia.org/wiki/EPUB) in [Mobipocket](https://de.wikipedia.org/wiki/Mobipocket) (mobi, z.B. für Kindle Reader und Kindle App) zu erzeugen. Um aus der PDF-Version eines Leitfadens das Titelbild als Grafik zu extrahieren und in die richtige Größe für E-Books zu skalieren kommt das Grafik-Paket [ImageMagick](https://www.imagemagick.org) zum Einsatz.
 
-Wiki-Seite [How to release a new guide version](https://github.com/cogneon/lernos-core/wiki/How-to-release-a-new-guide-version).
-
-Wiki-Seite [How to fork a lernOS Guide](https://github.com/cogneon/lernos-core/wiki/How-to-fork-a-lernOS-Guide).
-
-Sechs Stufen: Goal Setting, Creation, Publishing, Promotion, Maintaining, Retirement 
-
-## Rechtliche Aspekte
+## Rechtliches
 
 Lizenz CC BY. Richtige Zitation.
 

@@ -61,7 +61,7 @@ Die Auszeichnungssprache Markdown lässt verschiedene Stile zu, die oft auch [Ma
 lernOS Leitfäden sollten aus Gründen der Barrierefreiheit in möglichst vielen Sprachen vorliegen. Die Übersetzung von Leitfäden kann manuell, aber auch toolgestützt erfolgen. Hierfür wurden bereits folgende Tools verwendet:
 
 * [Deepl](https://de.wikipedia.org/wiki/DeepL) - Online-Übersetzungsdienst
-* https://de.wikipedia.org/wiki/Microsoft_Word - Online-Übersetzungsdienst als Teil von Office 365 (Überprüfen/Übersetzen/Dokument übersetzen)
+* [Microsoft Word](https://de.wikipedia.org/wiki/Microsoft_Word) - Online-Übersetzungsdienst als Teil von Office 365 (Überprüfen/Übersetzen/Dokument übersetzen)
 
 ## lernOS Produktionskette
 

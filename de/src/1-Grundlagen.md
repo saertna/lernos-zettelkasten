@@ -42,7 +42,7 @@ Direkte Ansprache (Du, da auch Solo-Lernende).
 
 ### Bilder
 
-...
+Ein Bild sagt mehr als 1000 Worte. Daher ist die Bebilderung von Leitfäden sehr sinnvoll. Auch bei Bildern sollten immer Quellen mit CC BY Lizenz verwendet werden. Vorzugsformat für Vektorgrafiken ist [SVG](https://de.wikipedia.org/wiki/Scalable_Vector_Graphics) (als PNG in den Leitfaden eingebunden), für Pixelgrafiken [PNG](https://de.wikipedia.org/wiki/Portable_Network_Graphics).
 
 ### Audio und Video
 
@@ -50,7 +50,7 @@ Da die Produktionskette auch Textdokumente erzeugt, können in lernOS Leitfäden
 
 ### Terminologie
 
-Siehe [lernOS Glossar](https://github.com/cogneon/lernos-core/blob/master/lernOS%20Glossary/de/lernOS-Glossary-de.md).
+Um eine einheitliche Begriffsverwendung über alle lernOS Leitfäden hinweg zu gewährleisten, müssen Fachbegriffe wie im [lernOS Glossar](https://github.com/cogneon/lernos-core/blob/master/lernOS%20Glossary/de/lernOS-Glossary-de.md) definiert verwendet werden. Wenn davon abgewichen wird, muss das im Leitfaden explizit erläutert werden.
 
 ### lernOS Markdown Flavor
 
@@ -58,7 +58,10 @@ Die Auszeichnungssprache Markdown lässt verschiedene Stile zu, die oft auch [Ma
 
 ### Mehrsprachigkeit
 
-...
+lernOS Leitfäden sollten aus Gründen der Barrierefreiheit in möglichst vielen Sprachen vorliegen. Die Übersetzung von Leitfäden kann manuell, aber auch toolgestützt erfolgen. Hierfür wurden bereits folgende Tools verwendet:
+
+* [Deepl](https://de.wikipedia.org/wiki/DeepL) - Online-Übersetzungsdienst
+* https://de.wikipedia.org/wiki/Microsoft_Word - Online-Übersetzungsdienst als Teil von Office 365 (Überprüfen/Übersetzen/Dokument übersetzen)
 
 ## lernOS Leitfaden Produktionskette
 
@@ -125,9 +128,13 @@ Für die Erstellung der Zielformate aus den Markdown-Quellen wird ein sog. [Make
 8. E-Book-Version EPUB (.epub) on Mobipocket (.mobi) konvertieren
 9. Fertig :-)
 
-### lernOS Produktionskette auf GitHub
+### Ideen für die Erweiterung der lernOS Produktionskette
 
-Aktuell ist eine automatisierte Produktionskette mit [GitHub Actions](https://github.com/features/actions) in Vorbereitung.
+Wie auch die Leitfäden wird die lernOS Produktionskette kontinuierlich erweitert. Einige Ideen für die Erweiterung:
+
+* **Github Actions:** aktuell ist eine automatisierte Produktionskette mit [GitHub Actions](https://github.com/features/actions) in Vorbereitung.
+* **OneNote:** zusätzlich Produktion einer OneNote-Version der Leitfäden (aktuell nur als Begleitdokument, das manuell gepflegt werden muss).
+* **Audiobook:** Produktion eines Audiobooks mit Kapitelmarken zum Anhören (z.B. mit [Balbolka](http://www.cross-plus-a.com/balabolka.htm)).
 
 ## lernOS Leitfaden Lebenszyklus
 

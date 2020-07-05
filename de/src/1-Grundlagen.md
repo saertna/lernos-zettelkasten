@@ -180,7 +180,7 @@ Damit die lernOS Produktionskette funktioniert, müssen die Inhalte des Leitfade
     * **3-Anhang.md** - das Kapitel "Anhang"
     * **index.md** - das Kapitel "Über lernOS", muss wegen Web-Version index.md heißen
 
-  * **make.bat** - das Herzstück der Produktionskette, Batch-Datei (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen
+  * **make.bat** - das Herzstück der Produktionskette, [Batch-Datei](https://de.wikipedia.org/wiki/BAT-Datei) (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen. Hinweis: für Mac und Linux muss stattdessen eine Shell-Datei (make.sh) verwendet werden.
   * **metadata.yaml** - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)
   * **mkdocs.yaml** - Einstellungen für die Generierung der Web-Version mit mkdocs
 

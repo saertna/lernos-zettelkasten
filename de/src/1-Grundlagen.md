@@ -126,11 +126,7 @@ Hinweis: der Pfad zum Bild ist im Markdown immer relativ zum Verzeichnis anzugeb
 
 **Code und Syntax Highlighting:**
 
-```
-​```
-...
-``
-```
+... folgt ...
 
 **Tabellen:**
 
@@ -231,7 +227,7 @@ Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder 
 
 [Typora](https://typora.io/) ist ein Text-Editor zur Bearbeitung von [Markdown](https://en.wikipedia.org/wiki/Markdown)-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfachen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.
 
-![Typora Screenshot](file:///Users/simondueckert/Documents/GitHub/lernos-template/de/src/images/typora-screenshot.png?lastModify=1593943079)
+![Typora Screenshot](./images/typora-screenshot.png)
 
 ### Pandoc
 
@@ -261,7 +257,7 @@ Zu den von Pandoc unterstützten Formaten gehören u.a.:
 
 [Github Desktop](https://desktop.github.com) ist ein Client, der [GitHub](https://de.wikipedia.org/wiki/GitHub) Repositories mit dem lokalen Rechner synchronisieren kann. Somit kann z.B. lokal an Markdown-Inhalten gearbeitet und diese bei Bedarf ins Repository synchronisiert werden. Die Funktionsweise kann man sich ähnlich wie die Synchronisation von Dateien mit Dropbox oder OneDrive vorstellen.
 
-![Github Desktop Screenshot](file:///Users/simondueckert/Documents/GitHub/lernos-template/de/src/images/github-desktop-screenshot.png?lastModify=1593943079)
+![Github Desktop Screenshot](./images/github-desktop-screenshot.png)
 
 ### LaTeX & Co.
 

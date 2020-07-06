@@ -781,11 +781,7 @@
 
 <p>Hinweis: der Pfad zum Bild ist im Markdown immer relativ zum Verzeichnis anzugeben, in dem die Markdown-Datei liegt (i.d.R. Unterverzeichnis <em>images</em>).</p>
 <p><strong>Code und Syntax Highlighting:</strong></p>
-<pre><code>​```
-...
-``
-</code></pre>
-
+<p>... folgt ...</p>
 <p><strong>Tabellen:</strong></p>
 <pre><code>| Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -879,7 +875,7 @@
 <p>Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich. </p>
 <h3 id="typora">Typora</h3>
 <p><a href="https://typora.io/">Typora</a> ist ein Text-Editor zur Bearbeitung von <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfachen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.</p>
-<p><img alt="Typora Screenshot" src="file:///Users/simondueckert/Documents/GitHub/lernos-template/de/src/images/typora-screenshot.png?lastModify=1593943079" /></p>
+<p><img alt="Typora Screenshot" src="../images/typora-screenshot.png" /></p>
 <h3 id="pandoc">Pandoc</h3>
 <p><a href="https://pandoc.org">Pandoc</a> ist ein Komandozeilen-basierter Text-Konverter, der Markdown in andere Formate konvertieren kann. Beispiel für die Konvertierung von Markdown in Microsoft Word:</p>
 <pre><code>pandoc dokument.md -o dokument.docx
@@ -903,7 +899,7 @@
 </ul>
 <h3 id="github-desktop">GitHub Desktop</h3>
 <p><a href="https://desktop.github.com">Github Desktop</a> ist ein Client, der <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> Repositories mit dem lokalen Rechner synchronisieren kann. Somit kann z.B. lokal an Markdown-Inhalten gearbeitet und diese bei Bedarf ins Repository synchronisiert werden. Die Funktionsweise kann man sich ähnlich wie die Synchronisation von Dateien mit Dropbox oder OneDrive vorstellen.</p>
-<p><img alt="Github Desktop Screenshot" src="file:///Users/simondueckert/Documents/GitHub/lernos-template/de/src/images/github-desktop-screenshot.png?lastModify=1593943079" /></p>
+<p><img alt="Github Desktop Screenshot" src="../images/github-desktop-screenshot.png" /></p>
 <h3 id="latex-co">LaTeX &amp; Co.</h3>
 <p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows <a href="https://miktex.org">MiKTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich <a href="https://de.wikipedia.org/wiki/Ghostscript">Ghostscript</a> notwendig.</p>
 <p>Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTex Template <a href="https://github.com/Wandmalfarbe/pandoc-latex-template">Eisvogel</a> verwendet und über die Datei <em>metadata.yaml</em> angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.</p>

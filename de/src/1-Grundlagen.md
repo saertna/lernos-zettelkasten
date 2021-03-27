@@ -147,6 +147,10 @@ Hinweis: Tabellen sind in Markdown schwierig zu editieren und wo möglich zu ver
 > (Benjamin Franklin)
 ```
 
+> Eine Investition in Wissen bringt immer noch die besten Zinsen.
+> (Benjamin Franklin)
+
+
 **Horizontale Linie:**
 
 ```

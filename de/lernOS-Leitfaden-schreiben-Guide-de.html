@@ -4,27 +4,151 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Simon Dückert" />
-  <title>Wie schreibt man einen lernOS Leitfaden?</title>
+  <title>index</title>
   <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
-<header id="title-block-header">
-<h1 class="title">Wie schreibt man einen lernOS Leitfaden?</h1>
-<p class="subtitle">Dein eigener lernOS Leitfaden in einem Sprint</p>
-<p class="author">Simon Dückert</p>
-<p class="date">Version 0.1 (xx.xx.2020)</p>
-</header>
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#über-lernos">Über lernOS</a></li>
@@ -97,7 +221,7 @@
 <p>Die Woche 0 und 12 im Learning Sprint sind immer für Planung und Retrospektive vorgesehen, in Woche 4 und 8 findet ein sog. Boxenstopp zur Zwischenreflexion des Lernfortschritts statt. Die Wochen 1-11 können mit Übungen (mindestens 11), <a href="https://de.wikipedia.org/wiki/Kata_(Programmierung)">Katas</a> genannt, gefüllt werden. Eine Kata sollte einen Übenden zw. 30-60 Minuten Zeit kosten und auf nicht mehr als zwei DIN A4 Seiten beschrieben sein (Sushi-Card-Prinzip).</p>
 <p>Ein lernOS Leitfaden steht immer unter der <a href="https://creativecommons.org/licenses/by/4.0/deed.de">Creative Commons Namensnennung 4.0 International Lizenz</a> (CC BY). Die Lizenz gilt auch für im Leitfaden verwendete Bilder. Alle Inhalte müssen auch in bearbeitbaren Quellformaten vorliegen (bei Bildern z.B. PNG und SVG). Die Inhalte eines lernOS Leitfaden werden als <a href="https://github.com">Repository auf GitHub</a> verwaltet, um offenen Zugang und einfach Wiederverwendung zu gewähleisten.</p>
 <figure>
-<img src="./images/CC-BY.png" alt="" /><figcaption>Offene Lizenz Creative Commons Namensnennung 4.0 International</figcaption>
+<img src="./images/CC-BY.png" alt="Offene Lizenz Creative Commons Namensnennung 4.0 International" /><figcaption aria-hidden="true">Offene Lizenz Creative Commons Namensnennung 4.0 International</figcaption>
 </figure>
 <p>Dadurch können lernOS Inhalte für jeden Zweck offen zugegriffen, genutzt, verändert und geteilt werden (auch für kommerzielle Anwendungen). Produkte und Dienstleistungen dürfen allerdings nicht den Begriff “lernOS” im Namen tragen. Dieser Ansatz ist vergleichbar mit dem Browser <a href="https://de.wikipedia.org/wiki/Chromium_(Browser)">Chromium</a> und den darauf aufsetzenden Produkten <a href="https://de.wikipedia.org/wiki/Google_Chrome">Google Chrome</a>, <a href="https://de.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge</a>, <a href="https://de.wikipedia.org/wiki/Opera_(Browser)">Opera</a> und Brave.</p>
 <h2 id="lebenszyklus-eines-leitfadens">Lebenszyklus eines Leitfadens</h2>
@@ -239,7 +363,7 @@
 <h3 id="typora">Typora</h3>
 <p><a href="https://typora.io/">Typora</a> ist ein Text-Editor zur Bearbeitung von <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfachen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.</p>
 <figure>
-<img src="./images/typora-screenshot.png" alt="" /><figcaption>Typora Screenshot</figcaption>
+<img src="./images/typora-screenshot.png" alt="Typora Screenshot" /><figcaption aria-hidden="true">Typora Screenshot</figcaption>
 </figure>
 <h3 id="pandoc">Pandoc</h3>
 <p><a href="https://pandoc.org">Pandoc</a> ist ein Komandozeilen-basierter Text-Konverter, der Markdown in andere Formate konvertieren kann. Beispiel für die Konvertierung von Markdown in Microsoft Word:</p>
@@ -263,7 +387,7 @@
 <h3 id="github-desktop">GitHub Desktop</h3>
 <p><a href="https://desktop.github.com">Github Desktop</a> ist ein Client, der <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> Repositories mit dem lokalen Rechner synchronisieren kann. Somit kann z.B. lokal an Markdown-Inhalten gearbeitet und diese bei Bedarf ins Repository synchronisiert werden. Die Funktionsweise kann man sich ähnlich wie die Synchronisation von Dateien mit Dropbox oder OneDrive vorstellen.</p>
 <figure>
-<img src="./images/github-desktop-screenshot.png" alt="" /><figcaption>Github Desktop Screenshot</figcaption>
+<img src="./images/github-desktop-screenshot.png" alt="Github Desktop Screenshot" /><figcaption aria-hidden="true">Github Desktop Screenshot</figcaption>
 </figure>
 <h3 id="latex-co.">LaTeX &amp; Co.</h3>
 <p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows <a href="https://miktex.org">MiKTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich <a href="https://de.wikipedia.org/wiki/Ghostscript">Ghostscript</a> notwendig.</p>
@@ -271,16 +395,16 @@
 <h3 id="mkdocs-material-for-mkdocs">MkDocs &amp; Material for MkDocs</h3>
 <p><a href="https://www.mkdocs.org/">MkDocs</a> ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion erzeugt. Als Theme kommt bei der Web-Version der lernOS Leitfäden <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> zum Einsatz.</p>
 <figure>
-<img src="./images/lernos-web-version-screenshot.png" alt="" /><figcaption>lernOS Leitfaden Web-Version</figcaption>
+<img src="./images/lernos-web-version-screenshot.png" alt="lernOS Leitfaden Web-Version" /><figcaption aria-hidden="true">lernOS Leitfaden Web-Version</figcaption>
 </figure>
 <p>Für die Kommentarfunktion am Ende jeder Seite der Web-Version kommt der Dienst <a href="https://de.wikipedia.org/wiki/Disqus">Disqus</a> zum Einsatz:</p>
 <figure>
-<img src="./images/disqus-screenshot.png" alt="" /><figcaption>Kommentare mit Disqus Screenshot</figcaption>
+<img src="./images/disqus-screenshot.png" alt="Kommentare mit Disqus Screenshot" /><figcaption aria-hidden="true">Kommentare mit Disqus Screenshot</figcaption>
 </figure>
 <h3 id="calibre">Calibre</h3>
 <p><a href="https://calibre-ebook.com">Calibre</a> ist eine E-Book-Management-Software, die für die Konvertierung der E-Book-Version <a href="https://de.wikipedia.org/wiki/EPUB">EPUB</a> in <a href="https://de.wikipedia.org/wiki/Mobipocket">Mobipocket</a> (mobi, z.B. für Kindle Reader und Kindle App) zu erzeugen. Um aus der PDF-Version eines Leitfadens das Titelbild als Grafik zu extrahieren und in die richtige Größe für E-Books zu skalieren kommt das Grafik-Paket <a href="https://www.imagemagick.org">ImageMagick</a> zum Einsatz.</p>
 <figure>
-<img src="./images/calibre-screenshot.png" alt="" /><figcaption>Calibre Screenshot</figcaption>
+<img src="./images/calibre-screenshot.png" alt="Calibre Screenshot" /><figcaption aria-hidden="true">Calibre Screenshot</figcaption>
 </figure>
 <h1 id="lernpfad">Lernpfad</h1>
 <p>Erste Skizze für die 11 Katas im Lernpfad:</p>
@@ -425,7 +549,8 @@
 </ul>
 <p><strong>Z</strong></p>
 <ul>
-<li><strong>Ziel</strong><br/>Result to be achieved (ISO 9001:2015).</li>
+<li><h2 id="ziel-result-to-be-achieved-iso-90012015."><strong>Ziel</strong><br/>Result to be achieved (ISO 9001:2015).</h2>
+title: “Wie schreibt man einen lernOS Leitfaden?” subtitle: “Dein eigener lernOS Leitfaden in einem Sprint” author: [Simon Dückert] date: “Version 0.1 (xx.xx.2020)” titlepage: true titlepage-color: “ff6600” titlepage-text-color: “ffffff” titlepage-rule-color: “ffffff” links-as-notes: true lof: false toc: true toc-own-page: true toc-depth: 3 logo: src/images/lernOS-logo-white-4000px.png logo-width: 300 —</li>
 </ul>
 </body>
 </html>

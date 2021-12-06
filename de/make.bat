@@ -1,9 +1,6 @@
 @echo off
 echo Starting lernOS Guide Generation ...
 
-REM Required Software
-REM See lernOS Core Repository
-
 REM Variables
 set filename="lernOS-Leitfaden-schreiben-Guide-de"
 set chapters=./src/index.md ./src/1-Grundlagen.md ./src/2-Lernpfad.md ./src/3-Anhang.md
@@ -26,7 +23,7 @@ mkdocs build
 
 REM Create PDF Version (pdf)
 echo Creating PDF version ...
-pandoc metadata.yaml --from markdown --resource-path="./src" --template lernOS --number-sections -V lang=de-de %chapters% -o %filename%.pdf 
+pandoc metadata.yaml --from markdown --resource-path="./src" --template lernOS --number-sections -V lang=de-de %chapters% -o %filename%.pdf
 
 REM Create eBook Versions (epub, mobi)
 echo Creating eBook versions ...
@@ -36,6 +33,6 @@ magick mogrify -crop 1563x2500+102+0 src/images/ebook-cover.jpg
 pandoc metadata.yaml -s --resource-path="./src" --epub-cover-image=src/images/ebook-cover.jpg %chapters% -o %filename%.epub
 ebook-convert %filename%.epub %filename%.mobi
 
-echo Done. Check for error messages or warnings above. 
+echo Done. Check for error messages or warnings above.
 
 pause

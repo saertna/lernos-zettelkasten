@@ -33,7 +33,7 @@
 <li><strong>Zieldefinition</strong> - die Idee konkretisierte sich, Lernziel und Zielgruppe der Lernenden werden klarer. Oft entstehen hier auch schon erste Inhalte z.B. in Form von Skizzen, Mitschriften, Mailverkehr etc.</li>
 <li><strong>Erstellung</strong> - in dieser Phase werden Struktur und Inhalte erstellt. Lernpfade können in Formaten wie Word, als Google Doc oder PowerPoint entstehen, lernOS Leitfäden haben immer Markdown als Quellformat.</li>
 <li><strong>Veröffentlichung</strong> - der Leitfaden wir als Repository auf GitHub veröffentlicht. Standardmäßig werden neben Markdown die Formate PDF, Word, HTML, und E-Book (EPUB, Mobipocket) produziert. Ist der Lernpfad eines Leitfaden noch nicht in der Praxis getestet, empfehlen wir 0.x Versionsnummer. Nach absolviertem Praxistest erhält der Leitfaden dann die Versionsnummer 1.0. Diese sollte dann mindestens in Deutsch und Englisch vorliegen, um internationale Nutzung zu ermöglichen.</li>
-<li><strong>Promotion</strong> - der Leitfaden wird bekannt gemacht und Lernende zur Nutzung animiert (wichtig für die Erhebung von Feedback). Das kann z.B. über die lernOS Community-Plattform <a href="https://community.cogneon.de">CONNECT</a>, den lernOS Community Call und den Twitter-Account <span class="citation" data-cites="lern_os">[@lern_os]</span>(https://twitter.com/lern_os) erfolgen.</li>
+<li><strong>Promotion</strong> - der Leitfaden wird bekannt gemacht und Lernende zur Nutzung animiert (wichtig für die Erhebung von Feedback). Das kann z.B. über die lernOS Community-Plattform <a href="https://community.cogneon.de">CONNECT</a>, den lernOS Community Call und den Twitter-Account <a href="https://twitter.com/lern_os"><span class="citation" data-cites="lern_os">@lern_os</span></a> erfolgen.</li>
 <li><strong>Pflege</strong> - in dieser Phase kümmert sich der Autor (Maintainer) - idealerweise mit einem Team von Mit-Autoren - um die Pflege des Leitfadens, den Ausbau der Inhalte und die Einarbeitung von Feedback. Wir empfehlen, Leitfäden in regelmäßigen Abständen zu aktualisieren und dadurch kontinuierlich zu verbessern (z.B. vierteljährlich oder halbjährlich). Für die Planung der Weiterentwicklung eignet sich ein Knaben-Board z.B. als <a href="https://docs.github.com/en/enterprise/2.15/user/articles/about-project-boards">GitHub Projekt Board</a> oder <a href="https://de.wikipedia.org/wiki/Trello">Trello Board</a>.</li>
 <li><strong>Archivierung</strong> - wenn der Leitfaden nicht weiter gepflegt wird und die Inhalte veraltet und nicht mehr nutzbar sind, werden die Inhalte archiviert, bleiben aber weiterhin verfügbar.</li>
 </ul>
@@ -114,7 +114,7 @@
 <ul>
 <li><p><strong>de</strong> - Inhalte der deutschen Version des Leitfadens</p>
 <ul>
-<li><strong>src</strong> - die Markdown-Quellen des Leitfaden
+<li><p><strong>src</strong> - die Markdown-Quellen des Leitfaden</p>
 <ul>
 <li><strong>css</strong> - Anpassung von Farben für die Web-Version</li>
 <li><strong>images</strong> - Bilder des Leitfadens in den Formaten SVG und PNG</li>
@@ -123,9 +123,9 @@
 <li><strong>3-Anhang.md</strong> - das Kapitel “Anhang”</li>
 <li><strong>index.md</strong> - das Kapitel “Über lernOS”, muss wegen Web-Version index.md heißen</li>
 </ul></li>
-<li><strong>make.bat</strong> - das Herzstück der Produktionskette, <a href="https://de.wikipedia.org/wiki/BAT-Datei">Batch-Datei</a> (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen. Hinweis: für Mac und Linux muss stattdessen eine Shell-Datei (make.sh) verwendet werden.</li>
-<li><strong>metadata.yaml</strong> - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)</li>
-<li><strong>mkdocs.yaml</strong> - Einstellungen für die Generierung der Web-Version mit mkdocs</li>
+<li><p><strong>make.bat</strong> - das Herzstück der Produktionskette, <a href="https://de.wikipedia.org/wiki/BAT-Datei">Batch-Datei</a> (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen. Hinweis: für Mac und Linux muss stattdessen eine Shell-Datei (make.sh) verwendet werden.</p></li>
+<li><p><strong>metadata.yaml</strong> - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)</p></li>
+<li><p><strong>mkdocs.yaml</strong> - Einstellungen für die Generierung der Web-Version mit mkdocs</p></li>
 </ul></li>
 <li><p><strong>docs</strong></p>
 <ul>
@@ -161,9 +161,18 @@
 <li><strong>Audiobook:</strong> Produktion eines Audiobooks mit Kapitelmarken zum Anhören (z.B. mit <a href="http://www.cross-plus-a.com/balabolka.htm">Balbolka</a>).</li>
 </ul>
 <h2 data-number="2.6" id="toolset-für-die-produktionskette"><span class="header-section-number">2.6</span> Toolset für die Produktionskette</h2>
-<p>Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich.</p>
+<p>Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich:</p>
+<ol type="1">
+<li><p><strong>Markdown-Editor</strong> - zum Editieren der Inhalte der Leitfäden, die alle in <a href="https://de.wikipedia.org/wiki/Markdown">Markdown</a> geschrieben werden (z.B. Typora, Atom oder Mark Text).</p></li>
+<li><p><strong>Github Desktop</strong> - um das Repository des Leitfadens auf GitHub mit dem lokalen Rechner synchronisieren zu können.</p></li>
+<li><p><strong>Pandoc</strong> - zum Konvertieren von Markdown in die Zielformate der lernOS Produktionskette.</p></li>
+<li><p><strong>LaTeX</strong> - wird von Pandoc benötigt, um PDF-Dateien erzeugen zu können.</p></li>
+<li><p><strong>MkDocs</strong> und <strong>Material for MkDocs</strong> - zum Erzeugen der Webversion des Leitfadens.</p></li>
+<li><p><strong>ImageMagick</strong> - zum Erzeugen einer Grafik der Titelseite des Leitfadens zum Einfügen in die E-Book-Version.</p></li>
+<li><p><strong>Calibre</strong> - zur Konvertierung der von Pandoc erzeugten E-Book-Version im epub-Format in das mobi-Format.</p></li>
+</ol>
 <h3 data-number="2.6.1" id="typora"><span class="header-section-number">2.6.1</span> Typora</h3>
-<p><a href="https://typora.io/">Typora</a> ist ein Text-Editor zur Bearbeitung von <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfachen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.</p>
+<p><a href="https://typora.io/">Typora</a> ist ein Text-Editor zur Bearbeitung von <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfac    hen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.</p>
 <figure>
 <img src="./images/typora-screenshot.png" alt="Typora Screenshot" /><figcaption aria-hidden="true">Typora Screenshot</figcaption>
 </figure>
@@ -192,7 +201,7 @@
 <img src="./images/github-desktop-screenshot.png" alt="Github Desktop Screenshot" /><figcaption aria-hidden="true">Github Desktop Screenshot</figcaption>
 </figure>
 <h3 data-number="2.6.4" id="latex-co."><span class="header-section-number">2.6.4</span> LaTeX &amp; Co.</h3>
-<p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows <a href="https://miktex.org">MiKTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich <a href="https://de.wikipedia.org/wiki/Ghostscript">Ghostscript</a> notwendig.</p>
+<p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows <a href="https://miktex.org">MiKTeX</a>, auf dem Mac <a href="https://tug.org/mactex/https://tug.org/mactex/">MacTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich <a href="https://de.wikipedia.org/wiki/Ghostscript">Ghostscript</a> notwendig.</p>
 <p>Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTex Template <a href="https://github.com/Wandmalfarbe/pandoc-latex-template">Eisvogel</a> verwendet und über die Datei <em>metadata.yaml</em> angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.</p>
 <h3 data-number="2.6.5" id="mkdocs-material-for-mkdocs"><span class="header-section-number">2.6.5</span> MkDocs &amp; Material for MkDocs</h3>
 <p><a href="https://www.mkdocs.org/">MkDocs</a> ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion erzeugt. Als Theme kommt bei der Web-Version der lernOS Leitfäden <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> zum Einsatz.</p>

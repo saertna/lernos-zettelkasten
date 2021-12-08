@@ -15,7 +15,7 @@ pandoc metadata.yaml -s --resource-path="./src" %chapters% -o %filename%.docx
 
 REM Create HTML Version (html)
 echo Creating HTML version ...
-pandoc metadata.yaml -s --resource-path="./src" --toc %chapters% -o %filename%.html
+pandoc metadata.yaml -s --resource-path="./src" %chapters% -o %filename%.html
 
 REM Create Web Version (mkdocs)
 echo Creating Web Version ...

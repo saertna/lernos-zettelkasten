@@ -1,5 +1,5 @@
-
 # Grundlagen
+
 ## Grundidee der lernOS Leitfäden
 
 Ein lernOS Leitfaden hilft Lernenden durch einen vorgegebenen Lernpfad ihr eigenes Lernziel im Rahmen eines Learning Sprints (3 Monate) zu erlernen zu erreichen. Die Lernenden lernen dabei allein, im Lerntandem oder in einem Learning Circle (4-5 Personen). Der zeitliche Aufwand über den Sprint sollte maximal zwei Stunden pro Woche betragen. Das Lernziel kann dabei aus einem oder einer Kombination dieser Bereiche kommen:
@@ -150,7 +150,6 @@ Hinweis: Tabellen sind in Markdown schwierig zu editieren und wo möglich zu ver
 > Eine Investition in Wissen bringt immer noch die besten Zinsen.
 > (Benjamin Franklin)
 
-
 **Horizontale Linie:**
 
 ```
@@ -173,26 +172,29 @@ lernOS Leitfäden werden in der Auszeichnungssprache [Markdown](https://de.wikip
 Damit die lernOS Produktionskette funktioniert, müssen die Inhalte des Leitfadens in einem Dateiordner mit folgender Verzeichnisstruktur abgelegt werden (Beispiel für ein Leitfaden mit deutscher und englischer Version, fett sind Ordner- und Dateinamen, dahinter eine kurze Beschreibung):
 
 * **de** - Inhalte der deutschen Version des Leitfadens
-
+  
   * **src** - die Markdown-Quellen des Leitfaden
+    
     * **css** - Anpassung von Farben für die Web-Version
     * **images** - Bilder des Leitfadens in den Formaten SVG und PNG
     * **1-Grundlagen.md** - das Kapitel "Grundlagen"
     * **2-Lernpfad.md** - das Kapitel "Lernpfad"
     * **3-Anhang.md** - das Kapitel "Anhang"
     * **index.md** - das Kapitel "Über lernOS", muss wegen Web-Version index.md heißen
-
+  
   * **make.bat** - das Herzstück der Produktionskette, [Batch-Datei](https://de.wikipedia.org/wiki/BAT-Datei) (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen. Hinweis: für Mac und Linux muss stattdessen eine Shell-Datei (make.sh) verwendet werden.
+  
   * **metadata.yaml** - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)
+  
   * **mkdocs.yaml** - Einstellungen für die Generierung der Web-Version mit mkdocs
 
 * **docs**
-
+  
   * **de** - deutsche Web-Version des Leitfadens
   * **en** - englische Web-Version des Leitfadens
 
 * **en** - Inhalte der deutschen Version des Leitfadens
-
+  
   * Struktur identisch mit der deutschen Sprachversion
 
 **Hinweis:** im Verzeichnis einer Sprachversion liegen zusätzlich alle produzierten Dokumente (z.B. docx, epub, html, mobi, pdf).
@@ -225,11 +227,25 @@ Wie auch die Leitfäden wird die lernOS Produktionskette kontinuierlich erweiter
 
 ## Toolset für die Produktionskette
 
-Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich. 
+Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich:
+
+1. **Markdown-Editor** - zum Editieren der Inhalte der Leitfäden, die alle in [Markdown](https://de.wikipedia.org/wiki/Markdown) geschrieben werden (z.B. Typora, Atom oder Mark Text).
+
+2. **Github Desktop** - um das Repository des Leitfadens auf GitHub mit dem lokalen Rechner synchronisieren zu können.
+
+3. **Pandoc** - zum Konvertieren von Markdown in die Zielformate der lernOS Produktionskette.
+
+4. **LaTeX** - wird von Pandoc benötigt, um PDF-Dateien erzeugen zu können.
+
+5. **MkDocs** und **Material for MkDocs** - zum Erzeugen der Webversion des Leitfadens.
+
+6. **ImageMagick** - zum Erzeugen einer Grafik der Titelseite des Leitfadens zum Einfügen in die E-Book-Version.
+
+7. **Calibre** - zur Konvertierung der von Pandoc erzeugten E-Book-Version im epub-Format in das mobi-Format.
 
 ### Typora
 
-[Typora](https://typora.io/) ist ein Text-Editor zur Bearbeitung von [Markdown](https://en.wikipedia.org/wiki/Markdown)-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfachen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.
+[Typora](https://typora.io/) ist ein Text-Editor zur Bearbeitung von [Markdown](https://en.wikipedia.org/wiki/Markdown)-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfac    hen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.
 
 ![Typora Screenshot](./images/typora-screenshot.png)
 
@@ -265,7 +281,7 @@ Zu den von Pandoc unterstützten Formaten gehören u.a.:
 
 ### LaTeX & Co.
 
-[LaTeX](https://de.wikipedia.org/wiki/LaTeX) ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows [MiKTeX](https://miktex.org)) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich [Ghostscript](https://de.wikipedia.org/wiki/Ghostscript) notwendig.
+[LaTeX](https://de.wikipedia.org/wiki/LaTeX) ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows [MiKTeX](https://miktex.org), auf dem Mac [MacTeX](https://tug.org/mactex/https://tug.org/mactex/)) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich [Ghostscript](https://de.wikipedia.org/wiki/Ghostscript) notwendig.
 
 Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTex Template [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template) verwendet und über die Datei *metadata.yaml* angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.
 
@@ -284,4 +300,3 @@ Für die Kommentarfunktion am Ende jeder Seite der Web-Version kommt der Dienst 
 [Calibre](https://calibre-ebook.com) ist eine E-Book-Management-Software, die für die Konvertierung der E-Book-Version [EPUB](https://de.wikipedia.org/wiki/EPUB) in [Mobipocket](https://de.wikipedia.org/wiki/Mobipocket) (mobi, z.B. für Kindle Reader und Kindle App) zu erzeugen. Um aus der PDF-Version eines Leitfadens das Titelbild als Grafik zu extrahieren und in die richtige Größe für E-Books zu skalieren kommt das Grafik-Paket [ImageMagick](https://www.imagemagick.org) zum Einsatz.
 
 ![Calibre Screenshot](./images/calibre-screenshot.png)
-

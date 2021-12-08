@@ -841,7 +841,9 @@
 <li>
 <p><strong>make.bat</strong> - das Herzstück der Produktionskette, <a href="https://de.wikipedia.org/wiki/BAT-Datei">Batch-Datei</a> (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen. Hinweis: für Mac und Linux muss stattdessen eine Shell-Datei (make.sh) verwendet werden.</p>
 </li>
-<li><strong>metadata.yaml</strong> - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)</li>
+<li>
+<p><strong>metadata.yaml</strong> - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)</p>
+</li>
 <li>
 <p><strong>mkdocs.yaml</strong> - Einstellungen für die Generierung der Web-Version mit mkdocs</p>
 </li>
@@ -885,9 +887,32 @@
 <li><strong>Audiobook:</strong> Produktion eines Audiobooks mit Kapitelmarken zum Anhören (z.B. mit <a href="http://www.cross-plus-a.com/balabolka.htm">Balbolka</a>).</li>
 </ul>
 <h2 id="toolset-fur-die-produktionskette">Toolset für die Produktionskette</h2>
-<p>Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich. </p>
+<p>Für die lernOS Produktionskette sind einige Tools auf dem eigenen Rechner oder in der Cloud erforderlich:</p>
+<ol>
+<li>
+<p><strong>Markdown-Editor</strong> - zum Editieren der Inhalte der Leitfäden, die alle in <a href="https://de.wikipedia.org/wiki/Markdown">Markdown</a> geschrieben werden (z.B. Typora, Atom oder Mark Text).</p>
+</li>
+<li>
+<p><strong>Github Desktop</strong> - um das Repository des Leitfadens auf GitHub mit dem lokalen Rechner synchronisieren zu können.</p>
+</li>
+<li>
+<p><strong>Pandoc</strong> - zum Konvertieren von Markdown in die Zielformate der lernOS Produktionskette.</p>
+</li>
+<li>
+<p><strong>LaTeX</strong> - wird von Pandoc benötigt, um PDF-Dateien erzeugen zu können.</p>
+</li>
+<li>
+<p><strong>MkDocs</strong> und <strong>Material for MkDocs</strong> - zum Erzeugen der Webversion des Leitfadens.</p>
+</li>
+<li>
+<p><strong>ImageMagick</strong> - zum Erzeugen einer Grafik der Titelseite des Leitfadens zum Einfügen in die E-Book-Version.</p>
+</li>
+<li>
+<p><strong>Calibre</strong> - zur Konvertierung der von Pandoc erzeugten E-Book-Version im epub-Format in das mobi-Format.</p>
+</li>
+</ol>
 <h3 id="typora">Typora</h3>
-<p><a href="https://typora.io/">Typora</a> ist ein Text-Editor zur Bearbeitung von <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfachen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.</p>
+<p><a href="https://typora.io/">Typora</a> ist ein Text-Editor zur Bearbeitung von <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>-Inhalten. Typora ist für lernOS Inhalte der empfohlene Markdown-Editor, weil er plattformübergreifend verfügbar ist und Markdown als echtes WYSIWYG (What You See Is What You Get) anzeigt. Markdown kann man prinzipiell auch mit einfac    hen Texteditoren erstellen und bearbeiten, gerade für Einsteiger ist die WYSIWYG-Ansicht aber von Vorteil.</p>
 <p><img alt="Typora Screenshot" src="../images/typora-screenshot.png" /></p>
 <h3 id="pandoc">Pandoc</h3>
 <p><a href="https://pandoc.org">Pandoc</a> ist ein Komandozeilen-basierter Text-Konverter, der Markdown in andere Formate konvertieren kann. Beispiel für die Konvertierung von Markdown in Microsoft Word:</p>
@@ -913,7 +938,7 @@
 <p><a href="https://desktop.github.com">Github Desktop</a> ist ein Client, der <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> Repositories mit dem lokalen Rechner synchronisieren kann. Somit kann z.B. lokal an Markdown-Inhalten gearbeitet und diese bei Bedarf ins Repository synchronisiert werden. Die Funktionsweise kann man sich ähnlich wie die Synchronisation von Dateien mit Dropbox oder OneDrive vorstellen.</p>
 <p><img alt="Github Desktop Screenshot" src="../images/github-desktop-screenshot.png" /></p>
 <h3 id="latex-co">LaTeX &amp; Co.</h3>
-<p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows <a href="https://miktex.org">MiKTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich <a href="https://de.wikipedia.org/wiki/Ghostscript">Ghostscript</a> notwendig.</p>
+<p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows <a href="https://miktex.org">MiKTeX</a>, auf dem Mac <a href="https://tug.org/mactex/https://tug.org/mactex/">MacTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich <a href="https://de.wikipedia.org/wiki/Ghostscript">Ghostscript</a> notwendig.</p>
 <p>Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTex Template <a href="https://github.com/Wandmalfarbe/pandoc-latex-template">Eisvogel</a> verwendet und über die Datei <em>metadata.yaml</em> angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.</p>
 <h3 id="mkdocs-material-for-mkdocs">MkDocs &amp; Material for MkDocs</h3>
 <p><a href="https://www.mkdocs.org/">MkDocs</a> ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion erzeugt. Als Theme kommt bei der Web-Version der lernOS Leitfäden <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> zum Einsatz.</p>

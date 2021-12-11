@@ -15,9 +15,16 @@ nav:
       - Überblick: 2-Lernpfad.md
     - Anhang:
       - Überblick: 3-Anhang.md
+    - Download:
+      - PDF-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.pdf
+      - Word-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.docx
+      - HTML-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.html
+      - E-Book (epub): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.epub
+      - E-Book (mobi): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.mobi
     - Links:
       - lernOS Website: https://lernos.org
       - lernOS Community: https://community.cogneon.de
+      - Peerfinder: https://web.peerfinder.app
 
 theme:
     name: 'material'
@@ -25,8 +32,6 @@ theme:
         primary: 'deep orange'
         accent: 'deep orange'
     language: de
-    features:
-      - navigation.sections
     icon:
       logo: material/home
       repo: fontawesome/brands/github

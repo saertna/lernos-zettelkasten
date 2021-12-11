@@ -1,5 +1,5 @@
-# PATH=$PATH:/Library/TeX/texbin:/usr/texbin:/usr/local/bin
-# PATH=$PATH:/Applications/calibre.app/Contents/console.app/Contents/MacOS
+PATH=$PATH:/opt/homebrew/bin
+echo Starting lernOS Guide Generation ...
 
 # Variables
 filename="lernOS-Leitfaden-schreiben-Guide-de"
@@ -9,26 +9,26 @@ chapters="./src/index.md ./src/1-0-Grundlagen.md ./src/1-1-Grundidee.md ./src/1-
 echo Deleting old versions ...
 rm -f $filename.*
 
-# Create Microsoft Word Version (docx)
-echo Creating Word version ...
-pandoc metadata.yaml --from markdown --resource-path="./src" --number-sections -V lang=de-de $chapters -o $filename.docx
-
-# Create HTML Version (html)
-echo Creating HTML version ...
-pandoc metadata.yaml --from markdown --resource-path="./src" --number-sections -V lang=de-de $chapters -o $filename.html
-
 # Create Web Version (mkdocs)
 echo Creating Web Version ...
 mkdocs build
 
+# Create Microsoft Word Version (docx)
+echo Creating Word version ...
+pandoc metadata.yaml --from markdown -s --resource-path="./src" -F mermaid-filter --number-sections -V lang=de-de -o $filename.docx $chapters
+
+# Create HTML Version (html)
+echo Creating HTML version ...
+pandoc metadata.yaml --from markdown -s --resource-path="./src" -F mermaid-filter --number-sections -V lang=de-de -o $filename.html $chapters
+
 # Create PDF Version (pdf)
 echo Creating PDF version ...
-pandoc metadata.yaml --from markdown --resource-path="./src" --template lernos --number-sections --toc -V lang=de-de $chapters -o $filename.pdf
+pandoc metadata.yaml --from markdown -s --resource-path="./src" -F mermaid-filter --template lernos --number-sections --toc -V lang=de-de -o $filename.pdf $chapters
 
 # Create eBook Versions (epub, mobi)
 echo Creating eBook versions ...
 magick -density 300 $filename.pdf[0] src/images/ebook-cover.jpg
 mogrify -size 2500x2500 -resize 2500x2500 src/images/ebook-cover.jpg
 mogrify -crop 1563x2500+102+0 src/images/ebook-cover.jpg
-pandoc metadata.yaml --from markdown -s --resource-path="./src" --epub-cover-image=src/images/ebook-cover.jpg $chapters -o $filename.epub
+pandoc metadata.yaml --from markdown -s --resource-path="./src" -F mermaid-filter --epub-cover-image=src/images/ebook-cover.jpg --number-sections --toc -V lang=de-de -o $filename.epub $chapters
 ebook-convert $filename.epub $filename.mobi

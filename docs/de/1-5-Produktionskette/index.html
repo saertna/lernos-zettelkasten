@@ -697,6 +697,18 @@
                 
                 <h2 id="leitfaden-produktionskette">Leitfaden Produktionskette</h2>
 <p>lernOS Leitfäden werden in der Auszeichnungssprache <a href="https://de.wikipedia.org/wiki/Markdown">Markdown</a> erstellt und i.d.R. auf <a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> verwaltet. Aus den Markdown-Quellen werden über die lernOS Produktionskette weitere Zielformate wie PDF, Word, E-Book etc. generiert. Diese Generierung kann zentral auf GitHub (noch nicht verfügbar) oder auf dem eigenen Rechner erfolgen. Generiert man die Zieformate auf dem eigenen Rechner, ist ein Toolset notwendig, das im folgenden beschrieben wird. Wir versuchen wo möglich <a href="https://de.wikipedia.org/wiki/Open_Source">Open Source Software</a> zu verwenden.</p>
+<pre class="mermaid"><code>graph TD
+    Z[GitHub Repository] --&gt;Y[Github Desktop] --&gt;A
+    A[Markdown Files] --&gt;B(make.bat/sh)
+    B --&gt; C[pandoc]
+    C --&gt;D[Word]
+    C --&gt;E[HTML]
+    C --&gt;F[PDF]
+    C --&gt;G[EPUB]
+    G --&gt;H[Calibre + ImageMagick]
+    H --&gt;I[MOBI]
+    B --&gt;J[mkdocs]
+    J --&gt;K[Webversion]</code></pre>
 <h3 id="lernos-leitfaden-verzeichnisstruktur">lernOS Leitfaden Verzeichnisstruktur</h3>
 <p>Damit die lernOS Produktionskette funktioniert, müssen die Inhalte des Leitfadens in einem Dateiordner mit folgender Verzeichnisstruktur abgelegt werden (Beispiel für ein Leitfaden mit deutscher und englischer Version, fett sind Ordner- und Dateinamen, dahinter eine kurze Beschreibung):</p>
 <ul>
@@ -792,8 +804,8 @@
 <p><img alt="Typora Screenshot" src="../images/typora-screenshot.png" /></p>
 <h3 id="pandoc">Pandoc</h3>
 <p><a href="https://pandoc.org">Pandoc</a> ist ein Komandozeilen-basierter Text-Konverter, der Markdown in andere Formate konvertieren kann. Beispiel für die Konvertierung von Markdown in Microsoft Word:</p>
-<pre><code>pandoc dokument.md -o dokument.docx
-</code></pre>
+<div class="highlight"><pre><span></span><code>pandoc dokument.md -o dokument.docx
+</code></pre></div>
 <p>Zu den von Pandoc unterstützten Formaten gehören u.a.:</p>
 <ul>
 <li>Asciidoc</li>

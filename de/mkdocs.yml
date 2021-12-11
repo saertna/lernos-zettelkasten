@@ -43,3 +43,10 @@ extra:
         - icon: fontawesome/brands/github
           link: 'https://github.com/cogneon'
     disqus: lernos
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

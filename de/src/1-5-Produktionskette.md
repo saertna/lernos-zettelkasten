@@ -2,34 +2,49 @@
 
 lernOS Leitfäden werden in der Auszeichnungssprache [Markdown](https://de.wikipedia.org/wiki/Markdown) erstellt und i.d.R. auf [GitHub](https://de.wikipedia.org/wiki/GitHub) verwaltet. Aus den Markdown-Quellen werden über die lernOS Produktionskette weitere Zielformate wie PDF, Word, E-Book etc. generiert. Diese Generierung kann zentral auf GitHub (noch nicht verfügbar) oder auf dem eigenen Rechner erfolgen. Generiert man die Zieformate auf dem eigenen Rechner, ist ein Toolset notwendig, das im folgenden beschrieben wird. Wir versuchen wo möglich [Open Source Software](https://de.wikipedia.org/wiki/Open_Source) zu verwenden.
 
+```mermaid
+graph TD
+    Z[GitHub Repository] -->Y[Github Desktop] -->A
+    A[Markdown Files] -->B(make.bat/sh)
+    B --> C[pandoc]
+    C -->D[Word]
+    C -->E[HTML]
+    C -->F[PDF]
+    C -->G[EPUB]
+    G -->H[Calibre + ImageMagick]
+    H -->I[MOBI]
+    B -->J[mkdocs]
+    J -->K[Webversion]
+```
+
 ### lernOS Leitfaden Verzeichnisstruktur
 
 Damit die lernOS Produktionskette funktioniert, müssen die Inhalte des Leitfadens in einem Dateiordner mit folgender Verzeichnisstruktur abgelegt werden (Beispiel für ein Leitfaden mit deutscher und englischer Version, fett sind Ordner- und Dateinamen, dahinter eine kurze Beschreibung):
 
 * **de** - Inhalte der deutschen Version des Leitfadens
-
+  
   * **src** - die Markdown-Quellen des Leitfaden
-
+    
     * **css** - Anpassung von Farben für die Web-Version
     * **images** - Bilder des Leitfadens in den Formaten SVG und PNG
     * **1-Grundlagen.md** - das Kapitel "Grundlagen"
     * **2-Lernpfad.md** - das Kapitel "Lernpfad"
     * **3-Anhang.md** - das Kapitel "Anhang"
     * **index.md** - das Kapitel "Über lernOS", muss wegen Web-Version index.md heißen
-
+  
   * **make.bat** - das Herzstück der Produktionskette, [Batch-Datei](https://de.wikipedia.org/wiki/BAT-Datei) (Windows), die alle Ergebnisdokumente produziert, im Datei-Explorer per Doppelklick ausführen. Hinweis: für Mac und Linux muss stattdessen eine Shell-Datei (make.sh) verwendet werden.
-
+  
   * **metadata.yaml** - Metadaten für Pandoc (z.B. Titel, Untertitel, Autor(en), Version etc.)
-
+  
   * **mkdocs.yaml** - Einstellungen für die Generierung der Web-Version mit mkdocs
 
 * **docs**
-
+  
   * **de** - deutsche Web-Version des Leitfadens
   * **en** - englische Web-Version des Leitfadens
 
 * **en** - Inhalte der deutschen Version des Leitfadens
-
+  
   * Struktur identisch mit der deutschen Sprachversion
 
 **Hinweis:** im Verzeichnis einer Sprachversion liegen zusätzlich alle produzierten Dokumente (z.B. docx, epub, html, mobi, pdf).

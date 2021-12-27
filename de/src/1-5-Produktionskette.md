@@ -21,6 +21,33 @@ graph TD
 
 Damit die lernOS Produktionskette funktioniert, müssen die Inhalte des Leitfadens in einem Dateiordner mit folgender Verzeichnisstruktur abgelegt werden (Beispiel für ein Leitfaden mit deutscher und englischer Version, fett sind Ordner- und Dateinamen, dahinter eine kurze Beschreibung):
 
+```
+lernos-repository
+|– de                                # Deutsche Sprachversion
+   |– src                            # Markdown Quelldateien
+      |– css
+         |– extra.css                # CSS-Datei für Webversion
+      |– images                      # Leitfaden Bilder
+      |– 1-0-Grundlagen.md
+      |– 2-0-Lernpfad.md
+      |– 3-0-Anhang.md
+      |– index.md                    # Willkommens-Kapitel (=Startseite)
+   |– lernos-repository-de.docx      # Word-Version
+   |– lernos-repository-de.epub      # E-Book-Version (epub)
+   |– lernos-repository-de.html      # HTML-Version
+   |– lernos-repository-de.mobi      # E-Book-Version (mobi)
+   |– lernos-repository-de.pdf       # PDF-Version
+   |– make.bat                       # Make-Datei (Windows)
+   |– make.sh                        # Make-Datei (Mac, Linux)
+   |– metadata.yaml                  # Metadaten für Pandoc
+   |– mkdocs.yml                     # Steuerdaten für Webversion
+|– en                                # gleiche Struktur wie de
+|– docs                              # Webversionen (nach Sprache)
+   |– de
+   |– en
+|– README.md                         # Wird auf Github angezeigt
+```
+
 * **de** - Inhalte der deutschen Version des Leitfadens
   
   * **src** - die Markdown-Quellen des Leitfaden

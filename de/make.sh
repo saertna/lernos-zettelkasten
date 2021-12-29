@@ -7,7 +7,9 @@ chapters="./src/index.md ./src/1-0-Grundlagen.md ./src/1-1-Grundidee.md ./src/1-
 
 # Delete Old Versions
 echo Deleting old versions ...
-rm -f $filename.*
+rm -rf $filename.*
+rm -rf ../docs/de/*
+rm -ff ../docs/de-slides/index.html
 
 # Create Web Version (mkdocs)
 echo Creating Web Version ...
@@ -32,3 +34,7 @@ mogrify -size 2500x2500 -resize 2500x2500 src/images/ebook-cover.jpg
 mogrify -crop 1563x2500+102+0 src/images/ebook-cover.jpg
 pandoc metadata.yaml --from markdown -s --resource-path="./src" -F mermaid-filter --epub-cover-image=src/images/ebook-cover.jpg --number-sections --toc -V lang=de-de -o $filename.epub $chapters
 ebook-convert $filename.epub $filename.mobi
+
+# Create Slides (revealjs)
+# echo Creating Presentation ...
+# pandoc metadata.yaml --from markdown -s --resource-path="./src" -t revealjs -V theme=night -s ./slides/index.md -o ../docs/de-slides/index.html

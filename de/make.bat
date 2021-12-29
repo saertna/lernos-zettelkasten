@@ -2,7 +2,7 @@
 echo Starting lernOS Guide Generation ...
 
 REM Variables
-set filename="lernOS-Leitfaden-schreiben-Guide-de"
+set filename="lernOS-Template-Guide-de"
 set chapters="./src/index.md ./src/1-0-Grundlagen.md ./src/1-1-Grundidee.md ./src/1-2-Lebenszyklus.md ./src/1-3-Inhaltsverzeichnis.md ./src/1-4-Inhalt.md ./src/1-5-Produktionskette.md ./src/2-Lernpfad.md ./src/3-Anhang.md"
 
 REM Delete Old Versions

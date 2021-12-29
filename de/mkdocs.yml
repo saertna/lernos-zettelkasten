@@ -16,11 +16,11 @@ nav:
     - Anhang:
       - Überblick: 3-Anhang.md
     - Download:
-      - PDF-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.pdf
-      - Word-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.docx
-      - HTML-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.html
-      - E-Book (epub): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.epub
-      - E-Book (mobi): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Leitfaden-schreiben-Guide-de.mobi
+      - PDF-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.pdf
+      - Word-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.docx
+      - HTML-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.html
+      - E-Book (epub): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.epub
+      - E-Book (mobi): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.mobi
     - Links:
       - lernOS Website: https://lernos.org
       - lernOS Community: https://community.cogneon.de
@@ -28,13 +28,16 @@ nav:
 
 theme:
     name: 'material'
+    custom_dir: src/overrides
     palette:
-        primary: 'deep orange'
-        accent: 'deep orange'
+        scheme: lernos
     language: de
     icon:
       logo: material/home
       repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
 
 repo_name: 'cogneon/lernos-template'
 repo_url: 'https://github.com/cogneon/lernos-template'
@@ -48,6 +51,8 @@ extra:
         - icon: fontawesome/brands/github
           link: 'https://github.com/cogneon'
     disqus: lernos
+    analytics:
+       provider: custom
 
 markdown_extensions:
   - pymdownx.superfences:

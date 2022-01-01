@@ -1,14 +1,14 @@
-
 # Anhang
 
 ## Danksagungen
 
-...
+Ein großer Dank an die vielen Projekte und Vorarbeiten, die die Erstellung und Verwaltung von lernOS Leitfäden ermöglichen.
 
 ## Änderungshistorie
-| Version | Bearbeitet von | Beschreibung Änderung | Datum |
-|---------|----------------|-----------------------|-------|
-| 0.1 | Simon Dückert | ... | dd.mm.2020 |
+
+| Version | Bearbeitet von | Beschreibung Änderung                   | Datum      |
+| ------- | -------------- | --------------------------------------- | ---------- |
+| 0.1     | Simon Dückert  | Erste Version des Template-Repositories | 09.12.2021 |
 
 ## lernOS Glossar
 

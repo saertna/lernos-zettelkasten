@@ -26,12 +26,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cogneon.github.io/1-4-Inhalt/</loc>
+         <loc>https://cogneon.github.io/1-4-Inhalt-Schreibstil/</loc>
          <lastmod>2022-01-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cogneon.github.io/1-5-Produktionskette/</loc>
+         <loc>https://cogneon.github.io/1-5-Markdown-Syntax/</loc>
+         <lastmod>2022-01-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cogneon.github.io/1-6-Produktionskette/</loc>
          <lastmod>2022-01-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

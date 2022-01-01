@@ -6,15 +6,14 @@ site_dir: ../docs/de
 nav:
     - Willkommen: index.md
     - Grundlagen:
-      - Grundidee: 1-1-Grundidee.md
+      - Überblick: 1-1-Grundidee.md
       - Lebenszyklus: 1-2-Lebenszyklus.md
       - Inhaltsverzeichnis: 1-3-Inhaltsverzeichnis.md
-      - Inhalt: 1-4-Inhalt.md
-      - Produktionskette: 1-5-Produktionskette.md
-    - Lernpfad:
-      - Überblick: 2-Lernpfad.md
-    - Anhang:
-      - Überblick: 3-Anhang.md
+      - Inhalt und Schreibstil: 1-4-Inhalt-Schreibstil.md
+      - Markdown Syntax: 1-5-Markdown-Syntax.md
+      - Produktionskette: 1-6-Produktionskette.md
+    - Lernpfad: 2-0-Lernpfad.md
+    - Anhang: 3-0-Anhang.md
     - Download:
       - PDF-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.pdf
       - Word-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.docx
@@ -22,8 +21,8 @@ nav:
       - E-Book (epub): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.epub
       - E-Book (mobi): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.mobi
     - Links:
-      - lernOS Website: https://lernos.org
-      - lernOS Community: https://community.cogneon.de
+      - lernos.org: https://lernos.org
+      - CONNECT Community: https://community.cogneon.de
       - Peerfinder: https://web.peerfinder.app
 
 theme:

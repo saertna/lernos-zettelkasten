@@ -16,7 +16,7 @@ Da die Produktionskette auch Textdokumente erzeugt, können in lernOS Leitfäden
 
 ### Markdown Syntax
 
-Die Auszeichnungssprache Markdown lässt verschiedene Stile zu, die oft auch [Markdown Flavors](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) genannt werden (z.B. kann man eine Aufzählung mit einem * oder einem - erzeugen). Für lernOS Leitfäden wird, wenn hier nicht anders beschrieben, die [Schreib- und Formatiersyntax von GitHub](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax) verwendet. Für die Erstellung eines lernOS Leitfadens kommt man mit einer überschaubaren Anzahl von Markdown-Auszeichnungen aus:
+Die Auszeichnungssprache Markdown lässt verschiedene Stile zu, die oft auch [Markdown Flavors](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) genannt werden (z.B. kann man eine Aufzählung mit einem * oder einem - erzeugen). Für lernOS Leitfäden wird [Commonmark](https://commonmark.org) und die [Schreib- und Formatiersyntax von GitHub](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax) verwendet. Für die Erstelleung eines lernOS Leitfadens kommt man mit einer überschaubaren Anzahl von Markdown-Auszeichnungen aus:
 
 **Überschriften:**
 
@@ -26,35 +26,47 @@ Die Auszeichnungssprache Markdown lässt verschiedene Stile zu, die oft auch [Ma
 ### Überschrift Ebene 3
 ```
 
-**Fett und kursiv:**
+**Auszeichnung:**
+
+So kann man **fetten Text** und *kursiven Text* erstellen:
 
 ```
 **fett**
 *kursiv*
 ```
 
-**Liste (unnummeriert):**
+**Listen:**
+
+Listen können Nummeriert und unnummeriert sein:
 
 ```
 - Listenpunkt 1
 - Listenpunkt 2
 ```
 
+- Listenpunkt 1
+
+- Listenpunkt 2
+
 Hinweis: Listen mit zwei Ebenen sind in Markdown möglich, werden aber von der Produktionskette nicht unterstützt.
 
-**Liste (nummeriert):**
+```
+- Erstens
+- Zweitens
+```
 
-```
-1. Listenpunkt 1
-2. Listenpunkt 2
-```
+1. Erstens
+
+2. Zweitens
 
 Hinweis: die Liste muss nicht korrekt durchnummeriert sein. Theoretisch kann jede Zeile der Liste mit 1. beginnen.
 
 **Links:**
 
+So können Links auf Webseiten wie z.B. [lernos.org](https://lernos.org) gesetzt werden:
+
 ```
-[Cogneon](https://cogneon.de)
+[Cogneon](https://lernos.org)
 ```
 
 Hinweis: Links werden in den produzierten Textdokumenten (z.B. PDF) zu Fußnoten.
@@ -65,21 +77,21 @@ Hinweis: Links werden in den produzierten Textdokumenten (z.B. PDF) zu Fußnoten
 ![Alternativtext](./images/bild.png)
 ```
 
+![](https://raw.githubusercontent.com/cogneon/lernos/master/de/src/images/lernOS-Quick-Start-Guide-de-v03.png)
+
 Hinweis: der Pfad zum Bild ist im Markdown immer relativ zum Verzeichnis anzugeben, in dem die Markdown-Datei liegt (i.d.R. Unterverzeichnis *images*).
-
-**Code und Syntax Highlighting:**
-
-... folgt ...
 
 **Tabellen:**
 
 ```
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Kopfzeile|Spalte 2|Spalte 3|
+| :--- |:---:|---:|
+| linksbündig | zentriert | rechtsbündig |
 ```
+
+| Kopfzeile   | Spalte 2  | Spalte 3     |
+| ----------- | --------- | ------------ |
+| linksbündig | zentriert | rechtsbündig |
 
 Hinweis: Tabellen sind in Markdown schwierig zu editieren und wo möglich zu vermeiden.
 
@@ -98,6 +110,8 @@ Hinweis: Tabellen sind in Markdown schwierig zu editieren und wo möglich zu ver
 ```
 ---
 ```
+
+---
 
 ### Mehrsprachigkeit
 

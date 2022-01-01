@@ -124,7 +124,7 @@ Wie auch die Leitfäden wird die lernOS Produktionskette kontinuierlich erweiter
 * **Github Actions:** aktuell ist eine automatisierte Produktionskette mit [GitHub Actions](https://github.com/features/actions) in Vorbereitung.
 * **OneNote:** zusätzlich Produktion einer OneNote-Version der Leitfäden (aktuell nur als Begleitdokument, das manuell gepflegt werden muss).
 * **Audiobook:** Produktion eines Audiobooks mit Kapitelmarken zum Anhören (z.B. mit [Balbolka](http://www.cross-plus-a.com/balabolka.htm)).
-* **Maschinelle Übersetzung:** Nutzung der DeepL API, um Leitfäden in der Produktionskette automatisch übersetzen zu lassen.
+* **Maschinelle Übersetzung:** Nutzung der DeepL API, um Leitfäden in der Produktionskette automatisch übersetzen zu lassen (Mit curl).
 * **Kindle Direct Publishing:** Veröffentlichung der E-Book-Versionen auf dem Amazon Marktplatz.
 * **TeX:** können wir auf allen Plattformen MiKTeX verwenden?
 * **Pandoc Optionen:** alle Optionen und Parameter von pandoc in eine Defaults-Datei auslagern, damit sie nicht in make.sh und make.bat parallel gepflegt werden müssen (-d options.yaml statt metadata.yaml)

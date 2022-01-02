@@ -13,3 +13,12 @@ Falls im Leitfaden-Team noch keine Erfahrungen mit Git und GitHub vorliegen, hie
 - Crash-Kurs [Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk) auf YouTube
 
 Das GitHub Repository wird nach dem [Git-Flow-Workflow von Atlassian](https://www.atlassian.com/de/git/tutorials/comparing-workflows/gitflow-workflow) verwaltet. Dabei ist im Master-Branch immer die aktuell gültige Version des Leitfadens. Im Develop-Branch werden Änderungen gemacht, die dann für eine neue Version mit einem Pull Request übernommen werden.
+
+```mermaid
+graph LR;
+v0.1 -->v0.2
+v0.2 -->v1.0
+v0.1 -->dev1.1
+dev1.1 -->dev1.2
+dev1.2 -->v0.2
+```

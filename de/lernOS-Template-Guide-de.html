@@ -158,7 +158,50 @@
 <p class="date">Version 0.2 (01.01.2022)</p>
 </header>
 <nav id="TOC" role="doc-toc">
-
+<ul>
+<li><a href="#über-lernos"><span class="toc-section-number">1</span> Über lernOS</a></li>
+<li><a href="#grundlagen"><span class="toc-section-number">2</span> Grundlagen</a>
+<ul>
+<li><a href="#grundidee-der-lernos-leitfäden"><span class="toc-section-number">2.1</span> Grundidee der lernOS Leitfäden</a></li>
+</ul></li>
+<li><a href="#section"><span class="toc-section-number">3</span> </a>
+<ul>
+<li><a href="#lebenszyklus-eines-leitfadens"><span class="toc-section-number">3.1</span> Lebenszyklus eines Leitfadens</a></li>
+<li><a href="#inhaltsverzeichnis-und-struktur"><span class="toc-section-number">3.2</span> Inhaltsverzeichnis und Struktur</a></li>
+<li><a href="#inhalt-und-schreibstil"><span class="toc-section-number">3.3</span> Inhalt und Schreibstil</a>
+<ul>
+<li><a href="#schreibstil"><span class="toc-section-number">3.3.1</span> Schreibstil</a></li>
+<li><a href="#bilder"><span class="toc-section-number">3.3.2</span> Bilder</a></li>
+<li><a href="#audio-und-video"><span class="toc-section-number">3.3.3</span> Audio und Video</a></li>
+<li><a href="#mehrsprachigkeit"><span class="toc-section-number">3.3.4</span> Mehrsprachigkeit</a></li>
+</ul></li>
+<li><a href="#markdown-syntax"><span class="toc-section-number">3.4</span> Markdown Syntax</a></li>
+<li><a href="#leitfaden-produktionskette"><span class="toc-section-number">3.5</span> Leitfaden Produktionskette</a>
+<ul>
+<li><a href="#lernos-leitfaden-verzeichnisstruktur"><span class="toc-section-number">3.5.1</span> lernOS Leitfaden Verzeichnisstruktur</a></li>
+<li><a href="#lernos-produktionskette"><span class="toc-section-number">3.5.2</span> lernOS Produktionskette</a></li>
+<li><a href="#ideen-für-die-erweiterung-der-lernos-produktionskette"><span class="toc-section-number">3.5.3</span> Ideen für die Erweiterung der lernOS Produktionskette</a></li>
+</ul></li>
+<li><a href="#toolset-für-die-produktionskette"><span class="toc-section-number">3.6</span> Toolset für die Produktionskette</a>
+<ul>
+<li><a href="#typora"><span class="toc-section-number">3.6.1</span> Typora</a></li>
+<li><a href="#pandoc"><span class="toc-section-number">3.6.2</span> Pandoc</a></li>
+<li><a href="#github-desktop"><span class="toc-section-number">3.6.3</span> GitHub Desktop</a></li>
+<li><a href="#latex-co."><span class="toc-section-number">3.6.4</span> LaTeX &amp; Co.</a></li>
+<li><a href="#mkdocs-material-for-mkdocs"><span class="toc-section-number">3.6.5</span> MkDocs &amp; Material for MkDocs</a></li>
+<li><a href="#disqus"><span class="toc-section-number">3.6.6</span> Disqus</a></li>
+<li><a href="#calibre"><span class="toc-section-number">3.6.7</span> Calibre</a></li>
+</ul></li>
+<li><a href="#github"><span class="toc-section-number">3.7</span> GitHub</a></li>
+</ul></li>
+<li><a href="#lernpfad"><span class="toc-section-number">4</span> Lernpfad</a></li>
+<li><a href="#anhang"><span class="toc-section-number">5</span> Anhang</a>
+<ul>
+<li><a href="#danksagungen"><span class="toc-section-number">5.1</span> Danksagungen</a></li>
+<li><a href="#änderungshistorie"><span class="toc-section-number">5.2</span> Änderungshistorie</a></li>
+<li><a href="#lernos-glossar"><span class="toc-section-number">5.3</span> lernOS Glossar</a></li>
+</ul></li>
+</ul>
 </nav>
 <h1 data-number="1" id="über-lernos"><span class="header-section-number">1</span> Über lernOS</h1>
 <p>lernOS ist eine Methode zur Selbstorganisation für Menschen, die im 21. Jahrhundert leben und arbeiten. Um heute erfolgreich zu sein, muss man ständig lernen, sich organisieren und weiterentwickeln. Niemand sonst ist für diesen Prozess verantwortlich. Man muss sich selber darum kümmern (selbstgesteuertes, lebenslanges Lernen).</p>
@@ -429,8 +472,8 @@ ebook-convert $filename.epub $filename.mobi
 <img src="./images/github-desktop-screenshot.png" alt="Github Desktop Screenshot" /><figcaption aria-hidden="true">Github Desktop Screenshot</figcaption>
 </figure>
 <h3 data-number="3.6.4" id="latex-co."><span class="header-section-number">3.6.4</span> LaTeX &amp; Co.</h3>
-<p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows <a href="https://miktex.org">MiKTeX</a>, auf dem Mac <a href="https://tug.org/mactex/https://tug.org/mactex/">MacTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich <a href="https://de.wikipedia.org/wiki/Ghostscript">Ghostscript</a> notwendig.</p>
-<p>Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTex Template <a href="https://github.com/Wandmalfarbe/pandoc-latex-template">Eisvogel</a> verwendet und über die Datei <em>metadata.yaml</em> angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.</p>
+<p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (z.B. <a href="https://miktex.org">MiKTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können (Befehl: <em>pdflatex</em>).</p>
+<p>Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTeX Template <a href="https://github.com/Wandmalfarbe/pandoc-latex-template">Eisvogel</a> verwendet und über die Datei <em>metadata.yaml</em> angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.</p>
 <h3 data-number="3.6.5" id="mkdocs-material-for-mkdocs"><span class="header-section-number">3.6.5</span> MkDocs &amp; Material for MkDocs</h3>
 <p><a href="https://www.mkdocs.org/">MkDocs</a> ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion erzeugt. Als Theme kommt bei der Web-Version der lernOS Leitfäden <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> zum Einsatz.</p>
 <figure>
@@ -446,6 +489,17 @@ ebook-convert $filename.epub $filename.mobi
 <figure>
 <img src="./images/calibre-screenshot.png" alt="Calibre Screenshot" /><figcaption aria-hidden="true">Calibre Screenshot</figcaption>
 </figure>
+<h2 data-number="3.7" id="github"><span class="header-section-number">3.7</span> GitHub</h2>
+<p><a href="https://github.com">GitHub</a> ist ein Internet-Dienst zur verteilten Verwaltung von Software-Entwicklungsprojekten. Mit dem Ansatz “Content as Code” werden die Inhalte der lernOS Leitfäden in Markdown (wie Quelltext einer Software) geschrieben und dann mit der Produktionskette in die Zielformate konvertiert.</p>
+<p>Falls im Leitfaden-Team noch keine Erfahrungen mit Git und GitHub vorliegen, hier einige Links zum einarbeiten:</p>
+<ul>
+<li><p><a href="https://de.wikipedia.org/wiki/Git">Git</a> in Wikipedia</p></li>
+<li><p><a href="https://de.wikipedia.org/wiki/GitHub">GitHub</a> in Wikipedia</p></li>
+<li><p>Video <a href="https://www.youtube.com/watch?v=3ZlpJHZBbi8">Was ist GitHub?</a> auf YouTube</p></li>
+<li><p>Crash-Kurs <a href="https://www.youtube.com/watch?v=RGOj5yH7evk">Git and GitHub for Beginners</a> auf YouTube</p></li>
+</ul>
+<p>Das GitHub Repository wird nach dem <a href="https://www.atlassian.com/de/git/tutorials/comparing-workflows/gitflow-workflow">Git-Flow-Workflow von Atlassian</a> verwaltet. Dabei ist im Master-Branch immer die aktuell gültige Version des Leitfadens. Im Develop-Branch werden Änderungen gemacht, die dann für eine neue Version mit einem Pull Request übernommen werden.</p>
+<p><img src="data:image/png;base64,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" alt="" /></p>
 <h1 data-number="4" id="lernpfad"><span class="header-section-number">4</span> Lernpfad</h1>
 <p>Erste Skizze für die 11 Katas im Lernpfad:</p>
 <p><strong>Hinweis:</strong> im Leitfaden-Team kann auch eine Rollenteilung sinnvoll sein: 1-2 Personen kümmern sich um die technische Infrastruktur, der Rest um die Inhalte. Man sollte sich nicht zu lange um die Technik der Produktionskette “drücken” und z.B. in Word, Google Doc &amp; Co. schreiben, da sonst gegen Ende großer Aufwand entsteht, die Inhalte in Markdown zu überführen.</p>
@@ -493,104 +547,202 @@ ebook-convert $filename.epub $filename.mobi
 </table>
 <h2 data-number="5.3" id="lernos-glossar"><span class="header-section-number">5.3</span> lernOS Glossar</h2>
 <p><strong>A</strong></p>
-<ul>
-<li><strong>Aufgabe</strong></li>
-<li><strong>Arbeitsumgebung</strong><br/>Nach DIN 33400 ist die Arbeitsumgebung eines Arbeitssystems „das räumliche Umfeld, von dem vor allem physikalische und chemische, aber auch unter anderem biologische (z. B. bakteriologische) Einflüsse auf den Menschen einwirken“. Hierbei wirken Mensch und Arbeitsmittel im Arbeitsablauf am Arbeitsplatz in einer Arbeitsumgebung unter den Bedingungen dieses Arbeitssystems zusammen.</li>
-</ul>
+<dl>
+<dt>Aufgabe</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Arbeitsumgebung</dt>
+<dd>Nach DIN 33400 ist die Arbeitsumgebung eines Arbeitssystems „das räumliche Umfeld, von dem vor allem physikalische und chemische, aber auch unter anderem biologische (z. B. bakteriologische) Einflüsse auf den Menschen einwirken“. Hierbei wirken Mensch und Arbeitsmittel im Arbeitsablauf am Arbeitsplatz in einer Arbeitsumgebung unter den Bedingungen dieses Arbeitssystems zusammen.
+</dd>
+</dl>
 <p><strong>C</strong></p>
-<ul>
-<li><strong>Change Agent</strong></li>
-<li><strong>Change Management</strong></li>
-</ul>
+<dl>
+<dt>Change Agent</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Change Management</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>E</strong></p>
-<ul>
-<li><strong>E-Portfolio</strong><br/>Ein E-Portfolio ist eine persönliche, strukturierte und digitale Informationssammlung, die Lernziele und -prozesse im lebenslangen Lernen unterstützt und dabei erworbenes Wissen und Fähigkeiten veranschaulicht.</li>
-</ul>
+<dl>
+<dt>E-Portfolio</dt>
+<dd>Ein E-Portfolio ist eine persönliche, strukturierte und digitale Informationssammlung, die Lernziele und -prozesse im lebenslangen Lernen unterstützt und dabei erworbenes Wissen und Fähigkeiten veranschaulicht.
+</dd>
+</dl>
 <p><strong>F</strong></p>
-<ul>
-<li><strong>Formale Organisation</strong></li>
-<li><strong>Formales Lernen</strong><br/>Formales Lernen ist das Lernen, das üblicherweise in einer Bildungs- oder Ausbildungseinrichtung stattfindet, in Bezug auf Lernziele, Lernzeit oder Lernförderung strukturiert ist und zur Zertifizierung führt. Formales Lernen ist aus der Sicht des Lernenden zielgerichtet (Europäische Kommission, 2001).</li>
-<li><strong>Führung</strong> Führung ist die Tätigkeit, Menschen in die Zielfindung einzubinden, motivierende Rahmenbedingungen zu schaffen, Lern- und Entwicklungsprozesse zu unterstützen und die Zielerreichung bei Bedarf zu unterstützen.</li>
-<li><strong>Führungskraft</strong><br/>Eine Führungskraft ist eine Person in einer Organisation, die mit Aufgaben der Personalführung betraut ist.</li>
-<li><strong>Führungsstil</strong><br/>Der Führungsstil bezeichnet das langfristig stabile und von der Situation unabhängige Verhalten einer Führungskraft gegenüber Mitarbeitern. Zu den klassischen Führungsstilen nach Levin gehören autoritäre Führung, demokratische Führung und Laissez-faire Führung.</li>
-</ul>
+<dl>
+<dt>Formale Organisation</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Formales Lernen</dt>
+<dd>Formales Lernen ist das Lernen, das üblicherweise in einer Bildungs- oder Ausbildungseinrichtung stattfindet, in Bezug auf Lernziele, Lernzeit oder Lernförderung strukturiert ist und zur Zertifizierung führt. Formales Lernen ist aus der Sicht des Lernenden zielgerichtet (Europäische Kommission, 2001).
+</dd>
+<dt>Führung</dt>
+<dd>Führung ist die Tätigkeit, Menschen in die Zielfindung einzubinden, motivierende Rahmenbedingungen zu schaffen, Lern- und Entwicklungsprozesse zu unterstützen und die Zielerreichung bei Bedarf zu unterstützen.
+</dd>
+<dt>Führungskraft</dt>
+<dd>Eine Führungskraft ist eine Person in einer Organisation, die mit Aufgaben der Personalführung betraut ist.
+</dd>
+<dt>Führungsstil</dt>
+<dd>Der Führungsstil bezeichnet das langfristig stabile und von der Situation unabhängige Verhalten einer Führungskraft gegenüber Mitarbeitern. Zu den klassischen Führungsstilen nach Levin gehören autoritäre Führung, demokratische Führung und Laissez-faire Führung.
+</dd>
+</dl>
 <p><strong>G</strong></p>
-<ul>
-<li><strong>Getting Things Done (GTD)</strong></li>
-</ul>
+<dl>
+<dt>Getting Things Done (GTD)</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>I</strong></p>
-<ul>
-<li><strong>Informale Organisation</strong></li>
-<li><strong>Informelles Lernen</strong><br/>Informelles Lernen ist das Lernen, das im Alltag, am Arbeitsplatz, im Familienkreis oder in der Freizeit stattfindet. Es ist in Bezug auf Lernziele, Lernzeit oder Lernförderung nicht strukturiert und führt üblicherweise nicht zur Zertifizierung. Informelles Lernen kann zielgerichtet sein, ist jedoch in den meisten Fällen nichtintentional beiläufig (Europäische Kommission, 2001)</li>
-<li><strong>Infrastruktur</strong></li>
-</ul>
+<dl>
+<dt>Informale Organisation</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Informelles Lernen</dt>
+<dd>Informelles Lernen ist das Lernen, das im Alltag, am Arbeitsplatz, im Familienkreis oder in der Freizeit stattfindet. Es ist in Bezug auf Lernziele, Lernzeit oder Lernförderung nicht strukturiert und führt üblicherweise nicht zur Zertifizierung. Informelles Lernen kann zielgerichtet sein, ist jedoch in den meisten Fällen nichtintentional beiläufig (Europäische Kommission, 2001)
+</dd>
+<dt>Infrastruktur</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>K</strong></p>
-<ul>
-<li><strong>Kollaboration</strong><br/>Kollaboration ist die Zusammenarbeit von Personen oder Gruppen von Personen (Wikipedia).</li>
-<li><strong>Kommunikation</strong><br/>Kommunikation ist der Austausch oder die Übertragung von Informationen, die auf verschiedenen Arten (verbal, nonverbal) oder verschiedenen Wegen (Sprechen, Schreiben) stattfinden kann (Wikipedia).</li>
-<li><strong>Kompetenz</strong><br/>ability to apply knowledge and skills to achieve intended results (ISO 9001:2015).</li>
-</ul>
+<dl>
+<dt>Kollaboration</dt>
+<dd>Kollaboration ist die Zusammenarbeit von Personen oder Gruppen von Personen (Wikipedia).
+</dd>
+<dt>Kommunikation</dt>
+<dd>Kommunikation ist der Austausch oder die Übertragung von Informationen, die auf verschiedenen Arten (verbal, nonverbal) oder verschiedenen Wegen (Sprechen, Schreiben) stattfinden kann (Wikipedia).
+</dd>
+<dt>Kompetenz</dt>
+<dd>ability to apply knowledge and skills to achieve intended results (ISO 9001:2015).
+</dd>
+</dl>
 <p><strong>L</strong></p>
-<ul>
-<li><strong>Lebenslanges Lernen</strong><br/>Lebenslanges Lernen bezeichnet alles Lernen während des gesamten Lebens, das der Verbesserung von Wissen, Qualifikationen und Kompetenzen dient und im Rahmen einer persönlichen, bürgergesell- schaftlichen, sozialen, bzw. beschäftigungsbezogenen Perspektive erfolgt (Europäische Kommission, 2001).</li>
-<li><strong>Lernen</strong><br/>Lernen ist der absichtliche oder beiläufige Erwerb von Wissen und Fähigkeiten. Lernen führt zu einer Veränderung des Verhaltens, Denkens oder Fühlens auf Basis neuer Erfahrungen oder Einsichten.</li>
-<li><strong>Lernende Organisation</strong><br/>Eine Lernende Organisation ist eine Organisation, die die Fähigkeit besitzt, Wissen zu generieren, zu akquirieren und zu verteilen und ihr Verhalten auf Basis neuer Erkenntnisse und Einsichten zu verändern.</li>
-<li><strong>lernOS</strong><br/>lernOS ist ein offenes System für Lebenslanges Lernen und Lernende Organisationen. Es stellt auf den drei Ebenen Individuum, Team und Organisation offene Leitfäden für die kontinuierliche Verbesserung des Lern- und Wissensmanagements bereit.</li>
-<li><strong>lernOS Canvas</strong></li>
-<li><strong>lernOS Rad</strong></li>
-<li><strong>Lernpfad</strong></li>
-<li><strong>Lernsprint</strong></li>
-<li><strong>Lernzirkel</strong><br/>Eine Gruppe von 4-5 Personen in der sich die Mitglieder gegenseitig mit Feedback, Erfahrung, Wissen und Reflexion helfen. Die Circle-Mitglieder treffen sich wöchentlich und folgen dabei einem vorgegebenen Ablauf, der den Lern- und Entwicklungsprozess strukturiert.</li>
-</ul>
+<dl>
+<dt>Lebenslanges Lernen</dt>
+<dd>Lebenslanges Lernen bezeichnet alles Lernen während des gesamten Lebens, das der Verbesserung von Wissen, Qualifikationen und Kompetenzen dient und im Rahmen einer persönlichen, bürgergesell- schaftlichen, sozialen, bzw. beschäftigungsbezogenen Perspektive erfolgt (Europäische Kommission, 2001).
+</dd>
+<dt>Lernen</dt>
+<dd>Lernen ist der absichtliche oder beiläufige Erwerb von Wissen und Fähigkeiten. Lernen führt zu einer Veränderung des Verhaltens, Denkens oder Fühlens auf Basis neuer Erfahrungen oder Einsichten.
+</dd>
+<dt>Lernende Organisation</dt>
+<dd>Eine Lernende Organisation ist eine Organisation, die die Fähigkeit besitzt, Wissen zu generieren, zu akquirieren und zu verteilen und ihr Verhalten auf Basis neuer Erkenntnisse und Einsichten zu verändern.
+</dd>
+<dt>lernOS</dt>
+<dd>lernOS ist ein offenes System für Lebenslanges Lernen und Lernende Organisationen. Es stellt auf den drei Ebenen Individuum, Team und Organisation offene Leitfäden für die kontinuierliche Verbesserung des Lern- und Wissensmanagements bereit.
+</dd>
+<dt>lernOS Canvas</dt>
+<dd>Definition fehlt
+</dd>
+<dt>lernOS Rad</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Lernpfad</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Lernsprint</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Lernzirkel</dt>
+<dd>Eine Gruppe von 4-5 Personen in der sich die Mitglieder gegenseitig mit Feedback, Erfahrung, Wissen und Reflexion helfen. Die Circle-Mitglieder treffen sich wöchentlich und folgen dabei einem vorgegebenen Ablauf, der den Lern- und Entwicklungsprozess strukturiert.
+</dd>
+</dl>
 <p><strong>M</strong></p>
-<ul>
-<li><strong>Management</strong><br/>Management ist die Koordination der Aktivitäten in einer Organisation mit dem Zweck, die Ziele der Organisation zu erreichen.</li>
-<li><strong>Mindset</strong></li>
-<li><strong>Mission</strong><br/>Die Mission beschreibt, was die Organisation im Tagesgeschäft tut oder tun wird (Business Motivation Model).</li>
-</ul>
+<dl>
+<dt>Management</dt>
+<dd>Management ist die Koordination der Aktivitäten in einer Organisation mit dem Zweck, die Ziele der Organisation zu erreichen.
+</dd>
+<dt>Mindset</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Mission</dt>
+<dd>Die Mission beschreibt, was die Organisation im Tagesgeschäft tut oder tun wird (Business Motivation Model).
+</dd>
+</dl>
 <p><strong>O</strong></p>
-<ul>
-<li><strong>Objectives &amp; Key Results (OKR)</strong></li>
-<li><strong>Organisation</strong><br/>Eine Organisation besteht aus einer oder oder mehreren Personen (Organisationsmitglieder), die ein gemeinsamer Zweck verbindet und die sich zur Zeckerreichung eine formale Organisationsstruktur geben.</li>
-</ul>
+<dl>
+<dt>Objectives &amp; Key Results (OKR)</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Organisation</dt>
+<dd>Eine Organisation besteht aus einer oder oder mehreren Personen (Organisationsmitglieder), die ein gemeinsamer Zweck verbindet und die sich zur Zeckerreichung eine formale Organisationsstruktur geben.
+</dd>
+</dl>
 <p><strong>P</strong></p>
-<ul>
-<li><strong>Projekt</strong></li>
-<li><strong>Prozess</strong><br/>set of interrelated or interacting activities that use inputs to deliver an intended result (ISO 9001:2015).</li>
-</ul>
+<dl>
+<dt>Projekt</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Prozess</dt>
+<dd>set of interrelated or interacting activities that use inputs to deliver an intended result (ISO 9001:2015).
+</dd>
+</dl>
 <p><strong>R</strong></p>
-<ul>
-<li><strong>Rolle</strong></li>
-</ul>
+<dl>
+<dt>Rolle</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>S</strong></p>
-<ul>
-<li><strong>Selbstgesteuertes Lernen:</strong></li>
-<li><strong>Selbstorganisation</strong></li>
-<li><strong>Sinn</strong></li>
-<li><strong>Skillset</strong></li>
-<li><strong>Sprint</strong></li>
-<li><strong>Strategie</strong></li>
-</ul>
+<dl>
+<dt>Selbstgesteuertes Lernen</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Selbstorganisation</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Sinn</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Skillset</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Sprint</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Strategie</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>T</strong></p>
-<ul>
-<li><strong>Toolset</strong></li>
-<li><strong>True North</strong><br/>Der “wahre Norden” (true north) ist das langfristige Ziel (auch Vision genannt), an dem sich jährliche Ziele und konkrete Verbesserungsaktivitäten orientieren.</li>
-</ul>
+<dl>
+<dt>Toolset</dt>
+<dd>Definition fehlt
+</dd>
+<dt>True North</dt>
+<dd>Der “wahre Norden” (true north) ist das langfristige Ziel (auch Vision genannt), an dem sich jährliche Ziele und konkrete Verbesserungsaktivitäten orientieren.
+</dd>
+</dl>
 <p><strong>V</strong></p>
-<ul>
-<li><strong>Vision</strong><br/>Die Vision beschreibt den zukünftigen Zustand einer Organisation und ihrer Umwelt, unabhängig davon, wie diesser erreicht wird (Business Motivation Model).</li>
-<li><strong>VUCA</strong> Die Abkürzung steht für volatility, uncertainty, complexity und ambiguity.</li>
-</ul>
+<dl>
+<dt>Vision</dt>
+<dd>Die Vision beschreibt den zukünftigen Zustand einer Organisation und ihrer Umwelt, unabhängig davon, wie diesser erreicht wird (Business Motivation Model).
+</dd>
+<dt>VUCA</dt>
+<dd>Die Abkürzung steht für volatility, uncertainty, complexity und ambiguity.
+</dd>
+</dl>
 <p><strong>W</strong></p>
-<ul>
-<li><strong>Wissen</strong></li>
-<li><strong>Wissensmanagement</strong> Wissensmanagement ist die Führung und Gestaltung einer Lernenden Organisation.</li>
-<li><strong>Working Out Loud</strong><br/>Working Out Loud (WOL) ist eine Arbeitsweise, bei der Arbeitsstände und -ergebnisse offen einsehbar sind (z.B. Wiki, offene Dateiablage) und über den Arbeitsfortschritt offen erzählt wird (z.B. Blog, Microblog).</li>
-<li><strong>Working Out Loud Lernprogramm</strong><br/>Das Working Out Loud Lernprogramm von John Stepper ist ein 12-wöchiger Lernpfad, mit dem Einsteiger*innen die WOL Arbeitsweise erlernen können.</li>
-</ul>
+<dl>
+<dt>Wissen</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Wissensmanagement</dt>
+<dd>Wissensmanagement ist die Führung und Gestaltung einer Lernenden Organisation.
+</dd>
+<dt>Working Out Loud</dt>
+<dd>Working Out Loud (WOL) ist eine Arbeitsweise, bei der Arbeitsstände und -ergebnisse offen einsehbar sind (z.B. Wiki, offene Dateiablage) und über den Arbeitsfortschritt offen erzählt wird (z.B. Blog, Microblog).
+</dd>
+<dt>Working Out Loud Lernprogramm</dt>
+<dd>Das Working Out Loud Lernprogramm von John Stepper ist ein 12-wöchiger Lernpfad, mit dem Einsteiger*innen die WOL Arbeitsweise erlernen können.
+</dd>
+</dl>
 <p><strong>Z</strong></p>
-<ul>
-<li><strong>Ziel</strong><br/>Result to be achieved (ISO 9001:2015).</li>
-</ul>
+<dl>
+<dt>Ziel</dt>
+<dd>Result to be achieved (ISO 9001:2015).
+</dd>
+</dl>
 </body>
 </html>

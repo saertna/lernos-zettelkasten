@@ -158,7 +158,50 @@
 <p class="date">Version 0.2 (01.01.2022)</p>
 </header>
 <nav id="TOC" role="doc-toc">
-
+<ul>
+<li><a href="#über-lernos"><span class="toc-section-number">1</span> Über lernOS</a></li>
+<li><a href="#grundlagen"><span class="toc-section-number">2</span> Grundlagen</a>
+<ul>
+<li><a href="#grundidee-der-lernos-leitfäden"><span class="toc-section-number">2.1</span> Grundidee der lernOS Leitfäden</a></li>
+</ul></li>
+<li><a href="#section"><span class="toc-section-number">3</span> </a>
+<ul>
+<li><a href="#lebenszyklus-eines-leitfadens"><span class="toc-section-number">3.1</span> Lebenszyklus eines Leitfadens</a></li>
+<li><a href="#inhaltsverzeichnis-und-struktur"><span class="toc-section-number">3.2</span> Inhaltsverzeichnis und Struktur</a></li>
+<li><a href="#inhalt-und-schreibstil"><span class="toc-section-number">3.3</span> Inhalt und Schreibstil</a>
+<ul>
+<li><a href="#schreibstil"><span class="toc-section-number">3.3.1</span> Schreibstil</a></li>
+<li><a href="#bilder"><span class="toc-section-number">3.3.2</span> Bilder</a></li>
+<li><a href="#audio-und-video"><span class="toc-section-number">3.3.3</span> Audio und Video</a></li>
+<li><a href="#mehrsprachigkeit"><span class="toc-section-number">3.3.4</span> Mehrsprachigkeit</a></li>
+</ul></li>
+<li><a href="#markdown-syntax"><span class="toc-section-number">3.4</span> Markdown Syntax</a></li>
+<li><a href="#leitfaden-produktionskette"><span class="toc-section-number">3.5</span> Leitfaden Produktionskette</a>
+<ul>
+<li><a href="#lernos-leitfaden-verzeichnisstruktur"><span class="toc-section-number">3.5.1</span> lernOS Leitfaden Verzeichnisstruktur</a></li>
+<li><a href="#lernos-produktionskette"><span class="toc-section-number">3.5.2</span> lernOS Produktionskette</a></li>
+<li><a href="#ideen-für-die-erweiterung-der-lernos-produktionskette"><span class="toc-section-number">3.5.3</span> Ideen für die Erweiterung der lernOS Produktionskette</a></li>
+</ul></li>
+<li><a href="#toolset-für-die-produktionskette"><span class="toc-section-number">3.6</span> Toolset für die Produktionskette</a>
+<ul>
+<li><a href="#typora"><span class="toc-section-number">3.6.1</span> Typora</a></li>
+<li><a href="#pandoc"><span class="toc-section-number">3.6.2</span> Pandoc</a></li>
+<li><a href="#github-desktop"><span class="toc-section-number">3.6.3</span> GitHub Desktop</a></li>
+<li><a href="#latex-co."><span class="toc-section-number">3.6.4</span> LaTeX &amp; Co.</a></li>
+<li><a href="#mkdocs-material-for-mkdocs"><span class="toc-section-number">3.6.5</span> MkDocs &amp; Material for MkDocs</a></li>
+<li><a href="#disqus"><span class="toc-section-number">3.6.6</span> Disqus</a></li>
+<li><a href="#calibre"><span class="toc-section-number">3.6.7</span> Calibre</a></li>
+</ul></li>
+<li><a href="#github"><span class="toc-section-number">3.7</span> GitHub</a></li>
+</ul></li>
+<li><a href="#lernpfad"><span class="toc-section-number">4</span> Lernpfad</a></li>
+<li><a href="#anhang"><span class="toc-section-number">5</span> Anhang</a>
+<ul>
+<li><a href="#danksagungen"><span class="toc-section-number">5.1</span> Danksagungen</a></li>
+<li><a href="#änderungshistorie"><span class="toc-section-number">5.2</span> Änderungshistorie</a></li>
+<li><a href="#lernos-glossar"><span class="toc-section-number">5.3</span> lernOS Glossar</a></li>
+</ul></li>
+</ul>
 </nav>
 <h1 data-number="1" id="über-lernos"><span class="header-section-number">1</span> Über lernOS</h1>
 <p>lernOS ist eine Methode zur Selbstorganisation für Menschen, die im 21. Jahrhundert leben und arbeiten. Um heute erfolgreich zu sein, muss man ständig lernen, sich organisieren und weiterentwickeln. Niemand sonst ist für diesen Prozess verantwortlich. Man muss sich selber darum kümmern (selbstgesteuertes, lebenslanges Lernen).</p>
@@ -429,8 +472,8 @@ ebook-convert $filename.epub $filename.mobi
 <img src="./images/github-desktop-screenshot.png" alt="Github Desktop Screenshot" /><figcaption aria-hidden="true">Github Desktop Screenshot</figcaption>
 </figure>
 <h3 data-number="3.6.4" id="latex-co."><span class="header-section-number">3.6.4</span> LaTeX &amp; Co.</h3>
-<p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (unter Windows <a href="https://miktex.org">MiKTeX</a>, auf dem Mac <a href="https://tug.org/mactex/https://tug.org/mactex/">MacTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können. Hierfür ist zusätzlich <a href="https://de.wikipedia.org/wiki/Ghostscript">Ghostscript</a> notwendig.</p>
-<p>Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTex Template <a href="https://github.com/Wandmalfarbe/pandoc-latex-template">Eisvogel</a> verwendet und über die Datei <em>metadata.yaml</em> angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.</p>
+<p><a href="https://de.wikipedia.org/wiki/LaTeX">LaTeX</a> ist ein Programmpaket, um im TeX-Format geschriebene Textdokumente in Formate wie HTML oder PDF zu konvertieren. In der lernOS Produktionskette wird wird eine LaTeX-Distribution (z.B. <a href="https://miktex.org">MiKTeX</a>) verwendet, um mit pandoc direkt PDF-Dateien generieren zu können (Befehl: <em>pdflatex</em>).</p>
+<p>Als Vorlage für die PDF-Erstellung der lernOS Leitfäden wird das pandoc LaTeX Template <a href="https://github.com/Wandmalfarbe/pandoc-latex-template">Eisvogel</a> verwendet und über die Datei <em>metadata.yaml</em> angepasst. Für den Einsatz dieser Vorlage werden bei erstmaligen Verwendung weitere LaTeX-Erweiterungen installiert.</p>
 <h3 data-number="3.6.5" id="mkdocs-material-for-mkdocs"><span class="header-section-number">3.6.5</span> MkDocs &amp; Material for MkDocs</h3>
 <p><a href="https://www.mkdocs.org/">MkDocs</a> ist statischer Webseiten Generator, der die responsive Webversion mit Navigation, Suche, Social Links und Kommentarfunktion erzeugt. Als Theme kommt bei der Web-Version der lernOS Leitfäden <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> zum Einsatz.</p>
 <figure>
@@ -504,104 +547,202 @@ ebook-convert $filename.epub $filename.mobi
 </table>
 <h2 data-number="5.3" id="lernos-glossar"><span class="header-section-number">5.3</span> lernOS Glossar</h2>
 <p><strong>A</strong></p>
-<ul>
-<li><strong>Aufgabe</strong></li>
-<li><strong>Arbeitsumgebung</strong><br/>Nach DIN 33400 ist die Arbeitsumgebung eines Arbeitssystems „das räumliche Umfeld, von dem vor allem physikalische und chemische, aber auch unter anderem biologische (z. B. bakteriologische) Einflüsse auf den Menschen einwirken“. Hierbei wirken Mensch und Arbeitsmittel im Arbeitsablauf am Arbeitsplatz in einer Arbeitsumgebung unter den Bedingungen dieses Arbeitssystems zusammen.</li>
-</ul>
+<dl>
+<dt>Aufgabe</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Arbeitsumgebung</dt>
+<dd>Nach DIN 33400 ist die Arbeitsumgebung eines Arbeitssystems „das räumliche Umfeld, von dem vor allem physikalische und chemische, aber auch unter anderem biologische (z. B. bakteriologische) Einflüsse auf den Menschen einwirken“. Hierbei wirken Mensch und Arbeitsmittel im Arbeitsablauf am Arbeitsplatz in einer Arbeitsumgebung unter den Bedingungen dieses Arbeitssystems zusammen.
+</dd>
+</dl>
 <p><strong>C</strong></p>
-<ul>
-<li><strong>Change Agent</strong></li>
-<li><strong>Change Management</strong></li>
-</ul>
+<dl>
+<dt>Change Agent</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Change Management</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>E</strong></p>
-<ul>
-<li><strong>E-Portfolio</strong><br/>Ein E-Portfolio ist eine persönliche, strukturierte und digitale Informationssammlung, die Lernziele und -prozesse im lebenslangen Lernen unterstützt und dabei erworbenes Wissen und Fähigkeiten veranschaulicht.</li>
-</ul>
+<dl>
+<dt>E-Portfolio</dt>
+<dd>Ein E-Portfolio ist eine persönliche, strukturierte und digitale Informationssammlung, die Lernziele und -prozesse im lebenslangen Lernen unterstützt und dabei erworbenes Wissen und Fähigkeiten veranschaulicht.
+</dd>
+</dl>
 <p><strong>F</strong></p>
-<ul>
-<li><strong>Formale Organisation</strong></li>
-<li><strong>Formales Lernen</strong><br/>Formales Lernen ist das Lernen, das üblicherweise in einer Bildungs- oder Ausbildungseinrichtung stattfindet, in Bezug auf Lernziele, Lernzeit oder Lernförderung strukturiert ist und zur Zertifizierung führt. Formales Lernen ist aus der Sicht des Lernenden zielgerichtet (Europäische Kommission, 2001).</li>
-<li><strong>Führung</strong> Führung ist die Tätigkeit, Menschen in die Zielfindung einzubinden, motivierende Rahmenbedingungen zu schaffen, Lern- und Entwicklungsprozesse zu unterstützen und die Zielerreichung bei Bedarf zu unterstützen.</li>
-<li><strong>Führungskraft</strong><br/>Eine Führungskraft ist eine Person in einer Organisation, die mit Aufgaben der Personalführung betraut ist.</li>
-<li><strong>Führungsstil</strong><br/>Der Führungsstil bezeichnet das langfristig stabile und von der Situation unabhängige Verhalten einer Führungskraft gegenüber Mitarbeitern. Zu den klassischen Führungsstilen nach Levin gehören autoritäre Führung, demokratische Führung und Laissez-faire Führung.</li>
-</ul>
+<dl>
+<dt>Formale Organisation</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Formales Lernen</dt>
+<dd>Formales Lernen ist das Lernen, das üblicherweise in einer Bildungs- oder Ausbildungseinrichtung stattfindet, in Bezug auf Lernziele, Lernzeit oder Lernförderung strukturiert ist und zur Zertifizierung führt. Formales Lernen ist aus der Sicht des Lernenden zielgerichtet (Europäische Kommission, 2001).
+</dd>
+<dt>Führung</dt>
+<dd>Führung ist die Tätigkeit, Menschen in die Zielfindung einzubinden, motivierende Rahmenbedingungen zu schaffen, Lern- und Entwicklungsprozesse zu unterstützen und die Zielerreichung bei Bedarf zu unterstützen.
+</dd>
+<dt>Führungskraft</dt>
+<dd>Eine Führungskraft ist eine Person in einer Organisation, die mit Aufgaben der Personalführung betraut ist.
+</dd>
+<dt>Führungsstil</dt>
+<dd>Der Führungsstil bezeichnet das langfristig stabile und von der Situation unabhängige Verhalten einer Führungskraft gegenüber Mitarbeitern. Zu den klassischen Führungsstilen nach Levin gehören autoritäre Führung, demokratische Führung und Laissez-faire Führung.
+</dd>
+</dl>
 <p><strong>G</strong></p>
-<ul>
-<li><strong>Getting Things Done (GTD)</strong></li>
-</ul>
+<dl>
+<dt>Getting Things Done (GTD)</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>I</strong></p>
-<ul>
-<li><strong>Informale Organisation</strong></li>
-<li><strong>Informelles Lernen</strong><br/>Informelles Lernen ist das Lernen, das im Alltag, am Arbeitsplatz, im Familienkreis oder in der Freizeit stattfindet. Es ist in Bezug auf Lernziele, Lernzeit oder Lernförderung nicht strukturiert und führt üblicherweise nicht zur Zertifizierung. Informelles Lernen kann zielgerichtet sein, ist jedoch in den meisten Fällen nichtintentional beiläufig (Europäische Kommission, 2001)</li>
-<li><strong>Infrastruktur</strong></li>
-</ul>
+<dl>
+<dt>Informale Organisation</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Informelles Lernen</dt>
+<dd>Informelles Lernen ist das Lernen, das im Alltag, am Arbeitsplatz, im Familienkreis oder in der Freizeit stattfindet. Es ist in Bezug auf Lernziele, Lernzeit oder Lernförderung nicht strukturiert und führt üblicherweise nicht zur Zertifizierung. Informelles Lernen kann zielgerichtet sein, ist jedoch in den meisten Fällen nichtintentional beiläufig (Europäische Kommission, 2001)
+</dd>
+<dt>Infrastruktur</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>K</strong></p>
-<ul>
-<li><strong>Kollaboration</strong><br/>Kollaboration ist die Zusammenarbeit von Personen oder Gruppen von Personen (Wikipedia).</li>
-<li><strong>Kommunikation</strong><br/>Kommunikation ist der Austausch oder die Übertragung von Informationen, die auf verschiedenen Arten (verbal, nonverbal) oder verschiedenen Wegen (Sprechen, Schreiben) stattfinden kann (Wikipedia).</li>
-<li><strong>Kompetenz</strong><br/>ability to apply knowledge and skills to achieve intended results (ISO 9001:2015).</li>
-</ul>
+<dl>
+<dt>Kollaboration</dt>
+<dd>Kollaboration ist die Zusammenarbeit von Personen oder Gruppen von Personen (Wikipedia).
+</dd>
+<dt>Kommunikation</dt>
+<dd>Kommunikation ist der Austausch oder die Übertragung von Informationen, die auf verschiedenen Arten (verbal, nonverbal) oder verschiedenen Wegen (Sprechen, Schreiben) stattfinden kann (Wikipedia).
+</dd>
+<dt>Kompetenz</dt>
+<dd>ability to apply knowledge and skills to achieve intended results (ISO 9001:2015).
+</dd>
+</dl>
 <p><strong>L</strong></p>
-<ul>
-<li><strong>Lebenslanges Lernen</strong><br/>Lebenslanges Lernen bezeichnet alles Lernen während des gesamten Lebens, das der Verbesserung von Wissen, Qualifikationen und Kompetenzen dient und im Rahmen einer persönlichen, bürgergesell- schaftlichen, sozialen, bzw. beschäftigungsbezogenen Perspektive erfolgt (Europäische Kommission, 2001).</li>
-<li><strong>Lernen</strong><br/>Lernen ist der absichtliche oder beiläufige Erwerb von Wissen und Fähigkeiten. Lernen führt zu einer Veränderung des Verhaltens, Denkens oder Fühlens auf Basis neuer Erfahrungen oder Einsichten.</li>
-<li><strong>Lernende Organisation</strong><br/>Eine Lernende Organisation ist eine Organisation, die die Fähigkeit besitzt, Wissen zu generieren, zu akquirieren und zu verteilen und ihr Verhalten auf Basis neuer Erkenntnisse und Einsichten zu verändern.</li>
-<li><strong>lernOS</strong><br/>lernOS ist ein offenes System für Lebenslanges Lernen und Lernende Organisationen. Es stellt auf den drei Ebenen Individuum, Team und Organisation offene Leitfäden für die kontinuierliche Verbesserung des Lern- und Wissensmanagements bereit.</li>
-<li><strong>lernOS Canvas</strong></li>
-<li><strong>lernOS Rad</strong></li>
-<li><strong>Lernpfad</strong></li>
-<li><strong>Lernsprint</strong></li>
-<li><strong>Lernzirkel</strong><br/>Eine Gruppe von 4-5 Personen in der sich die Mitglieder gegenseitig mit Feedback, Erfahrung, Wissen und Reflexion helfen. Die Circle-Mitglieder treffen sich wöchentlich und folgen dabei einem vorgegebenen Ablauf, der den Lern- und Entwicklungsprozess strukturiert.</li>
-</ul>
+<dl>
+<dt>Lebenslanges Lernen</dt>
+<dd>Lebenslanges Lernen bezeichnet alles Lernen während des gesamten Lebens, das der Verbesserung von Wissen, Qualifikationen und Kompetenzen dient und im Rahmen einer persönlichen, bürgergesell- schaftlichen, sozialen, bzw. beschäftigungsbezogenen Perspektive erfolgt (Europäische Kommission, 2001).
+</dd>
+<dt>Lernen</dt>
+<dd>Lernen ist der absichtliche oder beiläufige Erwerb von Wissen und Fähigkeiten. Lernen führt zu einer Veränderung des Verhaltens, Denkens oder Fühlens auf Basis neuer Erfahrungen oder Einsichten.
+</dd>
+<dt>Lernende Organisation</dt>
+<dd>Eine Lernende Organisation ist eine Organisation, die die Fähigkeit besitzt, Wissen zu generieren, zu akquirieren und zu verteilen und ihr Verhalten auf Basis neuer Erkenntnisse und Einsichten zu verändern.
+</dd>
+<dt>lernOS</dt>
+<dd>lernOS ist ein offenes System für Lebenslanges Lernen und Lernende Organisationen. Es stellt auf den drei Ebenen Individuum, Team und Organisation offene Leitfäden für die kontinuierliche Verbesserung des Lern- und Wissensmanagements bereit.
+</dd>
+<dt>lernOS Canvas</dt>
+<dd>Definition fehlt
+</dd>
+<dt>lernOS Rad</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Lernpfad</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Lernsprint</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Lernzirkel</dt>
+<dd>Eine Gruppe von 4-5 Personen in der sich die Mitglieder gegenseitig mit Feedback, Erfahrung, Wissen und Reflexion helfen. Die Circle-Mitglieder treffen sich wöchentlich und folgen dabei einem vorgegebenen Ablauf, der den Lern- und Entwicklungsprozess strukturiert.
+</dd>
+</dl>
 <p><strong>M</strong></p>
-<ul>
-<li><strong>Management</strong><br/>Management ist die Koordination der Aktivitäten in einer Organisation mit dem Zweck, die Ziele der Organisation zu erreichen.</li>
-<li><strong>Mindset</strong></li>
-<li><strong>Mission</strong><br/>Die Mission beschreibt, was die Organisation im Tagesgeschäft tut oder tun wird (Business Motivation Model).</li>
-</ul>
+<dl>
+<dt>Management</dt>
+<dd>Management ist die Koordination der Aktivitäten in einer Organisation mit dem Zweck, die Ziele der Organisation zu erreichen.
+</dd>
+<dt>Mindset</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Mission</dt>
+<dd>Die Mission beschreibt, was die Organisation im Tagesgeschäft tut oder tun wird (Business Motivation Model).
+</dd>
+</dl>
 <p><strong>O</strong></p>
-<ul>
-<li><strong>Objectives &amp; Key Results (OKR)</strong></li>
-<li><strong>Organisation</strong><br/>Eine Organisation besteht aus einer oder oder mehreren Personen (Organisationsmitglieder), die ein gemeinsamer Zweck verbindet und die sich zur Zeckerreichung eine formale Organisationsstruktur geben.</li>
-</ul>
+<dl>
+<dt>Objectives &amp; Key Results (OKR)</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Organisation</dt>
+<dd>Eine Organisation besteht aus einer oder oder mehreren Personen (Organisationsmitglieder), die ein gemeinsamer Zweck verbindet und die sich zur Zeckerreichung eine formale Organisationsstruktur geben.
+</dd>
+</dl>
 <p><strong>P</strong></p>
-<ul>
-<li><strong>Projekt</strong></li>
-<li><strong>Prozess</strong><br/>set of interrelated or interacting activities that use inputs to deliver an intended result (ISO 9001:2015).</li>
-</ul>
+<dl>
+<dt>Projekt</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Prozess</dt>
+<dd>set of interrelated or interacting activities that use inputs to deliver an intended result (ISO 9001:2015).
+</dd>
+</dl>
 <p><strong>R</strong></p>
-<ul>
-<li><strong>Rolle</strong></li>
-</ul>
+<dl>
+<dt>Rolle</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>S</strong></p>
-<ul>
-<li><strong>Selbstgesteuertes Lernen:</strong></li>
-<li><strong>Selbstorganisation</strong></li>
-<li><strong>Sinn</strong></li>
-<li><strong>Skillset</strong></li>
-<li><strong>Sprint</strong></li>
-<li><strong>Strategie</strong></li>
-</ul>
+<dl>
+<dt>Selbstgesteuertes Lernen</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Selbstorganisation</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Sinn</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Skillset</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Sprint</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Strategie</dt>
+<dd>Definition fehlt
+</dd>
+</dl>
 <p><strong>T</strong></p>
-<ul>
-<li><strong>Toolset</strong></li>
-<li><strong>True North</strong><br/>Der “wahre Norden” (true north) ist das langfristige Ziel (auch Vision genannt), an dem sich jährliche Ziele und konkrete Verbesserungsaktivitäten orientieren.</li>
-</ul>
+<dl>
+<dt>Toolset</dt>
+<dd>Definition fehlt
+</dd>
+<dt>True North</dt>
+<dd>Der “wahre Norden” (true north) ist das langfristige Ziel (auch Vision genannt), an dem sich jährliche Ziele und konkrete Verbesserungsaktivitäten orientieren.
+</dd>
+</dl>
 <p><strong>V</strong></p>
-<ul>
-<li><strong>Vision</strong><br/>Die Vision beschreibt den zukünftigen Zustand einer Organisation und ihrer Umwelt, unabhängig davon, wie diesser erreicht wird (Business Motivation Model).</li>
-<li><strong>VUCA</strong> Die Abkürzung steht für volatility, uncertainty, complexity und ambiguity.</li>
-</ul>
+<dl>
+<dt>Vision</dt>
+<dd>Die Vision beschreibt den zukünftigen Zustand einer Organisation und ihrer Umwelt, unabhängig davon, wie diesser erreicht wird (Business Motivation Model).
+</dd>
+<dt>VUCA</dt>
+<dd>Die Abkürzung steht für volatility, uncertainty, complexity und ambiguity.
+</dd>
+</dl>
 <p><strong>W</strong></p>
-<ul>
-<li><strong>Wissen</strong></li>
-<li><strong>Wissensmanagement</strong> Wissensmanagement ist die Führung und Gestaltung einer Lernenden Organisation.</li>
-<li><strong>Working Out Loud</strong><br/>Working Out Loud (WOL) ist eine Arbeitsweise, bei der Arbeitsstände und -ergebnisse offen einsehbar sind (z.B. Wiki, offene Dateiablage) und über den Arbeitsfortschritt offen erzählt wird (z.B. Blog, Microblog).</li>
-<li><strong>Working Out Loud Lernprogramm</strong><br/>Das Working Out Loud Lernprogramm von John Stepper ist ein 12-wöchiger Lernpfad, mit dem Einsteiger*innen die WOL Arbeitsweise erlernen können.</li>
-</ul>
+<dl>
+<dt>Wissen</dt>
+<dd>Definition fehlt
+</dd>
+<dt>Wissensmanagement</dt>
+<dd>Wissensmanagement ist die Führung und Gestaltung einer Lernenden Organisation.
+</dd>
+<dt>Working Out Loud</dt>
+<dd>Working Out Loud (WOL) ist eine Arbeitsweise, bei der Arbeitsstände und -ergebnisse offen einsehbar sind (z.B. Wiki, offene Dateiablage) und über den Arbeitsfortschritt offen erzählt wird (z.B. Blog, Microblog).
+</dd>
+<dt>Working Out Loud Lernprogramm</dt>
+<dd>Das Working Out Loud Lernprogramm von John Stepper ist ein 12-wöchiger Lernpfad, mit dem Einsteiger*innen die WOL Arbeitsweise erlernen können.
+</dd>
+</dl>
 <p><strong>Z</strong></p>
-<ul>
-<li><strong>Ziel</strong><br/>Result to be achieved (ISO 9001:2015).</li>
-</ul>
+<dl>
+<dt>Ziel</dt>
+<dd>Result to be achieved (ISO 9001:2015).
+</dd>
+</dl>
 </body>
 </html>

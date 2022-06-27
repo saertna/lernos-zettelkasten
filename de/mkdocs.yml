@@ -14,14 +14,16 @@ nav:
       - Markdown Syntax: 1-5-Markdown-Syntax.md
       - Produktionskette: 1-6-Produktionskette.md
       - GitHub: 1-7-Github.md
-    - Lernpfad: 2-0-Lernpfad.md
+    - Lernpfad:
+      - Lernpfad: 2-0-Lernpfad.md
+      - Kata 1: 2-1-Kata-1.md
     - Anhang: 3-0-Anhang.md
     - Download:
-      - PDF-Version: https://github.com/saertna/lernos-Zettelkasten/blob/master/de/lernOS-Zettelkasten-Guide-de.pdf
-      - Word-Version: https://github.com/saertna/lernos-Zettelkasten/blob/master/de/lernOS-Zettelkasten-Guide-de.docx
-      - HTML-Version: https://github.com/saertna/lernos-Zettelkasten/blob/master/de/lernOS-Zettelkasten-Guide-de.html
-      - E-Book (epub): https://github.com/saertna/lernos-Zettelkasten/blob/master/de/lernOS-Zettelkasten-Guide-de.epub
-      - E-Book (mobi): https://github.com/saertna/lernos-Zettelkasten/blob/master/de/lernOS-Zettelkasten-Guide-de.mobi
+      - PDF-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.pdf
+      - Word-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.docx
+      - HTML-Version: https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.html
+      - E-Book (epub): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.epub
+      - E-Book (mobi): https://github.com/cogneon/lernos-template/blob/master/de/lernOS-Template-Guide-de.mobi
     - Links:
       - lernos.org: https://lernos.org
       - CONNECT Community: https://community.cogneon.de
@@ -40,8 +42,8 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
-repo_name: 'cogneon/lernos-template'
-repo_url: 'https://github.com/saertna/lernos-Zettelkasten'
+repo_name: 'cogneon/lernos-zettelkasten'
+repo_url: 'https://github.com/saertna/lernos-zettelkasten'
 
 extra:
     social:
@@ -50,12 +52,18 @@ extra:
         - icon: fontawesome/brands/linkedin
           link: 'https://www.linkedin.com/showcase/lern-os'
         - icon: fontawesome/brands/github
-          link: 'https://github.com/saertna'
+          link: 'https://github.com/cogneon'
     disqus: lernos
     analytics:
        provider: custom
 
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - search
-  
+  - mermaid2
